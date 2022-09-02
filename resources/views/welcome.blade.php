@@ -12,8 +12,11 @@
 </head>
 
 <body class="antialiased font-sans">
+<div id="app">
     <h1 class="text-red-500 font-semibold bg-green-500">SRVN Dash</h1>
+    <test-Component> </test-Component>
 
+</div>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
+import vue from '@vitejs/plugin-vue';
 import fs from 'fs';
 import { resolve } from 'path';
 import { homedir } from 'os';
@@ -23,7 +24,9 @@ if (homeDir) {
 }
 
 export default defineConfig({
-    plugins: [laravel([
+    plugins: [
+        vue(),
+        laravel([
       'resources/js/app.js',
       'resourses/css/app.css',
       ])],
