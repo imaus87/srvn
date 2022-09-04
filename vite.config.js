@@ -26,10 +26,7 @@ if (homeDir) {
 export default defineConfig({
     plugins: [
         vue(),
-        laravel([
-      'resources/js/app.js',
-      'resourses/css/app.css',
-      ])],
+        laravel([ 'resources/js/app.js' ])],
 
     server: serverConfig,
 });

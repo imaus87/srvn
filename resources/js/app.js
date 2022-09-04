@@ -2,11 +2,13 @@ import './bootstrap';
 
 import {createApp} from 'vue/dist/vue.esm-bundler';
 
+import '../css/app.css'
+
 import TestComponent from './components/Test.vue'
 
 const app = createApp({
     components: {
-        'test-component': TestComponent
+        'v-test': TestComponent
     }
 })
 app.mount("#app")
