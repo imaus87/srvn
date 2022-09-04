@@ -1,3 +1,3 @@
 <template>
-    Hello I'm a Vue Component
+    This is my Vue Test Component
 </template>

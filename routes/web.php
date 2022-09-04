@@ -1,5 +1,10 @@
 <?php
 
+use App\Http\Livewire\Home;
+use App\Http\Livewire\Kalender;
+use App\Http\Livewire\Klassement;
+use App\Http\Livewire\Rijders;
+use App\Http\Livewire\Teams;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', Home::class)->name('home');
+
+Route::get('/kalender', Kalender::class)->name('kalender');
+Route::get('/klassement', Klassement::class)->name('klassement');
+Route::get('/rijders', Rijders::class)->name('rijders');
+Route::get('/teams', Teams::class)->name('teams');
