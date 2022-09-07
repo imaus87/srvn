@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Dashboard;
 use App\Http\Livewire\Home;
 use App\Http\Livewire\Kalender;
 use App\Http\Livewire\Klassement;
@@ -24,3 +25,8 @@ Route::get('/kalender', Kalender::class)->name('kalender');
 Route::get('/klassement', Klassement::class)->name('klassement');
 Route::get('/rijders', Rijders::class)->name('rijders');
 Route::get('/teams', Teams::class)->name('teams');
+
+Route::middleware('auth')->group(function ()
+{
+    Route::get('/dashboard', Dashboard::class)->name('dashboard');
+});
