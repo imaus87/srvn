@@ -1,58 +1,77 @@
 <x-auth-layout>
-    <x-auth.card>
+    <x-auth.container class="font-medium">
         <x-slot name="logo">
             <a href="/">
-                <x-srvn-logo class="h-20" />
+                <x-srvn-stone class="h-12" />
             </a>
         </x-slot>
 
+        <p class="text-center font-semibold text-[#ff460d]">
+            Simrace Vereniging Nederland
+        </p>
+
         <!-- Session Status -->
-        <x-auth.session-status class="mb-4" :status="session('status')" />
+        <x-auth.session-status class="mb-3" :status="session('status')" />
 
         <!-- Validation Errors -->
-        <x-auth.validation-errors class="mb-4" :errors="$errors" />
+        <x-auth.validation-errors class="mb-3" :errors="$errors" />
 
         <form method="POST" action="{{ route('login') }}">
             @csrf
 
             <!-- Email Address -->
-            <div>
-                <x-input.label for="email" :value="__('Email')" />
+            <div class="mt-9">
+                <x-input.label for="email"
+                               :value="__('Email')"
+                               class="hidden" />
 
-                <x-input.text id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')"
-                    required autofocus />
+                <x-input.text id="email"
+                              class="block w-full"
+                              type="email"
+                              name="email"
+                              :value="old('email')"
+                              required
+                              placeholder="Emailadres"
+                              autofocus />
             </div>
 
             <!-- Password -->
-            <div class="mt-4">
-                <x-input.label for="password" :value="__('Password')" />
+            <div class="mt-6">
+                <x-input.label for="password"
+                               :value="__('Password')"
+                               class="hidden" />
 
-                <x-input.text id="password" class="block mt-1 w-full" type="password" name="password" required
-                    autocomplete="current-password" />
+                <x-input.text id="password"
+                              class="block w-full"
+                              type="password"
+                              name="password"
+                              required
+                              autocomplete="current-password"
+                              placeholder="Wachtwoord" />
             </div>
 
-            <!-- Remember Me -->
-            <div class="block mt-4">
-                <label for="remember_me" class="inline-flex items-center">
-                    <input id="remember_me" type="checkbox"
-                        class="rounded border-gray-300 text-indigo-600 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-                        name="remember">
-                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-                </label>
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
+            <div class="mt-6 flex items-center justify-between">
                 @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900"
-                        href="{{ route('password.request') }}">
-                        {{ __('Forgot your password?') }}
-                    </a>
+                    <span class="text-sm decoration-1 hover:underline">
+                        <a href="{{ route('password.request') }}">
+                            {{ __('Wachtwoord vergeten?') }}
+                        </a>
+                    </span>
                 @endif
 
-                <x-button class="ml-3">
-                    {{ __('Log in') }}
+                <x-button class="ml-3 text-[#f3f3f3]">
+                    {{ __('Inloggen') }}
                 </x-button>
             </div>
         </form>
-    </x-auth.card>
+        <div class="mt-9 border-t border-stone-300">
+            @if (Route::has('register'))
+                <p class="mt-6 text-center text-sm decoration-1 hover:underline">
+                    <a href="{{ route('register') }}">
+                        {{ __('Nog geen account?') }}
+                    </a>
+                </p>
+            @endif
+        </div>
+    </x-auth.container>
 </x-auth-layout>

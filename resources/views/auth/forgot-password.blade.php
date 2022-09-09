@@ -1,37 +1,48 @@
 <x-auth-layout>
-    <x-auth.card>
+    <x-auth.container class="font-medium">
         <x-slot name="logo">
             <a href="/">
-                <x-srvn-logo class="h-20" />
+                <x-srvn-stone class="h-12" />
             </a>
         </x-slot>
+        <p class="text-center font-semibold text-[#ff460d]">
+            Simrace Vereniging Nederland
+        </p>
 
-        <div class="mb-4 text-sm text-gray-600">
-            {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
+        <div class="mt-6 text-sm text-gray-600">
+            {{ __('Vul je emailadres in om je wachtwoord opnieuw in te stellen.') }}
         </div>
 
         <!-- Session Status -->
-        <x-auth.session-status class="mb-4" :status="session('status')" />
+        <x-auth.session-status class="mb-3" :status="session('status')" />
 
         <!-- Validation Errors -->
-        <x-auth.validation-errors class="mb-4" :errors="$errors" />
+        <x-auth.validation-errors class="mb-3" :errors="$errors" />
 
-        <form method="POST" action="{{ route('password.email') }}">
+        <form method="POST" action="{{ route('password.email') }}" class="mt-6">
             @csrf
 
             <!-- Email Address -->
             <div>
-                <x-input.label for="email" :value="__('Email')" />
+                <x-input.label for="email"
+                :value="__('Email')"
+                class="hidden" />
 
-                <x-input.text id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')"
-                    required autofocus />
+                <x-input.text id="email"
+                class="mt-1 block w-full"
+                type="email"
+                name="email"
+                :value="old('email')"
+                required
+                placeholder="Emailadres"
+                autofocus />
             </div>
 
-            <div class="flex items-center justify-end mt-4">
-                <x-button>
-                    {{ __('Email Password Reset Link') }}
+            <div class="mt-6 flex items-center justify-end">
+                <x-button class="w-full">
+                    {{ __('Nieuw wachtwoord aanvragen') }}
                 </x-button>
             </div>
         </form>
-    </x-auth.card>
+    </x-auth.container>
 </x-auth-layout>

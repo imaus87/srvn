@@ -1,5 +1,5 @@
 <x-auth-layout>
-    <x-auth.card>
+    <x-auth.container>
         <x-slot name="logo">
             <a href="/">
                 <x-srvn-logo class="h-20" />
@@ -44,5 +44,5 @@
                 </x-button>
             </div>
         </form>
-    </x-auth.card>
+    </x-auth.container>
 </x-auth-layout>
