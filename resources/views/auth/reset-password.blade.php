@@ -13,32 +13,34 @@
             @csrf
 
             <!-- Password Reset Token -->
-            <input type="hidden" name="token" value="{{ $request->route('token') }}">
+            {{-- <input type="hidden" name="token" value="{{ $request->route('token') }}"> --}}
 
             <!-- Email Address -->
             <div>
                 <x-input.label for="email" :value="__('Email')" />
 
-                <x-input.text id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email', $request->email)"
-                    required autofocus />
+                {{-- <x-input.text id="email" class="mt-1 block w-full" type="email" name="email" :value="old('email', $request->email)"
+                              required autofocus /> --}}
+                <x-input.text id="email" class="mt-1 block w-full" type="email" name="email"
+                              required autofocus />
             </div>
 
             <!-- Password -->
             <div class="mt-4">
-                <x-input-label for="password" :value="__('Password')" />
+                <x-input.label for="password" :value="__('Password')" />
 
-                <x-input.text id="password" class="block mt-1 w-full" type="password" name="password" required />
+                <x-input.text id="password" class="mt-1 block w-full" type="password" name="password" required />
             </div>
 
             <!-- Confirm Password -->
             <div class="mt-4">
                 <x-input.label for="password_confirmation" :value="__('Confirm Password')" />
 
-                <x-input.text id="password_confirmation" class="block mt-1 w-full" type="password"
-                    name="password_confirmation" required />
+                <x-input.text id="password_confirmation" class="mt-1 block w-full" type="password"
+                              name="password_confirmation" required />
             </div>
 
-            <div class="flex items-center justify-end mt-4">
+            <div class="mt-4 flex items-center justify-end">
                 <x-button>
                     {{ __('Reset Password') }}
                 </x-button>
