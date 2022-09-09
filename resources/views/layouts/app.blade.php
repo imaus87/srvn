@@ -18,7 +18,7 @@
     <livewire:styles />
 </head>
 
-<body class="antialiased font-sans bg-zinc-100">
+<body class="antialiased font-sans text-stone-800 bg-[#f3f3f3] h-screen">
     <div id="app">
         <x-navbar />
         <main>
