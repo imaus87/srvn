@@ -1,7 +1,7 @@
 <x-auth-layout>
     <x-auth.container class="font-medium">
         <x-slot name="logo">
-            <a href="/">
+            <a href="{{ route('home') }}">
                 <x-srvn-stone class="h-12" />
             </a>
         </x-slot>
@@ -11,18 +11,21 @@
         </p>
 
         <!-- Session Status -->
-        <x-auth.session-status class="mb-3" :status="session('status')" />
+        <x-auth.session-status class="mb-3"
+                               :status="session('status')" />
 
         <!-- Validation Errors -->
-        <x-auth.validation-errors class="mb-3" :errors="$errors" />
+        <x-auth.validation-errors class="mb-3"
+                                  :errors="$errors" />
 
-        <form method="POST" action="{{ route('login') }}">
+        <form method="POST"
+              action="{{ route('login') }}">
             @csrf
 
             <!-- Email Address -->
             <div class="mt-9">
                 <x-input.label for="email"
-                               :value="__('Email')"
+                               :value="__('Emailadres')"
                                class="hidden" />
 
                 <x-input.text id="email"
@@ -38,7 +41,7 @@
             <!-- Password -->
             <div class="mt-6">
                 <x-input.label for="password"
-                               :value="__('Password')"
+                               :value="__('Wachtwoord')"
                                class="hidden" />
 
                 <x-input.text id="password"
