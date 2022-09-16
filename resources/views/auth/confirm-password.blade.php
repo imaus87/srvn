@@ -1,7 +1,7 @@
 <x-auth-layout>
     <x-auth.container>
         <x-slot name="logo">
-            <a href="/">
+            <a href="{{ route('home') }}">
                 <x-srvn-logo class="h-20" />
             </a>
         </x-slot>
