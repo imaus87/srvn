@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::domain('srvn-dash.test')->group(function() {
+Route::domain('srvn.test')->group(function () {
     Route::get('/', Home::class)->name('home');
     Route::get('/kalender', Kalender::class)->name('kalender');
     Route::get('/klassement', Klassement::class)->name('klassement');
@@ -27,6 +27,6 @@ Route::domain('srvn-dash.test')->group(function() {
 });
 
 
-Route::middleware(['auth', 'verified'])->domain('mijn.srvn-dash.test')->group(function() {
+Route::middleware(['auth', 'verified'])->domain('mijn.srvn.test')->group(function () {
     Route::get('/', Dashboard::class)->name('dashboard');
 });

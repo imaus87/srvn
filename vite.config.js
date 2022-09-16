@@ -5,7 +5,7 @@ import fs from 'fs';
 import { resolve } from 'path';
 import { homedir } from 'os';
 
-let host = 'srvn-dash.test';
+let host = 'srvn.test';
 let homeDir = homedir();
 
 let serverConfig = {};
@@ -17,9 +17,9 @@ if (homeDir) {
             cert: fs.readFileSync(resolve(homeDir, `.config/valet/Certificates/${host}.crt`)),
         },
         hmr: {
-            host: 'srvn-dash.test',
+            host: 'srvn.test',
         },
-        host: 'srvn-dash.test',
+        host: 'srvn.test',
     };
 }
 
