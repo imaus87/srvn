@@ -16,12 +16,16 @@
         rel="stylesheet">
 
     <livewire:styles />
+
+    <script defer src="https://unpkg.com/@alpinejs/ui@3.10.3-beta.2/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/@alpinejs/focus@3.10.3/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
 </head>
 
 <body class="antialiased font-sans text-stone-800 bg-[#f3f3f3] h-screen">
     <div id="app">
         <x-navbar />
-        <main>
+        <main class="px-6 py-9 bg-stone-800 text-stone-100 lg:bg-transparent h-48">
             {{ $slot }}
         </main>
 
