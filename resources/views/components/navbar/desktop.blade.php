@@ -70,19 +70,19 @@
                 <ul class="flex h-full">
                     <li class="h-full">
                         <a class="flex h-full w-full items-center px-3 hover:text-[#ff460d]"
-                           href="{{ route('kalender') }}">
+                           href="{{ route('schedule') }}">
                             <span>Kalender</span>
                         </a>
                     </li>
                     <li class="h-full">
                         <a class="flex h-full w-full items-center px-3 hover:text-[#ff460d]"
-                           href="{{ route('klassement') }}">
+                           href="{{ route('standings') }}">
                             <span>Klassement</span>
                         </a>
                     </li>
                     <li class="h-full">
                         <a class="flex h-full w-full items-center px-3 hover:text-[#ff460d]"
-                           href="{{ route('rijders') }}">
+                           href="{{ route('drivers') }}">
                             <span>Rijders</span>
                         </a>
                     </li>

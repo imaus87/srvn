@@ -1,10 +1,10 @@
 <?php
 
 use App\Http\Livewire\Dashboard;
+use App\Http\Livewire\Drivers;
 use App\Http\Livewire\Home;
-use App\Http\Livewire\Kalender;
-use App\Http\Livewire\Klassement;
-use App\Http\Livewire\Rijders;
+use App\Http\Livewire\Schedule;
+use App\Http\Livewire\Standings;
 use App\Http\Livewire\Teams;
 use Illuminate\Support\Facades\Route;
 
@@ -20,9 +20,9 @@ use Illuminate\Support\Facades\Route;
 */
 Route::domain('srvn.test')->group(function () {
     Route::get('/', Home::class)->name('home');
-    Route::get('/kalender', Kalender::class)->name('kalender');
-    Route::get('/klassement', Klassement::class)->name('klassement');
-    Route::get('/rijders', Rijders::class)->name('rijders');
+    Route::get('/kalender', Schedule::class)->name('schedule');
+    Route::get('/klassement', Standings::class)->name('standings');
+    Route::get('/rijders', Drivers::class)->name('drivers');
     Route::get('/teams', Teams::class)->name('teams');
 });
 

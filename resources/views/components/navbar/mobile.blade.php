@@ -34,21 +34,21 @@
                 <li class="flex items-center space-x-2">
                     <x-heroicon-o-chevron-double-right class="-mt-0.5 h-5 text-[#ff460d]" />
                     <a class="flex w-full items-center hover:text-[#ff460d]"
-                       href="{{ route('kalender') }}">
+                       href="{{ route('schedule') }}">
                         <span>Kalender</span>
                     </a>
                 </li>
                 <li class="flex items-center space-x-2">
                     <x-heroicon-o-chevron-double-right class="-mt-0.5 h-5 text-[#ff460d]" />
                     <a class="flex w-full items-center hover:text-[#ff460d]"
-                       href="{{ route('klassement') }}">
+                       href="{{ route('standings') }}">
                         <span>Klassement</span>
                     </a>
                 </li>
                 <li class="flex items-center space-x-2">
                     <x-heroicon-o-chevron-double-right class="-mt-0.5 h-5 text-[#ff460d]" />
                     <a class="flex w-full items-center hover:text-[#ff460d]"
-                       href="{{ route('rijders') }}">
+                       href="{{ route('drivers') }}">
                         <span>Rijders</span>
                     </a>
                 </li>

@@ -4,10 +4,10 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 
-class Rijders extends Component
+class Schedule extends Component
 {
     public function render()
     {
-        return view('rijders');
+        return view('schedule');
     }
 }
