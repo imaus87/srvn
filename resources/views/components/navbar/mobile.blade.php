@@ -2,18 +2,25 @@
 
     {{-- Navbar Mobile --}}
     <div class="shadow-b bg-white px-6 font-medium shadow-md">
-        <div class="flex h-20 w-full items-center justify-between lg:hidden">
+        <div class="flex h-20 w-full items-center justify-between">
             <a href="{{ route('home') }}">
                 <x-srvn-stone class="h-6" />
             </a>
             <div class="flex items-center justify-end space-x-6">
-                <a class="text-sm font-medium underline decoration-1"
-                   href="{{ route('login') }}">
-                    {{ __('Mijn SRVN') }}
-                </a>
+                <div x-show="!$popover.isOpen" x-transition.duration.150ms.delay.50ms>
+                  <a class="text-sm font-medium underline decoration-1"
+                     href="{{ route('login') }}">
+                      {{ __('Mijn SRVN') }}
+                  </a>
+                </div>
                 <button x-popover:button
-                        class="mt-0">
-                    <x-heroicon-o-bars-2 class="h-10 text-[#ff460d]" />
+                        class="relative mt-0 h-10 w-10">
+                    <div x-show="!$popover.isOpen" x-transition.duration.150ms class="absolute inset-0">
+                      <x-heroicon-o-bars-2 class="h-10 text-[#ff460d]" />
+                    </div>
+                    <div x-show="$popover.isOpen" x-transition.duration.150ms class="absolute inset-0">
+                      <x-heroicon-o-x-mark class="h-10 text-[#ff460d]" />
+                    </div>
                 </button>
             </div>
         </div>
