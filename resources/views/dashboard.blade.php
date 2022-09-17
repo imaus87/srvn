@@ -1,9 +1,13 @@
 <div>
     You are logged in now.
-    <form action="{{ route('logout') }}" method="POST">
+    {{-- <form action="{{ route('logout') }}" method="POST">
         @csrf
         <x-button type="submit">
             Logout
         </x-button>
-    </form>
+    </form> --}}
+
+    <x-button class="mt-4 max-w-min" href="{{ route('home') }}" wire:click="logout">
+        Uitloggen
+    </x-button>
 </div>
