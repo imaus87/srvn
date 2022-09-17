@@ -1,7 +1,8 @@
-<div class="shadow-b bg-white px-6 font-medium shadow-md">
+<div x-data="{ showBar: false }"
+     class="shadow-b bg-white px-6 font-medium shadow-md">
 
     {{-- Navbar Desktop --}}
-    <div class="mx-auto hidden max-w-7xl lg:block">
+    <div class="mx-auto max-w-7xl">
 
         {{-- Secondary Navbar --}}
         <div class="flex h-8 w-full items-center justify-between text-xs">
@@ -61,8 +62,12 @@
             </div>
         </div>
 
-        {{-- Navbar --}}
-        <div class="flex h-24 w-full items-center border-t border-stone-200">,
+        {{-- Primary Navbar --}}
+        {{-- :class="{ 'h-18 transition duration-150': showBar }" --}}
+        <div :class="showBar ? 'bg-red-500' : 'bg-blue-500'"
+             class="flex w-full items-center border-t border-stone-200"
+             @scroll.window="showBar = (window.pageYOffset > 20) ? true : false">
+            <div x-text="showBar"></div>
             <a href="{{ route('home') }}">
                 <x-srvn-stone class="h-8 pr-3" />
             </a>
