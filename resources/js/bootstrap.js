@@ -16,7 +16,7 @@ import Alpine from 'alpinejs'
 
 window.Alpine = Alpine
 
-Alpine.start()
+// Alpine.start()
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
