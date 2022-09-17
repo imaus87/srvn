@@ -1,11 +1,13 @@
 <div x-data="{ showBar: false }"
+     x-on:scroll.window="showBar = (window.pageYOffset > 20) ? true : false"
      class="shadow-b bg-white px-6 font-medium shadow-md">
 
     {{-- Navbar Desktop --}}
     <div class="mx-auto max-w-7xl">
 
         {{-- Secondary Navbar --}}
-        <div class="flex h-8 w-full items-center justify-between text-xs">
+        <div class="flex h-8 w-full items-center justify-between text-xs"
+            x-bind:class="showBar ? 'hidden' : 'block'">
 
             {{-- Call To Action --}}
             <div class="flex w-full items-center">
@@ -64,14 +66,13 @@
 
         {{-- Primary Navbar --}}
         {{-- :class="{ 'h-18 transition duration-150': showBar }" --}}
-        <div :class="showBar ? 'bg-red-500' : 'bg-blue-500'"
-             class="flex w-full items-center border-t border-stone-200"
-             @scroll.window="showBar = (window.pageYOffset > 20) ? true : false">
-            <div x-text="showBar"></div>
+        <div x-bind:class="showBar ? 'h-18' : 'h-24'"
+        x-transition.duration.1000ms
+             class="flex w-full items-center border-t border-stone-200">
             <a href="{{ route('home') }}">
                 <x-srvn-stone class="h-8 pr-3" />
             </a>
-            <div class="flex h-full w-full justify-between">
+            <div class="flex w-full items-center justify-between">
                 <ul class="flex h-full">
                     <li class="h-full">
                         <a class="flex h-full w-full items-center px-3 hover:text-[#ff460d]"
