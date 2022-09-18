@@ -2,6 +2,8 @@
      x-on:scroll.window="showBar = (window.scrollY > 1) ? true : false"
      x-bind:class="showBar ? '-translate-y-[56px]' : ''"
      class="shadow-b bg-white px-6 font-medium shadow-md transition-transform duration-200 [transition-delay: 0ms;]">
+     {{-- https://github.com/tailwindlabs/tailwindcss/discussions/3028 --}}
+     {{-- https://www.revolut.com/ --}}
 
     {{-- Navbar Desktop --}}
     <div class="mx-auto max-w-7xl">
