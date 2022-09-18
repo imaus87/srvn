@@ -14,6 +14,7 @@
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "livewire/livewire": "^2.10",
+        "orchestra/parser": "^7.0",
         "tonysm/turbo-laravel": "^1.5"
     },
     "require-dev": {
