@@ -25,7 +25,7 @@
 <body class="antialiased font-sans text-stone-800 bg-[#f3f3f3] h-screen">
     <div id="app">
         <x-navbar />
-        <main class="px-6 py-9 bg-stone-800 text-stone-100 h-screen">
+        <main class="px-6 py-9 h-screen">
             <div class="mx-auto max-w-7xl">
               {{ $slot }}
             </div>
