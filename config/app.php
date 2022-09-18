@@ -82,7 +82,7 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'nl',
 
     /*
     |--------------------------------------------------------------------------
@@ -108,7 +108,7 @@ return [
     |
     */
 
-    'faker_locale' => 'en_US',
+    'faker_locale' => 'nl_NL',
 
     /*
     |--------------------------------------------------------------------------
@@ -185,6 +185,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Orchestra\Parser\XmlServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -211,6 +212,7 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
+        'XmlParser' => Orchestra\Parser\Xml\Facade::class,
     ])->toArray(),
 
 ];
