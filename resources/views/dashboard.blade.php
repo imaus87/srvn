@@ -7,7 +7,7 @@
         </x-button>
     </form> --}}
 
-    <x-button class="mt-4 max-w-min" href="{{ route('home') }}" wire:click="logout">
+    <x-button class="mt-4 max-w-min" type="button" wire:click="logout">
         Uitloggen
     </x-button>
 </div>

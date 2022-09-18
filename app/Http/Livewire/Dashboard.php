@@ -10,6 +10,7 @@ class Dashboard extends Component
     public function logout()
     {
         Auth::logout();
+        return redirect()->route('home');
     }
 
     public function render()
