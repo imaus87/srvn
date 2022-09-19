@@ -5,7 +5,7 @@
                 <x-srvn-stone class="h-12" />
             </a>
         </x-slot>
-        <p class="text-center font-semibold text-[#ff460d]">
+        <p class="text-srvn-orange text-center font-semibold">
             Simrace Vereniging Nederland
         </p>
 
@@ -42,17 +42,17 @@
                               autofocus />
             </div>
 
-            <div class="mt-6 flex items-center justify-end">
+            <div class="mt-6 flex items-center">
                 <x-button class="w-full">
                     {{ __('Nieuw wachtwoord aanvragen') }}
                 </x-button>
             </div>
             @if (Route::has('login'))
-                <p class="mt-6 text-sm decoration-1 hover:underline">
-                    <a href="{{ route('login') }}">
+                <div class="mt-6">
+                    <x-link href="{{ route('login') }}">
                         {{ __('Terug naar inloggen?') }}
-                    </a>
-                </p>
+                    </x-link>
+                </div>
             @endif
         </form>
     </x-auth.container>

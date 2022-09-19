@@ -14,28 +14,28 @@
             {{-- Call To Action --}}
             <div class="flex w-full items-center">
                 <a href="{{ route('register') }}"
-                   class="font-semibold text-[#ff460d]">
+                   class="font-semibold text-srvn-orange">
                     Wordt lid voor €25 per jaar!
                 </a>
                 <ul class="flex text-stone-500">
                     <li class="ml-6 flex items-center">
-                        <x-heroicon-s-check class="mr-1 h-4 text-[#ff460d]" />
+                        <x-heroicon-s-check class="mr-1 h-4 text-srvn-orange" />
                         24/7 raceservers
                     </li>
                     <li class="ml-6 flex items-center">
-                        <x-heroicon-s-check class="mr-1 h-4 text-[#ff460d]" />
+                        <x-heroicon-s-check class="mr-1 h-4 text-srvn-orange" />
                         Kampioenschappen
                     </li>
                     <li class="ml-6 flex items-center">
-                        <x-heroicon-s-check class="mr-1 h-4 text-[#ff460d]" />
+                        <x-heroicon-s-check class="mr-1 h-4 text-srvn-orange" />
                         Evenementen
                     </li>
                     <li class="ml-6 flex items-center">
-                        <x-heroicon-s-check class="mr-1 h-4 text-[#ff460d]" />
+                        <x-heroicon-s-check class="mr-1 h-4 text-srvn-orange" />
                         Eigen livery
                     </li>
                     <li class="ml-6 flex items-center">
-                        <x-heroicon-s-check class="mr-1 h-4 text-[#ff460d]" />
+                        <x-heroicon-s-check class="mr-1 h-4 text-srvn-orange" />
                         2x ALV
                     </li>
                 </ul>
@@ -75,25 +75,25 @@
             <div class="flex w-full items-center justify-between">
                 <ul class="flex h-full">
                     <li class="h-full">
-                        <a class="flex h-full w-full items-center px-3 hover:text-[#ff460d]"
+                        <a class="flex h-full w-full items-center px-3 hover:text-srvn-orange"
                            href="{{ route('schedule') }}">
                             <span>Kalender</span>
                         </a>
                     </li>
                     <li class="h-full">
-                        <a class="flex h-full w-full items-center px-3 hover:text-[#ff460d]"
+                        <a class="flex h-full w-full items-center px-3 hover:text-srvn-orange"
                            href="{{ route('standings') }}">
                             <span>Klassement</span>
                         </a>
                     </li>
                     <li class="h-full">
-                        <a class="flex h-full w-full items-center px-3 hover:text-[#ff460d]"
+                        <a class="flex h-full w-full items-center px-3 hover:text-srvn-orange"
                            href="{{ route('drivers') }}">
                             <span>Rijders</span>
                         </a>
                     </li>
                     <li class="h-full">
-                        <a class="flex h-full w-full items-center px-3 hover:text-[#ff460d]"
+                        <a class="flex h-full w-full items-center px-3 hover:text-srvn-orange"
                            href="{{ route('teams') }}">
                             <span>Teams</span>
                         </a>
@@ -102,7 +102,7 @@
                 <ul class="flex h-full items-center">
                     <li>
                         <a href="{{ route('dashboard') }}"
-                           class="flex items-center justify-center space-x-1 rounded border-2 border-[#ff460d] bg-[#ff460d] px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-stone-800">
+                           class="flex items-center justify-center space-x-1 rounded border-2 border-srvn-orange bg-srvn-orange px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-stone-800">
                             <x-heroicon-o-user class="h-6" />
                             <span>Mijn SRVN</span>
                         </a>

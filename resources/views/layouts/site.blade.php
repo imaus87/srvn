@@ -22,7 +22,7 @@
     <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
 </head>
 
-<body class="h-screen bg-[#f3f3f3] font-sans text-stone-800 antialiased">
+<body class="bg-srvn-gray h-screen font-sans text-stone-800 antialiased">
     <div id="app">
         <x-navbar />
         <main class="h-screen px-6 py-9">
@@ -39,3 +39,26 @@
 </body>
 
 </html>
+
+<<<<<<< HEAD
+        <body class="h-screen bg-[#f3f3f3] font-sans text-stone-800 antialiased">
+    =======
+
+    <body class="bg-srvn-gray h-screen font-sans text-stone-800 antialiased">
+        >>>>>>> 63cc3c95572a8209396418d86516626753d74654
+        <div id="app">
+            <x-navbar />
+            <main class="h-screen px-6 py-9">
+                <div class="mx-auto max-w-7xl">
+                    {{ $slot }}
+                </div>
+            </main>
+
+        </div>
+
+        <livewire:scripts />
+        <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js"
+                data-turbo-eval="false"></script>
+    </body>
+
+    </html>

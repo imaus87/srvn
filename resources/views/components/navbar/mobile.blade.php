@@ -16,10 +16,10 @@
                 <button x-popover:button
                         class="relative mt-0 h-10 w-10">
                     <div x-show="!$popover.isOpen" x-transition.duration.150ms class="absolute inset-0">
-                      <x-heroicon-o-bars-2 class="h-10 text-[#ff460d]" />
+                      <x-heroicon-o-bars-2 class="h-10 text-srvn-orange" />
                     </div>
                     <div x-show="$popover.isOpen" x-transition.duration.150ms class="absolute inset-0">
-                      <x-heroicon-o-x-mark class="h-10 text-[#ff460d]" />
+                      <x-heroicon-o-x-mark class="h-10 text-srvn-orange" />
                     </div>
                 </button>
             </div>
@@ -39,29 +39,29 @@
             </h2>
             <ul class="flex flex-col space-y-3">
                 <li class="flex items-center space-x-2">
-                    <x-heroicon-o-chevron-double-right class="-mt-0.5 h-5 text-[#ff460d]" />
-                    <a class="flex w-full items-center hover:text-[#ff460d]"
+                    <x-heroicon-o-chevron-double-right class="-mt-0.5 h-5 text-srvn-orange" />
+                    <a class="flex w-full items-center hover:text-srvn-orange"
                        href="{{ route('schedule') }}">
                         <span>Kalender</span>
                     </a>
                 </li>
                 <li class="flex items-center space-x-2">
-                    <x-heroicon-o-chevron-double-right class="-mt-0.5 h-5 text-[#ff460d]" />
-                    <a class="flex w-full items-center hover:text-[#ff460d]"
+                    <x-heroicon-o-chevron-double-right class="-mt-0.5 h-5 text-srvn-orange" />
+                    <a class="flex w-full items-center hover:text-srvn-orange"
                        href="{{ route('standings') }}">
                         <span>Klassement</span>
                     </a>
                 </li>
                 <li class="flex items-center space-x-2">
-                    <x-heroicon-o-chevron-double-right class="-mt-0.5 h-5 text-[#ff460d]" />
-                    <a class="flex w-full items-center hover:text-[#ff460d]"
+                    <x-heroicon-o-chevron-double-right class="-mt-0.5 h-5 text-srvn-orange" />
+                    <a class="flex w-full items-center hover:text-srvn-orange"
                        href="{{ route('drivers') }}">
                         <span>Rijders</span>
                     </a>
                 </li>
                 <li class="flex items-center space-x-2">
-                    <x-heroicon-o-chevron-double-right class="-mt-0.5 h-5 text-[#ff460d]" />
-                    <a class="flex w-full items-center hover:text-[#ff460d]"
+                    <x-heroicon-o-chevron-double-right class="-mt-0.5 h-5 text-srvn-orange" />
+                    <a class="flex w-full items-center hover:text-srvn-orange"
                        href="{{ route('teams') }}">
                         <span>Teams</span>
                     </a>
@@ -72,7 +72,7 @@
             <ul class="flex items-center pt-6 pb-9">
                 <li class="w-full">
                     <a href="{{ route('dashboard') }}"
-                       class="flex items-center justify-center space-x-1 rounded border-2 border-[#ff460d] bg-[#ff460d] px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-stone-800">
+                       class="flex items-center justify-center space-x-1 rounded border-2 border-srvn-orange bg-srvn-orange px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-stone-800">
                         <x-heroicon-o-user class="h-6" />
                         <span>Mijn SRVN</span>
                     </a>
@@ -85,24 +85,24 @@
             </h2>
             <ul class="flex flex-col space-y-3">
                 <li class="flex items-center space-x-2">
-                    <x-heroicon-o-arrow-top-right-on-square class="-mt-0.5 h-5 text-[#ff460d]" />
-                    <a class="flex w-full items-center hover:text-[#ff460d]"
+                    <x-heroicon-o-arrow-top-right-on-square class="-mt-0.5 h-5 text-srvn-orange" />
+                    <a class="flex w-full items-center hover:text-srvn-orange"
                        href="https://srvn.liveracers.com/League"
                        target="_blank">
                         <span>LiveRacers</span>
                     </a>
                 </li>
                 <li class="flex items-center space-x-2">
-                    <x-heroicon-o-arrow-top-right-on-square class="-mt-0.5 h-5 text-[#ff460d]" />
-                    <a class="flex w-full items-center hover:text-[#ff460d]"
+                    <x-heroicon-o-arrow-top-right-on-square class="-mt-0.5 h-5 text-srvn-orange" />
+                    <a class="flex w-full items-center hover:text-srvn-orange"
                        href="https://forum.srvn.nl/"
                        target="_blank">
                         <span>Forum</span>
                     </a>
                 </li>
                 <li class="flex items-center space-x-2">
-                    <x-heroicon-o-arrow-top-right-on-square class="-mt-0.5 h-5 text-[#ff460d]" />
-                    <a class="flex w-full items-center hover:text-[#ff460d]"
+                    <x-heroicon-o-arrow-top-right-on-square class="-mt-0.5 h-5 text-srvn-orange" />
+                    <a class="flex w-full items-center hover:text-srvn-orange"
                        href="https://discord.com/invite/U5rs68Q9CQ"
                        target="_blank">
                         <span>Discord</span>
@@ -113,7 +113,7 @@
 
         {{-- Callout --}}
         <a href="{{ route('register') }}"
-           class="mt-9 text-center font-semibold text-[#ff460d]">
+           class="mt-9 text-center font-semibold text-srvn-orange">
             Wordt lid voor €25 per jaar!
         </a>
     </div>

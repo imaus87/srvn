@@ -6,7 +6,7 @@
             </a>
         </x-slot>
 
-        <h1 class="text-center font-semibold text-[#ff460d]">
+        <h1 class="text-center font-semibold text-srvn-orange">
             Simrace Vereniging Nederland
         </h1>
 
@@ -37,7 +37,7 @@
                                class="hidden" />
 
                 <x-input.text id="email"
-                              class="hidden mt-1 w-full"
+                              class="hidden w-full"
                               type="email"
                               name="email"
                               :value="old('email', $request->email)"
@@ -53,7 +53,7 @@
                                class="hidden" />
 
                 <x-input.text id="password"
-                              class="mt-1 block w-full"
+                              class="block w-full"
                               type="password"
                               name="password"
                               placeholder="Wachtwoord"
@@ -68,7 +68,7 @@
                                class="hidden" />
 
                 <x-input.text id="password_confirmation"
-                              class="mt-1 block w-full"
+                              class="block w-full"
                               type="password"
                               name="password_confirmation"
                               placeholder="Bevestig wachtwoord"
@@ -79,6 +79,7 @@
                 <x-link href="{{ route('login') }}">
                     {{ __('Terug naar inloggen?') }}
                 </x-link>
+
                 <x-button>
                     {{ __('Stel opnieuw in') }}
                 </x-button>
