@@ -23,7 +23,7 @@
 
 <body id="app" class="dark antialiased">
     <main
-          class="fixed bg-[#f3f3f3] font-sans text-stone-800 antialiased dark:bg-stone-900 dark:text-stone-100">
+          class="bg-srvn-gray fixed font-sans text-stone-800 antialiased dark:bg-stone-900 dark:text-stone-100">
         <div class="h-screen w-screen">
 
             <div class="w-full">
