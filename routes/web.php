@@ -1,11 +1,11 @@
 <?php
 
-use App\Http\Livewire\Dashboard;
-use App\Http\Livewire\Drivers;
-use App\Http\Livewire\Home;
-use App\Http\Livewire\Schedule;
-use App\Http\Livewire\Standings;
-use App\Http\Livewire\Teams;
+use App\Http\Livewire\Site\Home;
+use App\Http\Livewire\Site\Teams;
+use App\Http\Livewire\Site\Drivers;
+use App\Http\Livewire\Site\Schedule;
+use App\Http\Livewire\Dash\Dashboard;
+use App\Http\Livewire\Site\Standings;
 use Illuminate\Support\Facades\Route;
 
 /*
