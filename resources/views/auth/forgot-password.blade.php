@@ -5,7 +5,7 @@
                 <x-srvn-stone class="h-12" />
             </a>
         </x-slot>
-        <p class="text-center font-semibold text-[#ff460d]">
+        <p class="text-center font-semibold text-srvn-orange">
             Simrace Vereniging Nederland
         </p>
 

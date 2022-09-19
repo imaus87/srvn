@@ -6,7 +6,7 @@
             </a>
         </x-slot>
 
-        <h1 class="text-center font-semibold text-[#ff460d]">
+        <h1 class="text-center font-semibold text-srvn-orange">
             Simrace Vereniging Nederland
         </h1>
 

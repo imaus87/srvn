@@ -6,6 +6,10 @@ module.exports = {
   content: ['./resources/**/*.blade.php', './resources/**/*.js', './resources/**/*.vue'],
   theme: {
     extend: {
+      colors: {
+        'srvn-orange': '#ff460d',
+        'srvn-gray': '#f3f3f3',
+      },
       fontFamily: {
         sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
         smooch: ['Smooch', ...defaultTheme.fontFamily.sans]

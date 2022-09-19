@@ -22,7 +22,7 @@
     <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
 </head>
 
-<body class="antialiased font-sans text-stone-800 bg-[#f3f3f3] h-screen">
+<body class="antialiased font-sans text-stone-800 bg-srvn-gray h-screen">
     <div id="app">
         <x-navbar />
         <main class="px-6 py-9 h-screen">

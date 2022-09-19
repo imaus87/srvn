@@ -11,38 +11,38 @@
                 {{-- List --}}
                 <ul class="mt-9 text-sm font-medium text-stone-500 lg:text-base">
                     <li class="flex items-center pb-6">
-                        <x-heroicon-s-check class="mr-3 h-5 text-[#ff460d] lg:h-6" />
+                        <x-heroicon-s-check class="mr-3 h-5 text-srvn-orange lg:h-6" />
                         Maak 24/7 gebruik van onze raceservers
                     </li>
                     <li class="flex items-center pb-6">
                         <div class="pb-11 lg:pb-12">
-                            <x-heroicon-s-check class="mr-3 h-5 text-[#ff460d] lg:h-6" />
+                            <x-heroicon-s-check class="mr-3 h-5 text-srvn-orange lg:h-6" />
                         </div>
                         <div>
                             Doe mee aan het NK simracen:<br>
-                            <span class="inline-block pt-6 font-semibold text-[#ff460d]">
+                            <span class="inline-block pt-6 font-semibold text-srvn-orange">
                                 GT3, DTCR, Enduro en Formula Pro!
                             </span>
                         </div>
                     </li>
                     <li class="flex items-center pb-6">
                         <div class="pb-11 lg:pb-12">
-                            <x-heroicon-s-check class="mr-3 h-5 text-[#ff460d] lg:h-6" />
+                            <x-heroicon-s-check class="mr-3 h-5 text-srvn-orange lg:h-6" />
                         </div>
                         <div>
                             Rijdt mee in onze evenementen:<br>
-                            <span class="inline-block pt-6 font-semibold text-[#ff460d]">
+                            <span class="inline-block pt-6 font-semibold text-srvn-orange">
                                 de SRVN 500 en de SRVN Zomer Cup
                             </span>
                         </div>
                     </li>
                     <li class="flex items-center pb-6">
-                        <x-heroicon-s-check class="mr-3 h-5 text-[#ff460d] lg:h-6" />
+                        <x-heroicon-s-check class="mr-3 h-5 text-srvn-orange lg:h-6" />
                         Krijg je eigen auto in de mods van SRVN
                     </li>
                     <li class="flex items-center pb-6">
                         <div class="pb-11 lg:pb-12">
-                            <x-heroicon-s-check class="mr-3 h-5 text-[#ff460d] lg:h-6" />
+                            <x-heroicon-s-check class="mr-3 h-5 text-srvn-orange lg:h-6" />
                         </div>
                         <div>
                             Kom naar de Algemene Ledenvergadering<br class="hidden lg:block">
@@ -54,12 +54,12 @@
                 </ul>
 
                 {{-- Price Tag --}}
-                <div class="absolute -right-2 top-48 hidden h-32 w-min rotate-6 flex-col items-center justify-between rounded-xl border-4 border-double border-stone-900 bg-[#f3f3f3] p-3 shadow-2xl shadow-[#f3f3f3]/20 lg:flex">
-                    <div class="flex items-center justify-center rounded-full shadow-inner shadow-[#f3f3f3]/20">
+                <div class="absolute -right-2 top-48 hidden h-32 w-min rotate-6 flex-col items-center justify-between rounded-xl border-4 border-double border-stone-900 bg-srvn-gray p-3 shadow-2xl shadow-srvn-gray/20 lg:flex">
+                    <div class="flex items-center justify-center rounded-full shadow-inner shadow-srvn-gray/20">
                         <div class="h-4 w-4 rounded-full bg-stone-900"></div>
                     </div>
                     <div class="font-smooch flex flex-col items-center justify-end">
-                        <p class="-mb-2 text-3xl font-bold text-[#ff460d]">
+                        <p class="-mb-2 text-3xl font-bold text-srvn-orange">
                             €25,-
                         </p>
                         <p class="mb-2 text-lg font-semibold text-stone-900">
@@ -71,12 +71,12 @@
                 {{-- Price Tag Mobile --}}
                 <a href="#register">
                   <div class="mt-3 ml-6 flex items-center space-x-6 lg:hidden">
-                      <div class="flex h-16 w-52 items-center rounded-xl border-4 border-double border-stone-900 bg-[#f3f3f3] p-3 shadow-2xl shadow-[#f3f3f3]/20">
-                          <div class="flex shrink items-center justify-center rounded-full shadow-inner shadow-[#f3f3f3]/20">
+                      <div class="flex h-16 w-52 items-center rounded-xl border-4 border-double border-stone-900 bg-srvn-gray p-3 shadow-2xl shadow-srvn-gray/20">
+                          <div class="flex shrink items-center justify-center rounded-full shadow-inner shadow-srvn-gray/20">
                               <div class="h-4 w-4 rounded-full bg-stone-900"></div>
                           </div>
                           <div class="font-smooch mt-0.5 flex grow items-center justify-center space-x-2">
-                              <p class="text-3xl font-bold text-[#ff460d]">
+                              <p class="text-3xl font-bold text-srvn-orange">
                                   €25,-
                               </p>
                               <p class="text-lg font-semibold text-stone-900">
@@ -85,7 +85,7 @@
                           </div>
                       </div>
                       <div>
-                          <x-heroicon-o-chevron-double-down class="h-10 animate-bounce text-[#ff460d]" />
+                          <x-heroicon-o-chevron-double-down class="h-10 animate-bounce text-srvn-orange" />
                       </div>
                   </div>
                 </a>
@@ -99,7 +99,7 @@
                     <x-srvn-stone class="h-12" />
                 </a>
             </x-slot>
-            <p class="text-center font-semibold text-[#ff460d]">
+            <p class="text-center font-semibold text-srvn-orange">
                 Simrace Vereniging Nederland
             </p>
 
@@ -183,14 +183,14 @@
                     <p class="mt-6 text-xs text-stone-500">
                         Door verder te gaan, ga je akkoord met de
                         <a href="#"
-                           class="font-semibold text-[#ff460d] hover:underline">
+                           class="font-semibold text-srvn-orange hover:underline">
                             Algemene Voorwaarden</a>.
                         Ook verklaar je
-                        <span class="font-semibold text-[#ff460d]">
+                        <span class="font-semibold text-srvn-orange">
                             18 jaar
                         </span>
                         of ouder te zijn,
-                        <span class="font-semibold text-[#ff460d]">
+                        <span class="font-semibold text-srvn-orange">
                             of
                         </span>
                         heb je toestemming van je ouders om je aan te melden bij SRVN.

@@ -6,7 +6,7 @@
             </a>
         </x-slot>
 
-        <p class="text-center font-semibold text-[#ff460d]">
+        <p class="text-center font-semibold text-srvn-orange">
             Simrace Vereniging Nederland
         </p>
 
@@ -62,7 +62,7 @@
                     </span>
                 @endif
 
-                <x-button class="ml-3 text-[#f3f3f3]">
+                <x-button class="ml-3 text-srvn-gray">
                     {{ __('Inloggen') }}
                 </x-button>
             </div>
