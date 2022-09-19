@@ -15,6 +15,7 @@ class Dashboard extends Component
 
     public function render()
     {
-        return view('dash.dashboard');
+        return view('dash.dashboard')
+            ->layout('layouts.dash');
     }
 }
