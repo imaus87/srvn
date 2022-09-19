@@ -5,7 +5,7 @@
                 <x-srvn-stone class="h-12" />
             </a>
         </x-slot>
-        <p class="text-center font-semibold text-srvn-orange">
+        <p class="text-srvn-orange text-center font-semibold">
             Simrace Vereniging Nederland
         </p>
 
@@ -19,19 +19,20 @@
             </div>
         @endif
 
-        <div class="mt-6 flex items-center justify-between">
+        <x-auth.button-container>
             <form method="POST"
-                  action="{{ route('logout') }}">
+                  action="{{ route('logout') }}"
+                  class="flex mt-6 lg:mt-0 items-center">
                 @csrf
-
                 <button type="submit"
-                        class="text-sm decoration-1 hover:underline">
+                        class="text-sm font-medium decoration-1 hover:underline">
                     {{ __('Later afronden?') }}
                 </button>
             </form>
 
             <form method="POST"
-                  action="{{ route('verification.send') }}">
+                  action="{{ route('verification.send') }}"
+                  class="flex flex-col-reverse">
                 @csrf
 
                 <x-button>
@@ -39,6 +40,6 @@
                 </x-button>
             </form>
 
-        </div>
+        </x-auth.button-container>
     </x-auth.container>
 </x-auth-layout>

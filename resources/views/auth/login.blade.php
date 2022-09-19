@@ -6,7 +6,7 @@
             </a>
         </x-slot>
 
-        <p class="text-center font-semibold text-srvn-orange">
+        <p class="text-srvn-orange text-center font-semibold">
             Simrace Vereniging Nederland
         </p>
 
@@ -53,27 +53,25 @@
                               placeholder="Wachtwoord" />
             </div>
 
-            <div class="mt-6 flex items-center justify-between">
+            <x-auth.button-container>
                 @if (Route::has('password.request'))
-                    <span class="text-sm decoration-1 hover:underline">
-                        <a href="{{ route('password.request') }}">
-                            {{ __('Wachtwoord vergeten?') }}
-                        </a>
-                    </span>
+                    <x-link href="{{ route('password.request') }}">
+                        {{ __('Wachtwoord vergeten?') }}
+                    </x-link>
                 @endif
 
-                <x-button class="ml-3 text-srvn-gray">
+                <x-button>
                     {{ __('Inloggen') }}
                 </x-button>
-            </div>
+            </x-auth.button-container>
         </form>
-        <div class="mt-9 border-t border-stone-300">
+        <div class="mt-9 border-t border-stone-300 text-center">
             @if (Route::has('register'))
-                <p class="mt-6 text-center text-sm decoration-1 hover:underline">
-                    <a href="{{ route('register') }}">
-                        {{ __('Nog geen account?') }}
-                    </a>
-                </p>
+                <div class="mt-6">
+                  <x-link href="{{ route('register') }}">
+                      {{ __('Nog geen account?') }}
+                  </x-link>
+                </div>
             @endif
         </div>
     </x-auth.container>
