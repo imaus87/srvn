@@ -19,6 +19,12 @@
         "vite": "^3.0.0"
     },
     "dependencies": {
+        "@alpinejs/collapse": "^3.10.3",
+        "@alpinejs/focus": "^3.10.3",
+        "@alpinejs/intersect": "^3.10.3",
+        "@alpinejs/mask": "^3.10.3",
+        "@alpinejs/persist": "^3.10.3",
+        "@alpinejs/ui": "^3.10.3-beta.2",
         "@headlessui/vue": "^1.6.7",
         "@vitejs/plugin-vue": "^3.0.3",
         "alpinejs": "^3.10.3",
