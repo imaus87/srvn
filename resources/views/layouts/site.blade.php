@@ -22,7 +22,10 @@
     <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
 </head>
 
-<body class="bg-srvn-gray h-screen font-sans text-stone-800 antialiased">
+<body x-data="{ showBar: false, open: false }"
+      x-popover
+      x-bind:class="open ? 'overflow-hidden fixed w-full' : ''"
+      class="bg-srvn-gray h-screen font-sans text-stone-800 antialiased">
     <div id="app">
         <x-navbar />
         <main class="h-screen px-6 py-9">
