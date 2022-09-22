@@ -14,9 +14,23 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 import Alpine from 'alpinejs'
 
+import mask from '@alpinejs/mask'
+import collapse from '@alpinejs/collapse'
+import focus from '@alpinejs/focus'
+import intersect from '@alpinejs/intersect'
+import persist from '@alpinejs/persist'
+import ui from '@alpinejs/ui'
+
 window.Alpine = Alpine
 
-// Alpine.start()
+Alpine.plugin(mask)
+Alpine.plugin(collapse)
+Alpine.plugin(focus)
+Alpine.plugin(intersect)
+Alpine.plugin(persist)
+Alpine.plugin(ui)
+
+Alpine.start()
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening

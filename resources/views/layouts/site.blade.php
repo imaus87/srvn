@@ -16,10 +16,6 @@
           rel="stylesheet">
 
     <livewire:styles />
-
-    <script defer src="https://unpkg.com/@alpinejs/ui@3.10.3-beta.2/dist/cdn.min.js"></script>
-    <script defer src="https://unpkg.com/@alpinejs/focus@3.10.3/dist/cdn.min.js"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
 </head>
 
 <body x-data="{ showBar: false, open: false }"

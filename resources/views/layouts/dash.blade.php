@@ -15,26 +15,21 @@
           rel="stylesheet">
 
     <livewire:styles />
-
-    <script defer src="https://unpkg.com/@alpinejs/ui@3.10.3-beta.2/dist/cdn.min.js"></script>
-    <script defer src="https://unpkg.com/@alpinejs/focus@3.10.3/dist/cdn.min.js"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"></script>
 </head>
 
-<body id="app" class="dark antialiased">
-    <main
-          class="bg-srvn-gray fixed font-sans text-stone-800 antialiased dark:bg-stone-900 dark:text-stone-100">
-        <div class="h-screen w-screen">
+<body class="dark antialiased">
+    <div id="app"
+         class="bg-srvn-gray fixed h-screen w-screen font-sans text-neutral-800 antialiased dark:bg-neutral-900 dark:text-neutral-100">
 
-            <div class="w-full">
-                <x-dash.navbar.desktop />
-            </div>
-
-            <div class="h-full overflow-auto">
-                {{ $slot }}
-            </div>
+        <div class="w-full">
+            <x-dash.navbar.desktop />
         </div>
-    </main>
+
+        <main class="h-full overflow-auto pt-9">
+            {{ $slot }}
+        </main>
+
+    </div>
 
     <livewire:scripts />
     <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js"

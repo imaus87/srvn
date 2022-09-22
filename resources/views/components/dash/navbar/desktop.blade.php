@@ -1,9 +1,10 @@
-<div class="w-full bg-stone-800 px-6 shadow-xl">
+<div class="w-full bg-white px-6 font-medium shadow-md dark:bg-neutral-800">
     <div class="mx-auto flex w-full items-center justify-between py-3">
         <div class="flex items-center space-x-4">
             {{-- Main Logo --}}
             <a href="{{ route('home') }}">
-                <x-srvn-stone-light class="h-8" />
+                <x-srvn-stone-light class="hidden h-8 dark:block" />
+                <x-srvn-stone class="block h-8 dark:hidden" />
             </a>
 
             {{-- Main Navigation --}}
@@ -15,10 +16,47 @@
         </div>
 
         {{-- User Menu --}}
-        <a href="{{ route('dashboard') }}"
-           class="flex items-center justify-center space-x-1 rounded border-2 border-[#ff460d] bg-[#ff460d] px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-stone-800 dark:hover:text-stone-100">
-            <x-heroicon-o-user class="h-6" />
-            <span>{{ auth()->user()->name }}</span>
-        </a>
+
+        <div class="flex items-center justify-center divide-x bg-transparent">
+            <div class="relative"
+                 x-data
+                 x-popover>
+                <button class="flex space-x-2 rounded-md px-3 py-2 hover:bg-neutral-700 focus:bg-neutral-700 focus:ring focus:ring-neutral-600"
+                        x-popover:button
+                        type="button">
+                    <span>
+                        {{ str(auth()->user()->name) }}
+                    </span>
+
+                    <x-heroicon-s-chevron-down class="h-5 w-5 text-neutral-300" />
+                </button>
+
+                <div x-popover:panel
+                     x-cloak
+                     x-transition.origin.top.center
+                     class="absolute left-0 right-0 mt-2 rounded-md bg-white shadow-md dark:bg-neutral-700">
+                    <a href="#"
+                       class="block w-full px-4 py-2.5 text-left text-sm first-of-type:rounded-t-md last-of-type:rounded-b-md hover:bg-neutral-600 disabled:text-gray-500">
+                        Instellingen
+                    </a>
+
+                    <a href="#"
+                       class="block w-full px-4 py-2.5 text-left text-sm first-of-type:rounded-t-md last-of-type:rounded-b-md hover:bg-neutral-600 disabled:text-gray-500">
+                        Profiel
+                    </a>
+
+                    <form action="{{ route('logout') }}" method="post">
+                        @csrf
+                        <button class="text-srvn-orange block w-full px-4 py-2.5 text-left text-sm first-of-type:rounded-t-md last-of-type:rounded-b-md hover:bg-neutral-600 disabled:text-gray-500"
+                                type="submit">
+                            Uitloggen
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </div>
