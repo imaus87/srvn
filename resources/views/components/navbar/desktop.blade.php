@@ -1,5 +1,4 @@
-<div
-     x-on:scroll.window="showBar = (window.scrollY > 1) ? true : false"
+<div x-on:scroll.window="showBar = (window.scrollY > 1) ? true : false"
      x-bind:class="showBar ? '-translate-y-[56px]' : ''"
      class="shadow-b [transition-delay: 0ms;] bg-white px-6 font-medium shadow-md transition-transform duration-200">
     {{-- https://github.com/tailwindlabs/tailwindcss/discussions/3028 --}}
