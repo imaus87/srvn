@@ -1,4 +1,4 @@
-<div x-bind:class="(!$popover.isOpen) ? '-translate-y-[24px]' : ''"
+<div x-bind:class="($popover.isOpen) ? 'translate-y-[0px]' : ''"
      class="[transition-delay: 0ms;] transition-transform duration-200">
 
     <div x-bind:class="($popover.isOpen) ? 'shadow-none' : ''"
@@ -6,8 +6,8 @@
 
         {{-- Navbar Mobile --}}
         <div class="relative z-50 bg-white">
-            <div x-bind:class="(!$popover.isOpen) ? 'translate-y-[12px]' : ''"
-                 class="[transition-delay: 0ms;] flex w-full items-center justify-between px-6 py-6 transition-transform duration-200">
+            <div x-bind:class="($popover.isOpen) ? 'translate-y-[12px]' : ''"
+                 class="[transition-delay: 0ms;] flex w-full items-center justify-between px-6 py-3 transition-transform duration-500">
                 <button x-popover:button
                         x-on:click="open = !open"
                         class="relative mt-0 h-8 w-8">
@@ -37,8 +37,8 @@
         {{-- Menu Mobile --}}
         <div x-popover:panel
              x-cloak
-             x-transition.origin.top
-             class="absolute top-20 bottom-0 flex w-full flex-col overflow-auto bg-white pt-3 font-medium [min-height:calc(100vh-80px)]">
+             x-transition.origin.top.duration.300ms
+             class="absolute z-50 top-14 bottom-0 flex w-full flex-col overflow-auto bg-white pt-9 font-medium [min-height:calc(100vh-56px)]">
 
             {{-- Internal Links --}}
             <div class="relative z-40 px-6">
