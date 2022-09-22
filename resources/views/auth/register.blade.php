@@ -96,7 +96,7 @@
         <x-auth.container class="pt-12 pb-3 lg:p-12" id="register">
             <x-slot name="logo">
                 <a href="{{ route('home') }}">
-                    <x-srvn-stone class="h-12" />
+                    <x-logo.900 class="h-12" />
                 </a>
             </x-slot>
             <p class="text-center font-semibold text-srvn-orange">

@@ -3,8 +3,8 @@
         <div class="flex items-center space-x-4">
             {{-- Main Logo --}}
             <a href="{{ route('home') }}">
-                <x-srvn-stone-light class="hidden h-8 dark:block" />
-                <x-srvn-stone class="block h-8 dark:hidden" />
+                <x-logo.100 class="hidden h-8 dark:block" />
+                <x-logo.900 class="block h-8 dark:hidden" />
             </a>
 
             {{-- Main Navigation --}}
@@ -47,7 +47,7 @@
 
                     <form action="{{ route('logout') }}" method="post">
                         @csrf
-                        <button class="text-srvn-orange block w-full px-4 py-2.5 text-left text-sm first-of-type:rounded-t-md last-of-type:rounded-b-md hover:bg-neutral-600 disabled:text-gray-500"
+                        <button class="block w-full px-4 py-2.5 text-left text-sm text-srvn-orange first-of-type:rounded-t-md last-of-type:rounded-b-md hover:bg-neutral-600 disabled:text-gray-500"
                                 type="submit">
                             Uitloggen
                         </button>

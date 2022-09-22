@@ -2,7 +2,7 @@
     <x-auth.container>
         <x-slot name="logo">
             <a href="{{ route('home') }}">
-                <x-srvn-logo class="h-20" />
+                <x-logo.900 class="h-20" />
             </a>
         </x-slot>
 
@@ -20,11 +20,11 @@
             <div>
                 <x-input.label for="password" :value="__('Password')" />
 
-                <x-input.text id="password" class="block mt-1 w-full" type="password" name="password" required
-                    autocomplete="current-password" />
+                <x-input.text id="password" class="mt-1 block w-full" type="password" name="password" required
+                              autocomplete="current-password" />
             </div>
 
-            <div class="flex justify-end mt-4">
+            <div class="mt-4 flex justify-end">
                 <x-button>
                     {{ __('Confirm') }}
                 </x-button>

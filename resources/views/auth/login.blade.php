@@ -2,11 +2,11 @@
     <x-auth.container class="font-medium">
         <x-slot name="logo">
             <a href="{{ route('home') }}">
-                <x-srvn-stone class="h-12" />
+                <x-logo.900 class="h-12" />
             </a>
         </x-slot>
 
-        <p class="text-srvn-orange text-center font-semibold">
+        <p class="text-center font-semibold text-srvn-orange">
             Simrace Vereniging Nederland
         </p>
 
@@ -68,9 +68,9 @@
         <div class="mt-9 border-t border-stone-300 text-center">
             @if (Route::has('register'))
                 <div class="mt-6">
-                  <x-link href="{{ route('register') }}">
-                      {{ __('Nog geen account?') }}
-                  </x-link>
+                    <x-link href="{{ route('register') }}">
+                        {{ __('Nog geen account?') }}
+                    </x-link>
                 </div>
             @endif
         </div>

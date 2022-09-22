@@ -2,10 +2,10 @@
     <x-auth.container>
         <x-slot name="logo">
             <a href="{{ route('home') }}">
-                <x-srvn-stone class="h-12" />
+                <x-logo.900 class="h-12" />
             </a>
         </x-slot>
-        <p class="text-srvn-orange text-center font-semibold">
+        <p class="text-center font-semibold text-srvn-orange">
             Simrace Vereniging Nederland
         </p>
 
@@ -22,7 +22,7 @@
         <x-auth.button-container>
             <form method="POST"
                   action="{{ route('logout') }}"
-                  class="flex mt-6 lg:mt-0 items-center">
+                  class="mt-6 flex items-center lg:mt-0">
                 @csrf
                 <button type="submit"
                         class="text-sm font-medium decoration-1 hover:underline">

@@ -2,7 +2,7 @@
     <x-auth.container>
         <x-slot name="logo">
             <a href="{{ route('home') }}">
-                <x-srvn-stone class="h-12" />
+                <x-logo.900 class="h-12" />
             </a>
         </x-slot>
 
@@ -13,7 +13,7 @@
         <p class="mt-9 text-sm text-stone-600">
             Vul je nieuwe wachtwoord in voor het account met email:
             <span class="font-semibold text-stone-800">
-              {{ $request->email }}
+                {{ $request->email }}
             </span>
         </p>
 

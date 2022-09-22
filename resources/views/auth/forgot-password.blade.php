@@ -2,10 +2,10 @@
     <x-auth.container class="font-medium">
         <x-slot name="logo">
             <a href="{{ route('home') }}">
-                <x-srvn-stone class="h-12" />
+                <x-logo.900 class="h-12" />
             </a>
         </x-slot>
-        <p class="text-srvn-orange text-center font-semibold">
+        <p class="text-center font-semibold text-srvn-orange">
             Simrace Vereniging Nederland
         </p>
 

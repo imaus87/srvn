@@ -1,15 +1,15 @@
 <div
      x-on:scroll.window="showBar = (window.scrollY > 1) ? true : false"
      x-bind:class="showBar ? '-translate-y-[56px]' : ''"
-     class="shadow-b bg-white px-6 font-medium shadow-md transition-transform duration-200 [transition-delay: 0ms;]">
-     {{-- https://github.com/tailwindlabs/tailwindcss/discussions/3028 --}}
-     {{-- https://www.revolut.com/ --}}
+     class="shadow-b [transition-delay: 0ms;] bg-white px-6 font-medium shadow-md transition-transform duration-200">
+    {{-- https://github.com/tailwindlabs/tailwindcss/discussions/3028 --}}
+    {{-- https://www.revolut.com/ --}}
 
     {{-- Navbar Desktop --}}
     <div class="mx-auto max-w-7xl">
 
         {{-- Secondary Navbar --}}
-        <div class="flex py-2 w-full items-center justify-between text-xs">
+        <div class="flex w-full items-center justify-between py-2 text-xs">
 
             {{-- Call To Action --}}
             <div class="flex w-full items-center">
@@ -68,9 +68,9 @@
 
         {{-- Primary Navbar --}}
         <div x-bind:class="showBar ? 'translate-y-[11px]' : ''"
-             class="py-6 flex w-full items-center border-t border-stone-200 transition-transform duration-200 [transition-delay: 0ms;]">
+             class="[transition-delay: 0ms;] flex w-full items-center border-t border-stone-200 py-6 transition-transform duration-200">
             <a href="{{ route('home') }}">
-                <x-srvn-stone class="h-8 pr-3" />
+                <x-logo.900 class="h-8 pr-3" />
             </a>
             <div class="flex w-full items-center justify-between">
                 <ul class="flex h-full">
