@@ -9,7 +9,7 @@
             Simrace Vereniging Nederland
         </p>
 
-        <div class="mt-9 text-sm text-stone-600">
+        <div class="mt-9 text-sm text-neutral-600">
             {{ __('Je bent er bijna! Klik op de knop hieronder en ga naar je email om je account registratie af te ronden.') }}
         </div>
 

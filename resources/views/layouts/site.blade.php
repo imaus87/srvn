@@ -21,7 +21,7 @@
 <body x-data="{ showBar: false, open: false }"
       x-popover
       x-bind:class="open ? 'overflow-hidden fixed w-full' : ''"
-      class="bg-srvn-gray h-screen font-sans text-stone-800 antialiased">
+      class="bg-srvn-gray h-screen font-sans text-neutral-800 antialiased">
     <div id="app">
         <x-navbar />
         <main class="h-screen px-6 py-9">

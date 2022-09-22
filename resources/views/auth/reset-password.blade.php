@@ -10,9 +10,9 @@
             Simrace Vereniging Nederland
         </h1>
 
-        <p class="mt-9 text-sm text-stone-600">
+        <p class="mt-9 text-sm text-neutral-600">
             Vul je nieuwe wachtwoord in voor het account met email:
-            <span class="font-semibold text-stone-800">
+            <span class="font-semibold text-neutral-800">
                 {{ $request->email }}
             </span>
         </p>

@@ -9,7 +9,7 @@
             Simrace Vereniging Nederland
         </p>
 
-        <p class="mt-9 text-sm text-stone-600">
+        <p class="mt-9 text-sm text-neutral-600">
             {{ __('Vul je emailadres in om je wachtwoord opnieuw in te stellen.') }}
         </p>
 

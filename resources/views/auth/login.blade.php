@@ -65,7 +65,7 @@
                 </x-button>
             </x-auth.button-container>
         </form>
-        <div class="mt-9 border-t border-stone-300 text-center">
+        <div class="mt-9 border-t border-neutral-300 text-center">
             @if (Route::has('register'))
                 <div class="mt-6">
                     <x-link href="{{ route('register') }}">

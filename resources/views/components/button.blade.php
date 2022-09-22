@@ -7,7 +7,7 @@ $green = 'bg-emerald-700 text-white  hover:bg-emerald-600 active:bg-emerald-800 
 $indigo = 'bg-indigo-700 text-white  hover:bg-indigo-600 active:bg-indigo-800 focus:border-indigo-800 focus:shadow-outline-gray';
 $gray = 'bg-zinc-700 text-white  hover:bg-zinc-600 active:bg-zinc-800 focus:border-zinc-800 focus:shadow-outline-gray';
 $red = 'bg-red-600 text-white hover:bg-red-500 focus:border-red-700 focus:shadow-outline-red active:bg-red-600';
-$orange = 'border-srvn-orange bg-srvn-orange text-srvn-gray hover:bg-transparent hover:text-stone-800 disabled:hover:bg-srvn-orange disabled:hover:text-srvn-gray';
+$orange = 'border-srvn-orange bg-srvn-orange text-srvn-gray hover:bg-transparent hover:text-neutral-800 disabled:hover:bg-srvn-orange disabled:hover:text-srvn-gray';
 
 $link = 'hover:underline cursor-pointer';
 

@@ -2,14 +2,14 @@
     <div class="mx-auto grid sm:grid-cols-2">
 
         {{-- Selling Points Section --}}
-        <div class="flex min-h-screen w-full items-center bg-stone-900 p-6 lg:p-12">
+        <div class="flex min-h-screen w-full items-center bg-neutral-900 p-6 lg:p-12">
             <div class="relative mx-auto flex flex-col justify-center">
-                <h1 class="pl-8 text-xl font-semibold text-stone-300 lg:text-2xl">
+                <h1 class="pl-8 text-xl font-semibold text-neutral-300 lg:text-2xl">
                     Doe je gordel om en wordt lid van dé<br class="hidden lg:block"> nederlandse simrace vereniging!
                 </h1>
 
                 {{-- List --}}
-                <ul class="mt-9 text-sm font-medium text-stone-500 lg:text-base">
+                <ul class="mt-9 text-sm font-medium text-neutral-500 lg:text-base">
                     <li class="flex items-center pb-6">
                         <x-heroicon-s-check class="mr-3 h-5 text-srvn-orange lg:h-6" />
                         Maak 24/7 gebruik van onze raceservers
@@ -54,15 +54,15 @@
                 </ul>
 
                 {{-- Price Tag --}}
-                <div class="absolute -right-2 top-48 hidden h-32 w-min rotate-6 flex-col items-center justify-between rounded-xl border-4 border-double border-stone-900 bg-srvn-gray p-3 shadow-2xl shadow-srvn-gray/20 lg:flex">
+                <div class="absolute -right-2 top-48 hidden h-32 w-min rotate-6 flex-col items-center justify-between rounded-xl border-4 border-double border-neutral-900 bg-srvn-gray p-3 shadow-2xl shadow-srvn-gray/20 lg:flex">
                     <div class="flex items-center justify-center rounded-full shadow-inner shadow-srvn-gray/20">
-                        <div class="h-4 w-4 rounded-full bg-stone-900"></div>
+                        <div class="h-4 w-4 rounded-full bg-neutral-900"></div>
                     </div>
                     <div class="font-smooch flex flex-col items-center justify-end">
                         <p class="-mb-2 text-3xl font-bold text-srvn-orange">
                             €25,-
                         </p>
-                        <p class="mb-2 text-lg font-semibold text-stone-900">
+                        <p class="mb-2 text-lg font-semibold text-neutral-900">
                             per jaar
                         </p>
                     </div>
@@ -71,15 +71,15 @@
                 {{-- Price Tag Mobile --}}
                 <a href="#register">
                   <div class="mt-3 ml-6 flex items-center space-x-6 lg:hidden">
-                      <div class="flex h-16 w-52 items-center rounded-xl border-4 border-double border-stone-900 bg-srvn-gray p-3 shadow-2xl shadow-srvn-gray/20">
+                      <div class="flex h-16 w-52 items-center rounded-xl border-4 border-double border-neutral-900 bg-srvn-gray p-3 shadow-2xl shadow-srvn-gray/20">
                           <div class="flex shrink items-center justify-center rounded-full shadow-inner shadow-srvn-gray/20">
-                              <div class="h-4 w-4 rounded-full bg-stone-900"></div>
+                              <div class="h-4 w-4 rounded-full bg-neutral-900"></div>
                           </div>
                           <div class="font-smooch mt-0.5 flex grow items-center justify-center space-x-2">
                               <p class="text-3xl font-bold text-srvn-orange">
                                   €25,-
                               </p>
-                              <p class="text-lg font-semibold text-stone-900">
+                              <p class="text-lg font-semibold text-neutral-900">
                                   per jaar
                               </p>
                           </div>
@@ -179,8 +179,8 @@
                 </x-auth.button-container>
 
                 {{-- Footnote --}}
-                <div class="mt-9 border-t border-stone-300">
-                    <p class="mt-6 text-xs text-stone-500">
+                <div class="mt-9 border-t border-neutral-300">
+                    <p class="mt-6 text-xs text-neutral-500">
                         Door verder te gaan, ga je akkoord met de
                         <a href="#"
                            class="font-semibold text-srvn-orange hover:underline">

@@ -8,7 +8,7 @@
     <div class="mx-auto max-w-7xl">
 
         {{-- Secondary Navbar --}}
-        <div class="flex w-full items-center justify-between py-2 text-xs">
+        <nav class="flex w-full items-center justify-between py-2 text-xs">
 
             {{-- Call To Action --}}
             <div class="flex w-full items-center">
@@ -16,7 +16,7 @@
                    class="font-semibold text-srvn-orange">
                     Wordt lid voor €25 per jaar!
                 </a>
-                <ul class="flex text-stone-500">
+                <ul class="flex text-neutral-500">
                     <li class="ml-6 flex items-center">
                         <x-heroicon-s-check class="mr-1 h-4 text-srvn-orange" />
                         24/7 raceservers
@@ -63,15 +63,15 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </nav>
 
         {{-- Primary Navbar --}}
         <div x-bind:class="showBar ? 'translate-y-[11px]' : ''"
-             class="[transition-delay: 0ms;] flex w-full items-center border-t border-stone-200 py-6 transition-transform duration-200">
+             class="[transition-delay: 0ms;] flex w-full items-center border-t border-neutral-200 py-6 transition-transform duration-200">
             <a href="{{ route('home') }}">
                 <x-logo.900 class="h-8 pr-3" />
             </a>
-            <div class="flex w-full items-center justify-between">
+            <nav class="flex w-full items-center justify-between">
                 <ul class="flex h-full">
                     <li class="h-full">
                         <a class="flex h-full w-full items-center px-3 hover:text-srvn-orange"
@@ -101,13 +101,13 @@
                 <ul class="flex h-full items-center">
                     <li>
                         <a href="{{ route('dashboard') }}"
-                           class="flex items-center justify-center space-x-1 rounded border-2 border-srvn-orange bg-srvn-orange px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-stone-800">
+                           class="flex items-center justify-center space-x-1 rounded border-2 border-srvn-orange bg-srvn-orange px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-neutral-800">
                             <x-heroicon-o-user class="h-6" />
                             <span>Mijn SRVN</span>
                         </a>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </div>
 

@@ -42,7 +42,7 @@
 
             {{-- Internal Links --}}
             <div class="relative z-40 px-6">
-                <h2 class="pb-6 text-sm font-medium uppercase text-stone-400">
+                <h2 class="pb-6 text-sm font-medium uppercase text-neutral-400">
                     Intern
                 </h2>
                 <ul class="flex flex-col space-y-3">
@@ -80,7 +80,7 @@
                 <ul class="flex items-center pt-6 pb-9">
                     <li class="w-full">
                         <a href="{{ route('dashboard') }}"
-                           class="flex items-center justify-center space-x-1 rounded border-2 border-srvn-orange bg-srvn-orange px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-stone-800">
+                           class="flex items-center justify-center space-x-1 rounded border-2 border-srvn-orange bg-srvn-orange px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-neutral-800">
                             <x-heroicon-o-user class="h-6" />
                             <span>Mijn SRVN</span>
                         </a>
@@ -91,7 +91,7 @@
             {{-- External Links --}}
             <div class="relative z-50 flex grow flex-col justify-between bg-srvn-gray">
                 <div class="grow px-6">
-                    <h2 class="pt-9 pb-6 text-sm font-medium uppercase text-stone-400">
+                    <h2 class="pt-9 pb-6 text-sm font-medium uppercase text-neutral-400">
                         Extern
                     </h2>
                     <ul class="flex flex-col space-y-3">
