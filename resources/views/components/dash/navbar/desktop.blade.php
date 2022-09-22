@@ -1,4 +1,3 @@
-{{-- Test push after git changes and merge --}}
 <div class="w-full bg-white px-6 font-medium shadow-md dark:bg-neutral-800">
     <div class="mx-auto flex w-full items-center justify-between py-3">
         <div class="flex items-center space-x-4">
