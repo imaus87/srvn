@@ -78,8 +78,8 @@
 
                 {{-- Mijn SRVN Button --}}
                 <div class="flex items-center pt-6 pb-9">
-                    <a href="{{ route('dashboard') }}"
-                       class="w-full flex items-center justify-center space-x-1 rounded border-2 border-srvn-orange bg-srvn-orange px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-neutral-800">
+                    <a href="{{ route('dash.dashboard') }}"
+                       class="flex w-full items-center justify-center space-x-1 rounded border-2 border-srvn-orange bg-srvn-orange px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-neutral-800">
                         <x-heroicon-o-user class="h-6" />
                         <span>Mijn SRVN</span>
                     </a>
