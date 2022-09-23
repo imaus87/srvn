@@ -7,7 +7,7 @@
         {{-- Navbar Mobile --}}
         <div class="relative z-50 bg-white">
             <div x-bind:class="($popover.isOpen) ? 'translate-y-[12px]' : ''"
-                 class="[transition-delay: 0ms;] flex w-full items-center justify-between px-6 py-3 transition-transform duration-500">
+                 class="[transition-delay: 0ms;] flex w-full items-center justify-between px-6 py-3 transition-transform duration-300">
                 <button x-popover:button
                         x-on:click="open = !open"
                         class="relative mt-0 h-8 w-8">
@@ -38,10 +38,10 @@
         <div x-popover:panel
              x-cloak
              x-transition.origin.top.duration.300ms
-             class="absolute z-50 top-14 bottom-0 flex w-full flex-col overflow-auto bg-white pt-9 font-medium [min-height:calc(100vh-56px)]">
+             class="absolute top-14 bottom-0 z-50 flex w-full flex-col overflow-auto bg-white pt-9 font-medium [min-height:calc(100vh-56px)]">
 
             {{-- Internal Links --}}
-            <div class="relative z-40 px-6">
+            <nav class="relative z-40 px-6">
                 <h2 class="pb-6 text-sm font-medium uppercase text-neutral-400">
                     Intern
                 </h2>
@@ -77,19 +77,17 @@
                 </ul>
 
                 {{-- Mijn SRVN Button --}}
-                <ul class="flex items-center pt-6 pb-9">
-                    <li class="w-full">
-                        <a href="{{ route('dashboard') }}"
-                           class="flex items-center justify-center space-x-1 rounded border-2 border-srvn-orange bg-srvn-orange px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-neutral-800">
-                            <x-heroicon-o-user class="h-6" />
-                            <span>Mijn SRVN</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                <div class="flex items-center pt-6 pb-9">
+                    <a href="{{ route('dashboard') }}"
+                       class="w-full flex items-center justify-center space-x-1 rounded border-2 border-srvn-orange bg-srvn-orange px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-neutral-800">
+                        <x-heroicon-o-user class="h-6" />
+                        <span>Mijn SRVN</span>
+                    </a>
+                </div>
+            </nav>
 
             {{-- External Links --}}
-            <div class="relative z-50 flex grow flex-col justify-between bg-srvn-gray">
+            <nav class="relative z-50 flex grow flex-col justify-between bg-srvn-gray">
                 <div class="grow px-6">
                     <h2 class="pt-9 pb-6 text-sm font-medium uppercase text-neutral-400">
                         Extern
@@ -127,7 +125,7 @@
                    class="my-6 grow-0 text-center font-semibold text-srvn-orange">
                     Wordt lid voor €25 per jaar!
                 </a>
-            </div>
+            </nav>
 
         </div>
 
