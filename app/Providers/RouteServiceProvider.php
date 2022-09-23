@@ -33,8 +33,27 @@ class RouteServiceProvider extends ServiceProvider
                 ->prefix('api')
                 ->group(base_path('routes/api.php'));
 
-            Route::middleware('web')
-                ->group(base_path('routes/web.php'));
+            Route::domain('srvn.test')->group(function () {
+                Route::middleware('web')
+                    ->namespace($this->namespace)
+                    ->group(base_path('routes/web.php'));
+            });
+
+            Route::middleware('web', 'auth', 'verified')->domain('mijn.srvn.test')->group(function () {
+                Route::name('dash.')
+                    ->namespace($this->namespace)
+                    ->group(base_path('routes/dash.php'));
+
+                Route::prefix('crew')
+                    ->name('crew.')
+                    ->namespace($this->namespace)
+                    ->group(base_path('routes/crew.php'));
+
+                Route::prefix('admin')
+                    ->name('admin.')
+                    ->namespace($this->namespace)
+                    ->group(base_path('routes/admin.php'));
+            });
         });
     }
 
