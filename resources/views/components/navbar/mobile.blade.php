@@ -47,28 +47,28 @@
                 </h2>
                 <ul class="flex flex-col space-y-3">
                     <li class="flex items-center space-x-2">
-                        <x-heroicon-o-chevron-double-right class="-mt-0.5 h-5 text-srvn-orange" />
+                        <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
                         <a class="flex w-full items-center hover:text-srvn-orange"
                            href="{{ route('schedule') }}">
                             <span>Kalender</span>
                         </a>
                     </li>
                     <li class="flex items-center space-x-2">
-                        <x-heroicon-o-chevron-double-right class="-mt-0.5 h-5 text-srvn-orange" />
+                        <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
                         <a class="flex w-full items-center hover:text-srvn-orange"
                            href="{{ route('standings') }}">
                             <span>Klassement</span>
                         </a>
                     </li>
                     <li class="flex items-center space-x-2">
-                        <x-heroicon-o-chevron-double-right class="-mt-0.5 h-5 text-srvn-orange" />
+                        <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
                         <a class="flex w-full items-center hover:text-srvn-orange"
                            href="{{ route('drivers') }}">
                             <span>Rijders</span>
                         </a>
                     </li>
                     <li class="flex items-center space-x-2">
-                        <x-heroicon-o-chevron-double-right class="-mt-0.5 h-5 text-srvn-orange" />
+                        <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
                         <a class="flex w-full items-center hover:text-srvn-orange"
                            href="{{ route('teams') }}">
                             <span>Teams</span>
