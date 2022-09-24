@@ -1,23 +1,20 @@
-<div x-bind:class="($popover.isOpen) ? 'translate-y-[0px]' : ''"
+<div x-bind:class="navOpen ? 'translate-y-[0px]' : ''"
      class="[transition-delay: 0ms;] transition-transform duration-200">
 
-    <div x-bind:class="($popover.isOpen) ? 'shadow-none' : ''"
+    <div x-bind:class="navOpen ? 'shadow-none' : ''"
          class="shadow-b relative bg-white font-medium shadow-md transition-shadow duration-75">
 
         {{-- Navbar Mobile --}}
         <div class="relative z-50 bg-white">
-            <div x-bind:class="($popover.isOpen) ? 'translate-y-[12px]' : ''"
+            <div x-bind:class="navOpen ? 'translate-y-[12px]' : ''"
                  class="[transition-delay: 0ms;] flex w-full items-center justify-between px-6 py-3 transition-transform duration-300">
-                <button x-popover:button
-                        x-on:click="open = !open"
+                <button x-on:click="navOpen = !navOpen"
                         class="relative mt-0 h-8 w-8">
-                    <div x-show="!$popover.isOpen"
-                         x-transition.duration.150ms
+                    <div x-show="!navOpen"
                          class="absolute inset-0">
                         <x-heroicon-o-bars-2 class="h-8 text-srvn-orange" />
                     </div>
-                    <div x-show="$popover.isOpen"
-                         x-transition.duration.150ms
+                    <div x-show="navOpen"
                          class="absolute inset-0">
                         <x-heroicon-o-x-mark class="h-8 text-srvn-orange" />
                     </div>
@@ -35,9 +32,7 @@
         </div>
 
         {{-- Menu Mobile --}}
-        <div x-popover:panel
-             x-cloak
-             x-transition.origin.top.duration.300ms
+        <div x-show="navOpen"
              class="absolute top-14 bottom-0 z-50 flex w-full flex-col overflow-auto bg-white pt-9 font-medium [min-height:calc(100vh-56px)]">
 
             {{-- Internal Links --}}
@@ -79,7 +74,7 @@
                 {{-- Mijn SRVN Button --}}
                 <div class="flex items-center pt-6 pb-9">
                     <a href="{{ route('dashboard') }}"
-                       class="w-full flex items-center justify-center space-x-1 rounded border-2 border-srvn-orange bg-srvn-orange px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-neutral-800">
+                       class="flex w-full items-center justify-center space-x-1 rounded border-2 border-srvn-orange bg-srvn-orange px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-neutral-800">
                         <x-heroicon-o-user class="h-6" />
                         <span>Mijn SRVN</span>
                     </a>

@@ -18,10 +18,9 @@
     <livewire:styles />
 </head>
 
-<body x-data="{ showBar: false, open: false }"
-      x-popover
-      x-bind:class="open ? 'overflow-hidden fixed w-full' : ''"
-      class="bg-srvn-gray h-screen font-sans text-neutral-800 antialiased">
+<body x-data="{ showBar: false, navOpen: false }"
+      x-bind:class="navOpen ? 'overflow-hidden fixed w-full' : ''"
+      class="h-screen bg-srvn-gray font-sans text-neutral-800 antialiased">
     <div id="app">
         <x-navbar />
         <main class="h-screen px-6 py-9">

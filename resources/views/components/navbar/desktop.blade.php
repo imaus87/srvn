@@ -69,7 +69,7 @@
         <div x-bind:class="showBar ? 'translate-y-[11px]' : ''"
              class="[transition-delay: 0ms;] flex w-full items-center border-t border-neutral-200 py-6 transition-transform duration-200">
             <a href="{{ route('home') }}">
-                <x-logo.900 class="h-8 pr-3" />
+                <x-logo.900 class="h-8 pr-6" />
             </a>
             <nav class="flex w-full items-center justify-between">
                 <ul class="flex h-full">
