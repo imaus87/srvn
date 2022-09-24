@@ -4,7 +4,7 @@
     <div>
         <x-dash.card>
             <div class="flex items-center space-x-4 text-2xl font-semibold">
-                <img src="{{ asset('storage/icons/enduro-logo-srvn.png') }}" alt="enduro-logo" class="h-10">
+                <img src="icons/enduro-icon.png" alt="enduro-logo" class="h-10">
                 <span class="block"> NK Enduro</span>
             </div>
 
