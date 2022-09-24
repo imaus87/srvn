@@ -17,7 +17,7 @@
     <livewire:styles />
 </head>
 
-<body class="antialiased">
+<body class="dark antialiased">
     <div id="app"
          class="fixed h-screen w-screen bg-srvn-gray font-sans text-neutral-800 antialiased dark:bg-neutral-900 dark:text-neutral-100">
 
