@@ -29,14 +29,15 @@
             <div class="relative"
                  x-data
                  x-popover>
-                <button class="focus:ring-neutal-200 flex space-x-2 rounded-md px-3 py-2 hover:bg-neutral-100 focus:bg-neutral-100 focus:ring focus:ring-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 dark:focus:ring-neutral-600"
+                <button class="focus:ring-neutal-200 flex min-w-[130px] justify-between space-x-2 rounded-md px-4 py-2 hover:bg-neutral-100 focus:bg-neutral-100 focus:ring focus:ring-neutral-200 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700 dark:focus:ring-neutral-600"
                         x-popover:button
                         type="button">
-                    <span>
-                        {{ str(auth()->user()->name) }}
+                    <span class="">
+                        {{ str(auth()->user()->first_name) }}
                     </span>
 
-                    <x-heroicon-s-chevron-down class="h-5 w-5 text-neutral-900 dark:text-neutral-300" />
+                    <x-heroicon-s-chevron-down class="mt-0.5 h-5 w-5 text-neutral-900 transition-transform dark:text-neutral-300"
+                                               x-bind:class="$popover.isOpen && '-rotate-180 transition-transform'" />
                 </button>
 
                 <div x-popover:panel
