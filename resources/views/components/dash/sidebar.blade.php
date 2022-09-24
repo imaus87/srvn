@@ -2,7 +2,7 @@
     <nav>
         <ul class="space-y-2 font-medium text-neutral-500 dark:text-neutral-500">
             <li class="">
-                <a href="#"
+                <a href="{{ route('admin.index-users') }}"
                    class="flex items-center space-x-4 py-1">
                     <x-heroicon-s-user-group class="h-6 w-6 text-neutral-400 dark:text-neutral-700" />
                     <span>Gebruikers</span>

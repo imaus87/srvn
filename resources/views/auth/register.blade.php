@@ -54,11 +54,12 @@
                 </ul>
 
                 {{-- Price Tag --}}
-                <div class="absolute -right-2 top-48 hidden h-32 w-min rotate-6 flex-col items-center justify-between rounded-xl border-4 border-double border-neutral-900 bg-srvn-gray p-3 shadow-2xl shadow-srvn-gray/20 lg:flex">
+                <div
+                     class="absolute -right-2 top-48 hidden h-32 w-min rotate-6 flex-col items-center justify-between rounded-xl border-4 border-double border-neutral-900 bg-srvn-gray p-3 shadow-2xl shadow-srvn-gray/20 lg:flex">
                     <div class="flex items-center justify-center rounded-full shadow-inner shadow-srvn-gray/20">
                         <div class="h-4 w-4 rounded-full bg-neutral-900"></div>
                     </div>
-                    <div class="font-smooch flex flex-col items-center justify-end">
+                    <div class="flex flex-col items-center justify-end font-smooch">
                         <p class="-mb-2 text-3xl font-bold text-srvn-orange">
                             €25,-
                         </p>
@@ -70,24 +71,26 @@
 
                 {{-- Price Tag Mobile --}}
                 <a href="#register">
-                  <div class="mt-3 ml-6 flex items-center space-x-6 lg:hidden">
-                      <div class="flex h-16 w-52 items-center rounded-xl border-4 border-double border-neutral-900 bg-srvn-gray p-3 shadow-2xl shadow-srvn-gray/20">
-                          <div class="flex shrink items-center justify-center rounded-full shadow-inner shadow-srvn-gray/20">
-                              <div class="h-4 w-4 rounded-full bg-neutral-900"></div>
-                          </div>
-                          <div class="font-smooch mt-0.5 flex grow items-center justify-center space-x-2">
-                              <p class="text-3xl font-bold text-srvn-orange">
-                                  €25,-
-                              </p>
-                              <p class="text-lg font-semibold text-neutral-900">
-                                  per jaar
-                              </p>
-                          </div>
-                      </div>
-                      <div>
-                          <x-heroicon-o-chevron-double-down class="h-10 animate-bounce text-srvn-orange" />
-                      </div>
-                  </div>
+                    <div class="mt-3 ml-6 flex items-center space-x-6 lg:hidden">
+                        <div
+                             class="flex h-16 w-52 items-center rounded-xl border-4 border-double border-neutral-900 bg-srvn-gray p-3 shadow-2xl shadow-srvn-gray/20">
+                            <div
+                                 class="flex shrink items-center justify-center rounded-full shadow-inner shadow-srvn-gray/20">
+                                <div class="h-4 w-4 rounded-full bg-neutral-900"></div>
+                            </div>
+                            <div class="mt-0.5 flex grow items-center justify-center space-x-2 font-smooch">
+                                <p class="text-3xl font-bold text-srvn-orange">
+                                    €25,-
+                                </p>
+                                <p class="text-lg font-semibold text-neutral-900">
+                                    per jaar
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <x-heroicon-o-chevron-double-down class="h-10 animate-bounce text-srvn-orange" />
+                        </div>
+                    </div>
                 </a>
             </div>
         </div>
@@ -113,18 +116,36 @@
                 @csrf
 
                 <!-- Name -->
-                <div class="mt-9">
-                    <x-input.label for="name"
-                                   :value="__('Naam')"
-                                   class="hidden" />
-                    <x-input.text id="name"
-                                  class="mt-1 block w-full"
-                                  type="text"
-                                  name="name"
-                                  :value="old('name')"
-                                  placeholder="Naam"
-                                  required
-                                  autofocus />
+                <div class="mt-9 flex space-x-6">
+                    <div>
+                        <x-input.label for="first_name"
+                                       :value="__('Voornaam')"
+                                       class="hidden" />
+                        <x-input.text id="first_name"
+                                      class="mt-1 block w-full"
+                                      type="text"
+                                      name="first_name"
+                                      :value="old('first_name')"
+                                      placeholder="Voornaam"
+                                      required
+                                      autofocus />
+                    </div>
+                    {{-- </div>
+
+                <div class="mt-6"> --}}
+                    <div>
+                        <x-input.label for="last_name"
+                                       :value="__('Achternaam')"
+                                       class="hidden" />
+                        <x-input.text id="last_name"
+                                      class="mt-1 block w-full"
+                                      type="text"
+                                      name="last_name"
+                                      :value="old('last_name')"
+                                      placeholder="Achternaam"
+                                      required
+                                      autofocus />
+                    </div>
                 </div>
 
                 <!-- Email Address -->

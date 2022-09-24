@@ -17,9 +17,9 @@
     <livewire:styles />
 </head>
 
-<body class="dark antialiased">
+<body class="antialiased">
     <div id="app"
-         class="bg-srvn-gray fixed h-screen w-screen font-sans text-neutral-800 antialiased dark:bg-neutral-900 dark:text-neutral-100">
+         class="fixed h-screen w-screen bg-srvn-gray font-sans text-neutral-800 antialiased dark:bg-neutral-900 dark:text-neutral-100">
 
         <div class="w-full">
             <x-dash.navbar.desktop />
