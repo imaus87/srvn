@@ -19,17 +19,17 @@
 </head>
 
 <body x-data="{ showBar: false, navOpen: false }"
-      x-bind:class="navOpen && 'overflow-hidden fixed w-full'"
-      class="antialiased fixed h-screen w-screen bg-srvn-gray font-sans text-neutral-800">
+      x-bind:class="navOpen && '!overflow-hidden !fixed !w-full'"
+      class="fixed h-screen w-screen bg-srvn-gray font-sans text-neutral-800 antialiased">
     <div id="app">
 
         <header>
-          <div class="block lg:hidden">
-              <x-navbar.mobile />
-          </div>
-          <div class="hidden lg:block">
-              <x-navbar.desktop />
-          </div>
+            <div class="block lg:hidden">
+                <x-navbar.mobile />
+            </div>
+            <div class="hidden lg:block">
+                <x-navbar.desktop />
+            </div>
         </header>
 
         <main class="h-full overflow-auto px-6 pb-9 pt-23 lg:pt-9">

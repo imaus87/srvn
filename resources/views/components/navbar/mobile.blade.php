@@ -1,9 +1,9 @@
-<div x-bind:class="navOpen && 'translate-y-[0px] bottom-0 h-full'"
+<div x-bind:class="navOpen && '!translate-y-[0px] bottom-0 h-full'"
      class="shadow-b fixed top-0 z-50 h-auto w-full bg-white font-medium shadow-md transition-transform duration-500">
 
     {{-- Navbar Mobile --}}
     <div class="relative z-50 bg-white">
-        <div x-bind:class="navOpen && 'translate-y-[12px]'"
+        <div x-bind:class="navOpen && '!translate-y-[12px]'"
              class="flex w-full items-center justify-between px-6 py-3 transition-transform duration-500">
             <button x-on:click="navOpen = !navOpen"
                     class="relative mt-0 h-8 w-8">
@@ -35,12 +35,12 @@
 
         {{-- Internal Links --}}
         <nav class="shrink grow-0 basis-auto bg-white px-6 pt-3">
-            <h2 x-bind:class="navOpen && 'opacity-100 translate-x-0 delay-[100ms]'"
+            <h2 x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[100ms]'"
                 class="translate-x-[-5%] pb-6 text-sm font-medium uppercase text-neutral-400 opacity-0 transition-all delay-[100ms] duration-500">
                 Intern
             </h2>
             <ul class="flex flex-col space-y-3">
-                <li x-bind:class="navOpen && 'opacity-100 translate-x-0 delay-[200ms]'"
+                <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[200ms]'"
                     class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[200ms] duration-500">
                     <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
                     <a class="flex w-full items-center hover:text-srvn-orange"
@@ -48,7 +48,7 @@
                         <span>Kalender</span>
                     </a>
                 </li>
-                <li x-bind:class="navOpen && 'opacity-100 translate-x-0 delay-[300ms]'"
+                <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[300ms]'"
                     class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[300ms] duration-500">
                     <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
                     <a class="flex w-full items-center hover:text-srvn-orange"
@@ -56,7 +56,7 @@
                         <span>Klassement</span>
                     </a>
                 </li>
-                <li x-bind:class="navOpen && 'opacity-100 translate-x-0 delay-[400ms]'"
+                <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[400ms]'"
                     class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[400ms] duration-500">
                     <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
                     <a class="flex w-full items-center hover:text-srvn-orange"
@@ -64,7 +64,7 @@
                         <span>Rijders</span>
                     </a>
                 </li>
-                <li x-bind:class="navOpen && 'opacity-100 translate-x-0 delay-[500ms]'"
+                <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[500ms]'"
                     class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[500ms] duration-500">
                     <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
                     <a class="flex w-full items-center hover:text-srvn-orange"
@@ -75,7 +75,7 @@
             </ul>
 
             {{-- Mijn SRVN Button --}}
-            <div x-bind:class="navOpen && 'opacity-100 delay-[0ms]'"
+            <div x-bind:class="navOpen && '!opacity-100 !delay-[0ms]'"
                  class="flex items-center pt-6 pb-9 opacity-0 transition-opacity delay-[0ms] duration-500">
                 <a href="{{ route('dash.dashboard') }}"
                    class="flex w-full items-center justify-center space-x-1 rounded border-2 border-srvn-orange bg-srvn-orange px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-neutral-800">
@@ -88,12 +88,12 @@
         {{-- External Links --}}
         <nav class="flex shrink grow basis-auto flex-col justify-between bg-srvn-gray">
             <div class="shrink-0 grow basis-auto px-6">
-                <h2 x-bind:class="navOpen && 'opacity-100 translate-x-0 delay-[125ms]'"
+                <h2 x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[125ms]'"
                     class="translate-x-[-5%] pt-9 pb-6 text-sm font-medium uppercase text-neutral-400 opacity-0 transition-all delay-[125ms] duration-500">
                     Extern
                 </h2>
                 <ul class="flex flex-col space-y-3">
-                    <li x-bind:class="navOpen && 'opacity-100 translate-x-0 delay-[250ms]'"
+                    <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[250ms]'"
                         class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[250ms] duration-500">
                         <x-heroicon-o-arrow-top-right-on-square class="-mt-0.5 h-5 text-srvn-orange" />
                         <a class="flex w-full items-center hover:text-srvn-orange"
@@ -102,7 +102,7 @@
                             <span>LiveRacers</span>
                         </a>
                     </li>
-                    <li x-bind:class="navOpen && 'opacity-100 translate-x-0 delay-[375ms]'"
+                    <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[375ms]'"
                         class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[375ms] duration-500">
                         <x-heroicon-o-arrow-top-right-on-square class="-mt-0.5 h-5 text-srvn-orange" />
                         <a class="flex w-full items-center hover:text-srvn-orange"
@@ -111,7 +111,7 @@
                             <span>Forum</span>
                         </a>
                     </li>
-                    <li x-bind:class="navOpen && 'opacity-100 translate-x-0 delay-[500ms]'"
+                    <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[500ms]'"
                         class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[500ms] duration-500">
                         <x-heroicon-o-arrow-top-right-on-square class="-mt-0.5 h-5 text-srvn-orange" />
                         <a class="flex w-full items-center hover:text-srvn-orange"
@@ -125,7 +125,7 @@
 
             {{-- Callout --}}
             <a href="{{ route('register') }}"
-               x-bind:class="navOpen && 'opacity-100 delay-[0ms]'"
+               x-bind:class="navOpen && '!opacity-100 !delay-[0ms]'"
                class="mb-6 mt-9 shrink grow-0 basis-auto text-center font-semibold text-srvn-orange opacity-0 transition-opacity delay-[0ms] duration-500">
                 Wordt lid voor €25 per jaar!
             </a>

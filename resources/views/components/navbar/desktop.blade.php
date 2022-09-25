@@ -1,6 +1,6 @@
 <div x-on:scroll.window="showBar = (window.scrollY > 1) ? true : false"
-     x-bind:class="showBar ? '-translate-y-[56px]' : ''"
-     class="shadow-b [transition-delay: 0ms;] bg-white px-6 font-medium shadow-md transition-transform duration-200">
+     x-bind:class="showBar && '!-translate-y-[56px]'"
+     class="shadow-b bg-white px-6 font-medium shadow-md transition-transform delay-[0ms] duration-200">
     {{-- https://github.com/tailwindlabs/tailwindcss/discussions/3028 --}}
     {{-- https://www.revolut.com/ --}}
 
@@ -66,8 +66,8 @@
         </nav>
 
         {{-- Primary Navbar --}}
-        <div x-bind:class="showBar ? 'translate-y-[11px]' : ''"
-             class="[transition-delay: 0ms;] flex w-full items-center border-t border-neutral-200 py-6 transition-transform duration-200">
+        <div x-bind:class="showBar && '!translate-y-[11px]'"
+             class="flex w-full items-center border-t border-neutral-200 py-6 transition-transform delay-[0ms] duration-200">
             <a href="{{ route('home') }}">
                 <x-logo.900 class="h-8 pr-6" />
             </a>
