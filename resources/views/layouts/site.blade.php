@@ -19,11 +19,20 @@
 </head>
 
 <body x-data="{ showBar: false, navOpen: false }"
-      x-bind:class="navOpen ? 'overflow-hidden fixed w-full' : ''"
-      class="h-screen bg-srvn-gray font-sans text-neutral-800 antialiased">
+      x-bind:class="navOpen && 'overflow-hidden fixed w-full'"
+      class="antialiased fixed h-screen w-screen bg-srvn-gray font-sans text-neutral-800">
     <div id="app">
-        <x-navbar />
-        <main class="h-screen px-6 py-9">
+
+        <header>
+          <div class="block lg:hidden">
+              <x-navbar.mobile />
+          </div>
+          <div class="hidden lg:block">
+              <x-navbar.desktop />
+          </div>
+        </header>
+
+        <main class="h-full overflow-auto px-6 pb-9 pt-23 lg:pt-9">
             <div class="mx-auto max-w-7xl">
                 {{ $slot }}
             </div>
