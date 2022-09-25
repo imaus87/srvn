@@ -5,10 +5,10 @@ namespace App\Models;
 use App\Models\Team;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 // class User extends Authenticatable implements MustVerifyEmail
@@ -53,8 +53,12 @@ class User extends Authenticatable
     //     return $this->hasOne(Team::class);
     // }
 
-    public function setFullNameAttribute(): void
+    protected static function booted(): void
     {
-        $this->attributes['full_name'] = $this->attributes['first_name'] . ' ' . $this->attributes['last_name'];
+        parent::boot();
+
+        static::saving(function ($model) {
+            $model->full_name = $model->first_name . ' ' . $model->last_name;
+        });
     }
 }
