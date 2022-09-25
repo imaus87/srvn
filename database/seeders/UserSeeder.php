@@ -29,6 +29,7 @@ class UserSeeder extends Seeder
             'email_verified_at' => Carbon::now(),
             'created_at' => Carbon::now(),
             'remember_token' => Str::random(10),
+            'start_nr' => 14,
         ]);
 
         DB::table('users')->insert([
@@ -40,6 +41,7 @@ class UserSeeder extends Seeder
             'email_verified_at' => Carbon::now(),
             'created_at' => Carbon::now(),
             'remember_token' => Str::random(10),
+            'start_nr' => 323,
         ]);
 
         DB::table('users')->insert([
@@ -51,6 +53,7 @@ class UserSeeder extends Seeder
             'email_verified_at' => Carbon::now(),
             'created_at' => Carbon::now(),
             'remember_token' => Str::random(10),
+            'start_nr' => 10,
         ]);
 
         User::factory()->count(100)->create();

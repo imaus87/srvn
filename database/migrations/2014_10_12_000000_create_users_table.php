@@ -27,6 +27,9 @@ return new class extends Migration
             $table->rememberToken();
             $table->string('photo_url')
                 ->nullable();
+            $table->integer('start_nr')
+                ->unique()
+                ->nullable();
             $table->dateTime('created_at')
                 ->nullable();
             $table->dateTime('updated_at')
