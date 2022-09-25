@@ -48,7 +48,7 @@ class UserSeeder extends Seeder
             'first_name' => 'René',
             'last_name' => 'Hoogterp',
             'full_name' => 'René Hoogterp',
-            'email' => 'renehoogterp@srvn.com',
+            'email' => 'renehoogterp@srvn.nl',
             'password' => '$2y$10$BZOQqA/tuKbkjQ0ehdU0/eO6.9GdaDS9Y0OzrrlNoDLlGPOMG1YVm', //password
             'email_verified_at' => Carbon::now(),
             'created_at' => Carbon::now(),
