@@ -13,7 +13,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
-        smooch: ['Smooch', ...defaultTheme.fontFamily.sans]
+        smooch: ['Smooch', ...defaultTheme.fontFamily.sans],
+        oxanium: ['Oxanium', ...defaultTheme.fontFamily.sans],
+        titilliumweb: ['Titillium Web', ...defaultTheme.fontFamily.sans]
       },
       spacing: {
         '13': '3.25rem',

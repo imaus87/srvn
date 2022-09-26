@@ -8,12 +8,12 @@
     <div class="mx-auto max-w-7xl">
 
         {{-- Secondary Navbar --}}
-        <nav class="flex w-full items-center justify-between py-2 text-xs">
+        <nav class="flex w-full items-center justify-between py-2 text-sm">
 
             {{-- Call To Action --}}
             <div class="flex w-full items-center">
                 <a href="{{ route('register') }}"
-                   class="font-semibold text-srvn-orange">
+                   class="font-semibold text-srvn-orange hover:underline">
                     Wordt lid voor €25 per jaar!
                 </a>
                 <ul class="flex text-neutral-500">
@@ -72,10 +72,10 @@
                 <h1 class="sr-only">
                   SimRace Vereniging Nederland
                 </h1>
-                <x-logo.900 class="h-8 pr-6" />
+                <x-logo.900 class="h-10 pr-6" />
             </a>
             <nav class="flex w-full items-center justify-between">
-                <ul class="flex h-full">
+                <ul class="flex h-full font-oxanium">
                     <li class="h-full">
                         <a class="flex h-full w-full items-center px-3 hover:text-srvn-orange"
                            href="{{ route('schedule') }}">
