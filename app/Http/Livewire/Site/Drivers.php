@@ -13,7 +13,7 @@ class Drivers extends Component
 
     public function mount(): void
     {
-        $this->drivers = User::all();
+        $this->drivers = User::orderBy('start_nr')->get();
     }
 
     public function render(): View
