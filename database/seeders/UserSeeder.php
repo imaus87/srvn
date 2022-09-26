@@ -29,6 +29,7 @@ class UserSeeder extends Seeder
             'email_verified_at' => Carbon::now(),
             'created_at' => Carbon::now(),
             'remember_token' => Str::random(10),
+            'start_nr' => 14,
         ]);
 
         DB::table('users')->insert([
@@ -40,17 +41,19 @@ class UserSeeder extends Seeder
             'email_verified_at' => Carbon::now(),
             'created_at' => Carbon::now(),
             'remember_token' => Str::random(10),
+            'start_nr' => 323,
         ]);
 
         DB::table('users')->insert([
             'first_name' => 'René',
             'last_name' => 'Hoogterp',
             'full_name' => 'René Hoogterp',
-            'email' => 'renehoogterp@srvn.com',
+            'email' => 'renehoogterp@srvn.nl',
             'password' => '$2y$10$BZOQqA/tuKbkjQ0ehdU0/eO6.9GdaDS9Y0OzrrlNoDLlGPOMG1YVm', //password
             'email_verified_at' => Carbon::now(),
             'created_at' => Carbon::now(),
             'remember_token' => Str::random(10),
+            'start_nr' => 10,
         ]);
 
         User::factory()->count(100)->create();

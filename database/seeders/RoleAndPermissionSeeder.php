@@ -7,13 +7,9 @@ use Illuminate\Database\Seeder;
 
 class RoleAndPermissionSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
-    public function run()
+    public function run(): void
     {
+        // Roles
         $superadmin = app('db')
             ->table('roles')
             ->insertGetId([
@@ -62,6 +58,23 @@ class RoleAndPermissionSeeder extends Seeder
                 'guard_name' => 'web',
                 'created_at' => now(),
                 'updated_at' => now(),
+            ]);
+
+        // Permissions
+        $editRoles = app('db')
+            ->table('permissions')
+            ->insertGetId([
+                'name' => 'Rollen Wijzigen',
+                'guard_name' => 'web',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ]);
+
+        app('db')
+            ->table('role_has_permissions')
+            ->insert([
+                'role_id' => $superadmin,
+                'permission_id' => $editRoles,
             ]);
     }
 }
