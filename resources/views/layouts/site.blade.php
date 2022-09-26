@@ -20,7 +20,7 @@
 
 <body x-data="{ showBar: false, navOpen: false }"
       x-bind:class="navOpen && '!overflow-hidden !fixed !w-full'"
-      class="fixed h-screen w-screen bg-srvn-gray font-sans text-neutral-800 antialiased">
+      class="h-screen w-screen bg-srvn-gray font-sans text-neutral-800 antialiased">
     <div id="app">
 
         <header>
