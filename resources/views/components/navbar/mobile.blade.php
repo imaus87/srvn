@@ -17,6 +17,9 @@
                 </div>
             </button>
             <a href="{{ route('home') }}">
+                <h1 class="sr-only">
+                    SimRace Vereniging Nederland
+                </h1>
                 <x-logo.900 class="h-6" />
             </a>
             <div>

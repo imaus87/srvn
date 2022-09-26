@@ -69,6 +69,9 @@
         <div x-bind:class="showBar && '!translate-y-[11px]'"
              class="flex w-full items-center border-t border-neutral-200 py-6 transition-transform delay-[0ms] duration-200">
             <a href="{{ route('home') }}">
+                <h1 class="sr-only">
+                  SimRace Vereniging Nederland
+                </h1>
                 <x-logo.900 class="h-8 pr-6" />
             </a>
             <nav class="flex w-full items-center justify-between">
