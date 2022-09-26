@@ -36,7 +36,7 @@ class RouteServiceProvider extends ServiceProvider
             Route::domain('srvn.test')->group(function () {
                 Route::middleware('web')
                     ->namespace($this->namespace)
-                    ->group(base_path('routes/web.php'));
+                    ->group(base_path('routes/site.php'));
             });
 
             Route::middleware('web', 'auth', 'verified')->domain('mijn.srvn.test')->group(function () {
