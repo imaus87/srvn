@@ -28,7 +28,7 @@ return new class extends Migration
             $table->string('photo_url')
                 ->nullable();
             $table->integer('start_nr')
-                ->unique()
+                // ->unique()
                 ->nullable();
             $table->dateTime('created_at')
                 ->nullable();
