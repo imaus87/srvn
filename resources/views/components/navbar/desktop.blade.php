@@ -13,7 +13,7 @@
             {{-- Call To Action --}}
             <div class="flex w-full items-center">
                 <a href="{{ route('register') }}"
-                   class="font-semibold text-srvn-orange hover:underline">
+                   class="font-semibold text-srvn-orange">
                     Wordt lid voor €25 per jaar!
                 </a>
                 <ul class="flex text-neutral-500">
