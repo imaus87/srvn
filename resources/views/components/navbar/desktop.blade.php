@@ -61,6 +61,13 @@
                             Discord
                         </a>
                     </li>
+                    {{-- Trello -> Bug Report --}}
+                    {{-- <li class="ml-6">
+                        <a href="#">
+                            Reporteer een bug
+                            <x-heroicon-o-bug-ant class="h-4 text-neutral-700" />
+                        </a>
+                    </li> --}}
                 </ul>
             </div>
         </nav>
@@ -70,7 +77,7 @@
              class="flex w-full items-center border-t border-neutral-200 py-6 transition-transform delay-[0ms] duration-200">
             <a href="{{ route('home') }}">
                 <h1 class="sr-only">
-                  SimRace Vereniging Nederland
+                    SimRace Vereniging Nederland
                 </h1>
                 <x-logo.900 class="h-10 pr-6" />
             </a>
@@ -101,7 +108,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="flex h-full items-center">
+                <ul class="flex h-full items-center space-x-3">
                     <li>
                         <a href="{{ route('dash.dashboard') }}"
                            class="flex items-center justify-center space-x-1 rounded border-2 border-srvn-orange bg-srvn-orange px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-neutral-800">
