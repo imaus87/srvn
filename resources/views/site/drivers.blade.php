@@ -1,4 +1,4 @@
-<div>
+<section>
     <h2 class="border-t-8 border-neutral-800 pt-6 font-oxanium text-4xl font-bold lg:text-6xl">
         Rijders 2022-2
     </h2>
@@ -23,7 +23,7 @@
                                :value="__('Vind je favourite coureur...')"
                                class="hidden" />
                 <x-input.text id="search"
-                              class="block w-full text-base"
+                              class="block w-full"
                               type="search"
                               name="search"
                               :value="old('search')"
@@ -103,4 +103,4 @@
             </li>
         @endforeach
     </ul>
-</div>
+</section>
