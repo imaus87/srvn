@@ -3,6 +3,7 @@
 use App\Http\Livewire\Site\Home;
 use App\Http\Livewire\Site\Teams;
 use App\Http\Livewire\Site\Drivers;
+use App\Http\Livewire\Site\Drivers\Driver;
 use App\Http\Livewire\Site\Schedule;
 use App\Http\Livewire\Site\Standings;
 use Illuminate\Support\Facades\Route;
@@ -21,4 +22,5 @@ Route::get('/', Home::class)->name('home');
 Route::get('/kalender', Schedule::class)->name('schedule');
 Route::get('/klassement', Standings::class)->name('standings');
 Route::get('/rijders', Drivers::class)->name('drivers');
+Route::get('/rijders/{driver}', Driver::class)->name('driver');
 Route::get('/teams', Teams::class)->name('teams');

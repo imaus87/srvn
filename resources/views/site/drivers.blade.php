@@ -47,7 +47,7 @@
                       </span>
                   </div>
                 </div> --}}
-                <a href="{{ route('home') }}"
+                <a href="{{ route('driver', $driver) }}"
                    class="block w-full p-6">
                     <div class="flex w-full items-center justify-between">
                         <div class="grid w-full grid-cols-[52px_1fr_40px] items-center">
