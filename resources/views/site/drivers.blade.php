@@ -9,22 +9,15 @@
         </p> --}}
         <p class="max-w-xl hyphens-manual">
             Bekijk de officiële line-up van dit seizoen van het NK SimRacen. Zie in welke kampioen&shy;schappen ze
-            rijden en
-            voor welk team. Leer je favoriete coureurs kennen!
+            rijden en voor welk team. Leer je favoriete coureurs kennen!
         </p>
-
-        {{-- Session Status --}}
-        <x-auth.session-status class="mb-3"
-                               :status="session('status')" />
 
         {{-- Validation Errors --}}
         <x-auth.validation-errors class="mb-3"
                                   :errors="$errors" />
 
         <div class="w-full pt-6 lg:max-w-xs lg:pt-0">
-            <form method="POST"
-                  action="">
-                @csrf
+            <form>
                 {{-- Search Field --}}
                 <x-input.label for="search"
                                :value="__('Vind je favourite coureur...')"
@@ -40,7 +33,7 @@
     </div>
     <ul class="grid grid-cols-1 gap-3 pt-6 font-oxanium lg:grid-cols-2 lg:pt-9">
         @foreach ($drivers as $driver)
-            <li class="group rounded-md bg-white hover:bg-neutral-800 shadow-md transition-all duration-150">
+            <li class="group rounded-md bg-white shadow-md transition-all duration-150 hover:bg-neutral-800">
                 {{-- <div class="flex items-center justify-between pb-2">
                   <span class=" text-4xl font-bold">
                       1
@@ -55,9 +48,9 @@
                   </div>
                 </div> --}}
                 <a href="{{ route('home') }}"
-                   class="p-6 block">
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center space-x-6">
+                   class="block w-full p-6">
+                    <div class="flex w-full items-center justify-between">
+                        <div class="grid w-full grid-cols-[52px_1fr_40px] items-center">
                             {{-- <div class="h-full w-full bg-red-600 py-3"></div> --}}
                             {{-- <div class="-mt-1 h-9 w-9 overflow-hidden rounded-full">
                               @if (isset($driver->photo_url))
@@ -94,16 +87,17 @@
                             <span class="-mb-1 w-[52px] text-right text-3xl font-bold text-srvn-orange">
                                 {{ $driver->start_nr }}
                             </span>
-                            <div class="-mb-1.5 flex flex-col uppercase group-hover:text-neutral-100 transition-all duration-150">
-                                <span class="text-sm">
+                            <div
+                                 class="mx-6 -mb-1.5 overflow-hidden uppercase transition-all duration-150 group-hover:text-neutral-100">
+                                <div class="text-sm">
                                     {{ $driver->first_name }}
-                                </span>
-                                <span class="text-xl font-bold">
+                                </div>
+                                <div class="truncate text-lg font-bold lg:text-xl">
                                     {{ $driver->last_name }}
-                                </span>
+                                </div>
                             </div>
+                            <x-heroicon-m-chevron-double-right class="h-10 transition-all duration-150 group-hover:text-neutral-100" />
                         </div>
-                        <x-heroicon-m-chevron-double-right class="h-10 group-hover:text-neutral-100 transition-all duration-150" />
                     </div>
                 </a>
             </li>
