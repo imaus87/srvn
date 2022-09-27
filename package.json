@@ -28,6 +28,7 @@
         "@headlessui/vue": "^1.6.7",
         "@vitejs/plugin-vue": "^3.0.3",
         "alpinejs": "^3.10.3",
+        "tailwindcss-hyphens": "^0.1.0",
         "vue": "^3.2.36",
         "vue-loader": "^17.0.0"
     }
