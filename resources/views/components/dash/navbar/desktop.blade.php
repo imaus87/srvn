@@ -5,19 +5,22 @@
             <x-logo.100 class="hidden h-8 dark:block" />
             <x-logo.900 class="block h-8 dark:hidden" />
         </a>
-
         {{-- Main Navigation --}}
         <x-dash.navbar.nav>
-            <x-dash.navbar.nav-item href="{{ route('driver.dashboard') }}">
+            <x-dash.navbar.nav-item class="{{ Route::is('driver.*') ? 'text-srvn-orange' : '' }}"
+                                    href="{{ route('driver.dashboard') }}">
                 Persoonlijk
             </x-dash.navbar.nav-item>
-            <x-dash.navbar.nav-item href="{{ route('team.dashboard') }}">
+            <x-dash.navbar.nav-item class="{{ Route::is('team.*') ? 'text-srvn-orange' : '' }}"
+                                    href="{{ route('team.dashboard') }}">
                 Team
             </x-dash.navbar.nav-item>
-            <x-dash.navbar.nav-item href="{{ route('crew.dashboard') }}">
+            <x-dash.navbar.nav-item class="{{ Route::is('crew.*') ? 'text-srvn-orange' : '' }}"
+                                    href="{{ route('crew.dashboard') }}">
                 Crew
             </x-dash.navbar.nav-item>
-            <x-dash.navbar.nav-item href="{{ route('admin.dashboard') }}">
+            <x-dash.navbar.nav-item class="{{ Route::is('admin.*') ? 'text-srvn-orange' : '' }}"
+                                    href="{{ route('admin.dashboard') }}">
                 Admin
             </x-dash.navbar.nav-item>
         </x-dash.navbar.nav>
