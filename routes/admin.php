@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Dash\Admin\Dashboard;
 use Illuminate\Support\Facades\Route;
 use App\Http\Livewire\Dash\Admin\Users\EditUsers;
 use App\Http\Livewire\Dash\Admin\Users\ShowUsers;
@@ -23,6 +24,10 @@ use App\Http\Livewire\Dash\Admin\Permissions\CreatePermissions;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/', Dashboard::class)
+    ->name('dashboard');
+
 Route::get('/rijders', IndexUsers::class)
     ->name('index-users');
 Route::get('/rijders/{slug}', ShowUsers::class)

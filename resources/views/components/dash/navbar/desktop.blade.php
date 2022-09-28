@@ -8,16 +8,16 @@
 
         {{-- Main Navigation --}}
         <x-dash.navbar.nav>
-            <x-dash.navbar.nav-item href="#">
+            <x-dash.navbar.nav-item href="{{ route('driver.dashboard') }}">
                 Persoonlijk
             </x-dash.navbar.nav-item>
-            <x-dash.navbar.nav-item href="#">
+            <x-dash.navbar.nav-item href="{{ route('team.dashboard') }}">
                 Team
             </x-dash.navbar.nav-item>
-            <x-dash.navbar.nav-item href="#">
+            <x-dash.navbar.nav-item href="{{ route('crew.dashboard') }}">
                 Crew
             </x-dash.navbar.nav-item>
-            <x-dash.navbar.nav-item href="#">
+            <x-dash.navbar.nav-item href="{{ route('admin.dashboard') }}">
                 Admin
             </x-dash.navbar.nav-item>
         </x-dash.navbar.nav>
