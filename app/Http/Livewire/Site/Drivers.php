@@ -3,21 +3,51 @@
 namespace App\Http\Livewire\Site;
 
 use App\Models\User;
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\View\View;
+
 use Livewire\Component;
+use Illuminate\View\View;
+use Illuminate\Support\Collection;
+use Livewire\WithPagination;
 
 class Drivers extends Component
 {
-    public Collection $drivers;
+    use WithPagination;
+
+    public Collection $driversCollection;
+    public string $search = '';
+
+    protected $queryString = ['search' => ['except' => '']];
 
     public function mount(): void
     {
-        $this->drivers = User::orderBy('start_nr')->get();
+        $this->driversCollection = $this->getDrivers();
+        $this->search = '';
+    }
+
+    public function getDrivers(): Collection
+    {
+        if (empty($this->search)) {
+            $drivers = User::orderBy('start_nr')->get();
+
+            return $drivers;
+        }
+
+        $drivers = User::where('full_name', 'like', '%' . $this->search . '%')
+            ->get();
+
+        return $drivers;
+    }
+
+    public function updatedSearch(): void
+    {
+        $this->driversCollection = $this->getDrivers();
+        $this->resetPage();
     }
 
     public function render(): View
     {
-        return view('site.drivers');
+        return view('site.drivers', [
+            'drivers' => $this->driversCollection->all()
+        ]);
     }
 }

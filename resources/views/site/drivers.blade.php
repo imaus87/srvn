@@ -17,18 +17,18 @@
                                   :errors="$errors" />
 
         <div class="w-full pt-6 lg:max-w-xs lg:pt-0">
-            <form>
-                {{-- Search Field --}}
-                <x-input.label for="search"
-                               :value="__('Vind je favourite coureur...')"
-                               class="hidden" />
-                <x-input.text id="search"
-                              class="block w-full text-base"
-                              type="search"
-                              name="search"
-                              :value="old('search')"
-                              placeholder="Vind je favourite coureur..." />
-            </form>
+            {{-- <form> --}}
+            {{-- Search Field --}}
+            <x-input.label for="search"
+                           :value="__('Vind je favourite coureur...')"
+                           class="hidden" />
+            <x-input.text wire:model="search"
+                          id="search"
+                          class="block w-full text-base"
+                          type="search"
+                          name="search"
+                          placeholder="Vind je favourite coureur..." />
+            {{-- </form> --}}
         </div>
     </div>
     <ul class="grid grid-cols-1 gap-3 pt-6 font-oxanium lg:grid-cols-2 lg:pt-9">
