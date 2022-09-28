@@ -9,7 +9,7 @@
         </p> --}}
         <p class="max-w-xl hyphens-manual">
             Bekijk de officiële line-up van dit seizoen van het NK SimRacen. Zie in welke kampioen&shy;schappen ze
-            rijden en voor welk team. Leer je favoriete coureurs kennen!
+            rijden en voor welke teams. Leer je favoriete coureurs kennen!
         </p>
 
         {{-- Validation Errors --}}
