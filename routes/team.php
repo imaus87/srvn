@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Livewire\Dash\Crew\Dashboard;
+use App\Http\Livewire\Dash\Team\Dashboard;
 use Illuminate\Support\Facades\Route;
 
 /*

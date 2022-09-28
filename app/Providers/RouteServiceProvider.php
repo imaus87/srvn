@@ -40,9 +40,14 @@ class RouteServiceProvider extends ServiceProvider
             });
 
             Route::middleware('web', 'auth', 'verified')->domain('mijn.srvn.test')->group(function () {
-                Route::name('dash.')
+                Route::name('driver.')
                     ->namespace($this->namespace)
-                    ->group(base_path('routes/dash.php'));
+                    ->group(base_path('routes/driver.php'));
+
+                Route::prefix('team')
+                    ->name('team.')
+                    ->namespace($this->namespace)
+                    ->group(base_path('routes/team.php'));
 
                 Route::prefix('crew')
                     ->name('crew.')

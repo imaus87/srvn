@@ -80,7 +80,7 @@
             {{-- Mijn SRVN Button --}}
             <div x-bind:class="navOpen && '!opacity-100 !delay-[0ms]'"
                  class="flex items-center pt-6 pb-9 opacity-0 transition-opacity delay-[0ms] duration-500">
-                <a href="{{ route('dash.dashboard') }}"
+                <a href="{{ route('driver.dashboard') }}"
                    class="flex w-full items-center justify-center space-x-1 rounded border-2 border-srvn-orange bg-srvn-orange px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-neutral-800">
                     <x-heroicon-o-user class="h-6" />
                     <span>Mijn SRVN</span>

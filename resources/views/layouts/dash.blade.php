@@ -19,15 +19,20 @@
 
 <body class="dark antialiased">
     <div id="app"
-         class="fixed h-screen w-screen bg-srvn-gray font-sans text-neutral-800 dark:bg-neutral-900 dark:text-neutral-100">
+         class="bg-srvn-gray font-sans text-neutral-800 dark:bg-neutral-900 dark:text-neutral-100">
 
-        <header class="w-full">
+        <header class="fixed w-full">
             <x-dash.navbar.desktop />
         </header>
 
-        <main class="h-full overflow-auto pt-9">
-            {{ $slot }}
-        </main>
+        <div class="container mx-auto grid h-screen grid-cols-[320px_1fr] pt-25">
+            <aside class="fixed col-start-1 h-full w-80">
+                <x-dash.sidebar />
+            </aside>
+            <main class="col-start-2 h-full overflow-auto">
+                {{ $slot }}
+            </main>
+        </div>
 
     </div>
 

@@ -1,6 +1,6 @@
 <div class="container mx-auto flex h-full">
 
-    <x-dash.sidebar />
+
     <div>
         <x-dash.card>
             <div class="flex items-center space-x-4 text-2xl font-semibold">

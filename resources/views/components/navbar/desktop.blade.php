@@ -110,7 +110,7 @@
                 </ul>
                 <ul class="flex h-full items-center space-x-3">
                     <li>
-                        <a href="{{ route('dash.dashboard') }}"
+                        <a href="{{ route('driver.dashboard') }}"
                            class="flex items-center justify-center space-x-1 rounded border-2 border-srvn-orange bg-srvn-orange px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-neutral-800">
                             <x-heroicon-o-user class="h-6" />
                             <span>Mijn SRVN</span>

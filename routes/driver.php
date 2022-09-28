@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Livewire\Dash\Dashboard;
+use App\Http\Livewire\Dash\Driver\Dashboard;
 use Illuminate\Support\Facades\Route;
 
 /*
