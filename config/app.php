@@ -186,6 +186,7 @@ return [
          * Package Service Providers...
          */
         Orchestra\Parser\XmlServiceProvider::class,
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 
         /*
          * Application Service Providers...
