@@ -3,12 +3,12 @@
         <x-slot name="logo">
             <a href="{{ route('home') }}">
                 <x-logo.900 class="h-12" />
+                <p class="mt-3 text-center font-medium text-srvn-orange font-oxanium text-lg">
+                    SimRace Vereniging Nederland
+                </p>
             </a>
         </x-slot>
 
-        <p class="text-center font-semibold text-srvn-orange">
-            Simrace Vereniging Nederland
-        </p>
 
         <!-- Session Status -->
         <x-auth.session-status class="mb-3"
@@ -19,11 +19,11 @@
                                   :errors="$errors" />
 
         <form method="POST"
-              action="{{ route('login') }}">
+              action="{{ route('login') }}"
+              class="space-y-6">
             @csrf
 
             <!-- Email Address -->
-            <div class="mt-9">
                 <x-input.label for="email"
                                :value="__('Emailadres')"
                                class="hidden" />
@@ -36,10 +36,8 @@
                               required
                               placeholder="Emailadres"
                               autofocus />
-            </div>
 
             <!-- Password -->
-            <div class="mt-6">
                 <x-input.label for="password"
                                :value="__('Wachtwoord')"
                                class="hidden" />
@@ -51,7 +49,6 @@
                               required
                               autocomplete="current-password"
                               placeholder="Wachtwoord" />
-            </div>
 
             <x-auth.button-container>
                 @if (Route::has('password.request'))
