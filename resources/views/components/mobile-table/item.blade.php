@@ -1,6 +1,6 @@
 @props(['iteration'])
 
-<li class="rounded-lg bg-zinc-800"
+<li class="rounded-lg bg-neutral-800"
     {{ $attributes }}
     x-data="{
         id: {{ $iteration }},
