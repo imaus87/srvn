@@ -21,7 +21,6 @@ class Drivers extends Component
     public function mount(): void
     {
         $this->driversCollection = $this->getDrivers();
-        $this->search = '';
     }
 
     public function getDrivers(): Collection
