@@ -4,7 +4,14 @@ const colors = require('tailwindcss/colors')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'class',
-  content: ['./resources/**/*.blade.php', './resources/**/*.js', './resources/**/*.vue'],
+  content: [
+    './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+    './vendor/anillusion/wired/**/*.blade.php',
+    './storage/framework/views/*.php',
+    './resources/views/**/*.blade.php',
+    './resources/views/**/**/*.blade.php',
+    './resources/**/*.js',
+    './resources/**/*.vue'],
   theme: {
     extend: {
       colors: {
@@ -32,6 +39,9 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/aspect-ratio'),
     require("tailwindcss-hyphens")
   ]
 }

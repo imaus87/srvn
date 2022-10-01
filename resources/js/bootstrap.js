@@ -21,6 +21,8 @@ import intersect from '@alpinejs/intersect'
 import persist from '@alpinejs/persist'
 import ui from '@alpinejs/ui'
 
+import AutoAnimate from '@marcreichel/alpine-auto-animate';
+
 window.Alpine = Alpine
 
 Alpine.plugin(mask)
@@ -29,6 +31,8 @@ Alpine.plugin(focus)
 Alpine.plugin(intersect)
 Alpine.plugin(persist)
 Alpine.plugin(ui)
+
+Alpine.plugin(AutoAnimate)
 
 Alpine.start()
 
