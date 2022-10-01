@@ -4,7 +4,13 @@
 /public/js
 /public/hot
 /public/storage
+/public/media
+/public/mix-manifest.json
+/public/robots.txt
+/public/sw.js
+/public/uploads
 /storage/*.key
+/storage/clockwork
 /vendor
 composer.lock
 package-lock.json
@@ -17,5 +23,8 @@ auth.json
 npm-debug.log
 yarn-error.log
 /.idea
+/.vagrant
 /.vscode
 _ide_helper.php
+_ide_helper_models.php
+**/.DS_Store
