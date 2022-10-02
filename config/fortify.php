@@ -76,7 +76,7 @@ return [
 
     'prefix' => '',
 
-    'domain' => 'mijn.srvn.test',
+    'domain' => 'mijn.' . config('app.domain'),
 
     /*
     |--------------------------------------------------------------------------
