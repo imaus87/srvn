@@ -33,13 +33,13 @@ class RouteServiceProvider extends ServiceProvider
                 ->prefix('api')
                 ->group(base_path('routes/api.php'));
 
-            Route::domain(config('app.domain'))->group(function () {
+            Route::domain('http://' . config('app.domain'))->group(function () {
                 Route::middleware('web')
                     ->namespace($this->namespace)
                     ->group(base_path('routes/site.php'));
             });
 
-            Route::middleware('web', 'auth', 'verified')->domain('mijn.' . config('app.domain'))->group(function () {
+            Route::middleware('web', 'auth', 'verified')->domain('http://mijn.' . config('app.domain'))->group(function () {
                 Route::name('driver.')
                     ->namespace($this->namespace)
                     ->group(base_path('routes/driver.php'));
