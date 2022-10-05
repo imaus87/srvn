@@ -79,7 +79,7 @@
                 <h1 class="sr-only">
                     SimRace Vereniging Nederland
                 </h1>
-                <x-logo.900 class="h-10 pr-6" />
+                <x-logo.900 class="h-10 w-[182px] pr-6" />
             </a>
             <nav class="flex w-full items-center justify-between">
                 <ul class="flex h-full font-oxanium">
