@@ -84,25 +84,25 @@
             <nav class="flex w-full items-center justify-between">
                 <ul class="flex h-full font-oxanium">
                     <li class="h-full">
-                        <a class="flex h-full w-full items-center px-3 hover:text-srvn-orange"
+                        <a class="{{ Route::is('schedule') ? 'text-srvn-orange font-semibold' : '' }} flex h-full w-full items-center px-3 hover:text-srvn-orange hover:font-semibold"
                            href="{{ route('schedule') }}">
                             <span>Kalender</span>
                         </a>
                     </li>
                     <li class="h-full">
-                        <a class="flex h-full w-full items-center px-3 hover:text-srvn-orange"
+                        <a class="{{ Route::is('standings') ? 'text-srvn-orange font-semibold' : '' }} flex h-full w-full items-center px-3 hover:text-srvn-orange hover:font-semibold"
                            href="{{ route('standings') }}">
                             <span>Klassement</span>
                         </a>
                     </li>
                     <li class="h-full">
-                        <a class="flex h-full w-full items-center px-3 hover:text-srvn-orange"
+                        <a class="{{ Route::is('drivers') ? 'text-srvn-orange font-semibold' : '' }} flex h-full w-full items-center px-3 hover:text-srvn-orange hover:font-semibold"
                            href="{{ route('drivers') }}">
                             <span>Rijders</span>
                         </a>
                     </li>
                     <li class="h-full">
-                        <a class="flex h-full w-full items-center px-3 hover:text-srvn-orange"
+                        <a class="{{ Route::is('teams') ? 'text-srvn-orange font-semibold' : '' }} flex h-full w-full items-center px-3 hover:text-srvn-orange hover:font-semibold"
                            href="{{ route('teams') }}">
                             <span>Teams</span>
                         </a>
