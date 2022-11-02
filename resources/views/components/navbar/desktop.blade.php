@@ -8,7 +8,8 @@
     <div class="mx-auto max-w-7xl">
 
         {{-- Secondary Navbar --}}
-        <nav class="flex w-full items-center justify-between py-2 text-sm">
+        <nav aria-label="Secondary Navigation"
+             class="flex w-full items-center justify-between py-2 text-sm">
 
             {{-- Call To Action --}}
             <div class="flex w-full items-center">
@@ -81,28 +82,29 @@
                 </h1>
                 <x-logo.900 class="h-10 w-[182px] pr-6" />
             </a>
-            <nav class="flex w-full items-center justify-between">
+            <nav aria-label="Primary Navigation"
+                 class="flex w-full items-center justify-between">
                 <ul class="flex h-full font-oxanium">
                     <li class="h-full">
-                        <a class="{{ Route::is('schedule') ? 'text-srvn-orange font-semibold' : '' }} flex h-full w-full items-center px-3 hover:text-srvn-orange hover:font-semibold"
+                        <a class="{{ Route::is('schedule') ? 'text-srvn-orange font-semibold' : '' }} flex h-full w-full items-center px-3 hover:font-semibold hover:text-srvn-orange"
                            href="{{ route('schedule') }}">
                             <span>Kalender</span>
                         </a>
                     </li>
                     <li class="h-full">
-                        <a class="{{ Route::is('standings') ? 'text-srvn-orange font-semibold' : '' }} flex h-full w-full items-center px-3 hover:text-srvn-orange hover:font-semibold"
+                        <a class="{{ Route::is('standings') ? 'text-srvn-orange font-semibold' : '' }} flex h-full w-full items-center px-3 hover:font-semibold hover:text-srvn-orange"
                            href="{{ route('standings') }}">
                             <span>Klassement</span>
                         </a>
                     </li>
                     <li class="h-full">
-                        <a class="{{ Route::is('drivers') ? 'text-srvn-orange font-semibold' : '' }} flex h-full w-full items-center px-3 hover:text-srvn-orange hover:font-semibold"
+                        <a class="{{ Route::is('drivers') ? 'text-srvn-orange font-semibold' : '' }} flex h-full w-full items-center px-3 hover:font-semibold hover:text-srvn-orange"
                            href="{{ route('drivers') }}">
                             <span>Rijders</span>
                         </a>
                     </li>
                     <li class="h-full">
-                        <a class="{{ Route::is('teams') ? 'text-srvn-orange font-semibold' : '' }} flex h-full w-full items-center px-3 hover:text-srvn-orange hover:font-semibold"
+                        <a class="{{ Route::is('teams') ? 'text-srvn-orange font-semibold' : '' }} flex h-full w-full items-center px-3 hover:font-semibold hover:text-srvn-orange"
                            href="{{ route('teams') }}">
                             <span>Teams</span>
                         </a>
