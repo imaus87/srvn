@@ -46,7 +46,7 @@
                 <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[200ms]'"
                     class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[200ms] duration-500">
                     <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
-                    <a class="flex w-full items-center hover:text-srvn-orange"
+                    <a class="{{ Route::is('schedule') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center hover:font-medium hover:text-srvn-orange"
                        href="{{ route('schedule') }}">
                         <span>Kalender</span>
                     </a>
@@ -54,7 +54,7 @@
                 <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[300ms]'"
                     class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[300ms] duration-500">
                     <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
-                    <a class="flex w-full items-center hover:text-srvn-orange"
+                    <a class="{{ Route::is('standings') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center hover:font-medium hover:text-srvn-orange"
                        href="{{ route('standings') }}">
                         <span>Klassement</span>
                     </a>
@@ -62,7 +62,7 @@
                 <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[400ms]'"
                     class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[400ms] duration-500">
                     <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
-                    <a class="flex w-full items-center hover:text-srvn-orange"
+                    <a class="{{ Route::is('drivers') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center hover:font-medium hover:text-srvn-orange"
                        href="{{ route('drivers') }}">
                         <span>Rijders</span>
                     </a>
@@ -70,7 +70,7 @@
                 <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[500ms]'"
                     class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[500ms] duration-500">
                     <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
-                    <a class="flex w-full items-center hover:text-srvn-orange"
+                    <a class="{{ Route::is('teams') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center hover:font-medium hover:text-srvn-orange"
                        href="{{ route('teams') }}">
                         <span>Teams</span>
                     </a>
