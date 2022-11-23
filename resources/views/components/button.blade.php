@@ -1,7 +1,7 @@
 @props(['color' => 'orange', 'href' => false, 'type' => 'submit'])
 
 @php
-$baseclasses = 'flex items-center justify-center space-x-1 rounded border-2 px-5 py-2.5 font-semibold focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed transition ease-in-out duration-150';
+$baseclasses = 'flex items-center justify-center space-x-1 rounded border-2 px-5 py-2 text-lg font-semibold focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed transition ease-in-out duration-150';
 $blue = 'bg-blue-700 text-white  hover:bg-blue-600 active:bg-blue-800 focus:border-blue-800 focus:shadow-outline-gray';
 $green = 'bg-emerald-700 text-white  hover:bg-emerald-600 active:bg-emerald-800 focus:border-emerald-800 focus:shadow-outline-gray';
 $indigo = 'bg-indigo-700 text-white  hover:bg-indigo-600 active:bg-indigo-800 focus:border-indigo-800 focus:shadow-outline-gray';
