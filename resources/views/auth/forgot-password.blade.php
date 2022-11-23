@@ -1,16 +1,11 @@
 <x-auth-layout>
     <x-auth.container class="font-medium">
         <x-slot name="logo">
-            <a href="{{ route('home') }}">
-                <x-logo.900 class="h-12" />
-            </a>
+            <x-auth.header />
         </x-slot>
-        <p class="text-center font-semibold text-srvn-orange">
-            Simrace Vereniging Nederland
-        </p>
 
-        <p class="mt-9 text-sm text-neutral-600">
-            {{ __('Vul je emailadres in om je wachtwoord opnieuw in te stellen.') }}
+        <p class="mt-6 text-neutral-800">
+            Vul het <span class="font-semibold text-neutral-900">emailadres van je SRVN account</span> in om je wachtwoord opnieuw in te stellen.
         </p>
 
         <!-- Session Status -->
@@ -23,32 +18,30 @@
 
         <form method="POST"
               action="{{ route('password.email') }}"
-              class="mt-6">
+              class="space-y-6">
             @csrf
 
             <!-- Email Address -->
-            <div>
-                <x-input.label for="email"
-                               :value="__('Emailadres')"
-                               class="hidden" />
+            <x-input.label for="email"
+                            :value="__('Emailadres')"
+                            class="hidden" />
 
-                <x-input.text id="email"
-                              class="mt-1 block w-full"
-                              type="email"
-                              name="email"
-                              :value="old('email')"
-                              required
-                              placeholder="Emailadres"
-                              autofocus />
-            </div>
+            <x-input.text id="email"
+                          class="block w-full"
+                          type="email"
+                          name="email"
+                          :value="old('email')"
+                          required
+                          placeholder="Emailadres"
+                          autofocus />
 
-            <div class="mt-6 flex items-center">
+            <div class=" flex items-center">
                 <x-button class="w-full">
                     {{ __('Nieuw wachtwoord aanvragen') }}
                 </x-button>
             </div>
             @if (Route::has('login'))
-                <div class="mt-6">
+                <div class="">
                     <x-link href="{{ route('login') }}">
                         {{ __('Terug naar inloggen?') }}
                     </x-link>

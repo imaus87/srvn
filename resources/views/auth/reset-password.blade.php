@@ -1,18 +1,12 @@
 <x-auth-layout>
     <x-auth.container>
         <x-slot name="logo">
-            <a href="{{ route('home') }}">
-                <x-logo.900 class="h-12" />
-            </a>
+            <x-auth.header />
         </x-slot>
 
-        <h1 class="text-center font-semibold text-srvn-orange">
-            Simrace Vereniging Nederland
-        </h1>
-
-        <p class="mt-9 text-sm text-neutral-600">
+        <p class="mt-6 text-neutral-800">
             Vul je nieuwe wachtwoord in voor het account met email:
-            <span class="font-semibold text-neutral-800">
+            <span class="font-semibold text-neutral-900">
                 {{ $request->email }}
             </span>
         </p>
@@ -22,7 +16,8 @@
                                   :errors="$errors" />
 
         <form method="POST"
-              action="{{ route('password.update') }}">
+              action="{{ route('password.update') }}"
+              class="space-y-6">
             @csrf
 
             <!-- Password Reset Token -->
@@ -31,49 +26,43 @@
                    value="{{ $request->route('token') }}">
 
             <!-- Email Address -->
-            <div class="mt-6">
-                <x-input.label for="email"
-                               :value="__('Emailadres')"
-                               class="hidden" />
+            <x-input.label for="email"
+                            :value="__('Emailadres')"
+                            class="hidden" />
 
-                <x-input.text id="email"
-                              class="hidden w-full"
-                              type="email"
-                              name="email"
-                              :value="old('email', $request->email)"
-                              placeholder="Emailadres"
-                              required />
+            <x-input.text id="email"
+                          class="hidden w-full"
+                          type="email"
+                          name="email"
+                          :value="old('email', $request->email)"
+                          placeholder="Emailadres"
+                          required />
 
-            </div>
 
             <!-- Password -->
-            <div class="mt-6">
-                <x-input.label for="password"
-                               :value="__('Wachtwoord')"
-                               class="hidden" />
+            <x-input.label for="password"
+                            :value="__('Wachtwoord')"
+                            class="hidden" />
 
-                <x-input.text id="password"
-                              class="block w-full"
-                              type="password"
-                              name="password"
-                              placeholder="Wachtwoord"
-                              required
-                              autofocus />
-            </div>
+            <x-input.text id="password"
+                          class="block w-full"
+                          type="password"
+                          name="password"
+                          placeholder="Wachtwoord"
+                          required
+                          autofocus />
 
             <!-- Confirm Password -->
-            <div class="mt-6">
-                <x-input.label for="password_confirmation"
-                               :value="__('Bevestig wachtwoord')"
-                               class="hidden" />
+            <x-input.label for="password_confirmation"
+                            :value="__('Bevestig wachtwoord')"
+                            class="hidden" />
 
-                <x-input.text id="password_confirmation"
-                              class="block w-full"
-                              type="password"
-                              name="password_confirmation"
-                              placeholder="Bevestig wachtwoord"
-                              required />
-            </div>
+            <x-input.text id="password_confirmation"
+                          class="block w-full"
+                          type="password"
+                          name="password_confirmation"
+                          placeholder="Bevestig wachtwoord"
+                          required />
 
             <x-auth.button-container>
                 <x-link href="{{ route('login') }}">
