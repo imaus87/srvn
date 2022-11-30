@@ -18,31 +18,31 @@
             @csrf
 
             <!-- Email Address -->
-                <x-input.label for="email"
-                               :value="__('Emailadres')"
-                               class="hidden" />
+            <x-input.label for="email"
+                           :value="__('Emailadres')"
+                           class="hidden" />
 
-                <x-input.text id="email"
-                              class="block w-full"
-                              type="email"
-                              name="email"
-                              :value="old('email')"
-                              required
-                              placeholder="Emailadres"
-                              autofocus />
+            <x-input.text id="email"
+                          class="block w-full"
+                          type="email"
+                          name="email"
+                          :value="old('email')"
+                          required
+                          placeholder="Emailadres"
+                          autofocus />
 
             <!-- Password -->
-                <x-input.label for="password"
-                               :value="__('Wachtwoord')"
-                               class="hidden" />
+            <x-input.label for="password"
+                           :value="__('Wachtwoord')"
+                           class="hidden" />
 
-                <x-input.text id="password"
-                              class="block w-full"
-                              type="password"
-                              name="password"
-                              required
-                              autocomplete="current-password"
-                              placeholder="Wachtwoord" />
+            <x-input.text id="password"
+                          class="block w-full"
+                          type="password"
+                          name="password"
+                          required
+                          autocomplete="current-password"
+                          placeholder="Wachtwoord" />
 
             <x-auth.button-container>
                 @if (Route::has('password.request'))
