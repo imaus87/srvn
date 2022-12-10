@@ -1,14 +1,8 @@
 <x-auth-layout>
     <x-auth.container class="font-medium">
         <x-slot name="logo">
-            <a href="{{ route('home') }}">
-                <x-logo.900 class="h-12" />
-                <p class="mt-3 text-center font-medium text-srvn-orange font-oxanium text-lg">
-                    SimRace Vereniging Nederland
-                </p>
-            </a>
+            <x-auth.header />
         </x-slot>
-
 
         <!-- Session Status -->
         <x-auth.session-status class="mb-3"

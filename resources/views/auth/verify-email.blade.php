@@ -1,16 +1,11 @@
 <x-auth-layout>
     <x-auth.container>
         <x-slot name="logo">
-            <a href="{{ route('home') }}">
-                <x-logo.900 class="h-12" />
-            </a>
+            <x-auth.header />
         </x-slot>
-        <p class="text-center font-semibold text-srvn-orange">
-            Simrace Vereniging Nederland
-        </p>
 
-        <div class="mt-9 text-sm text-neutral-600">
-            {{ __('Je bent er bijna! Klik op de knop hieronder en ga naar je email om je account registratie af te ronden.') }}
+        <div class="mt-6 text-neutral-800">
+            Je bent er bijna! <span class="font-semibold text-neutral-900">Klik op de knop hieronder en ga naar je email</span> om je account registratie af te ronden.
         </div>
 
         @if (session('status') == 'verification-link-sent')

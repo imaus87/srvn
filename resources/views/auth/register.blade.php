@@ -98,13 +98,8 @@
         {{-- Auth Section --}}
         <x-auth.container class="pt-12 pb-3 lg:p-12" id="register">
             <x-slot name="logo">
-                <a href="{{ route('home') }}">
-                    <x-logo.900 class="h-12" />
-                </a>
+                <x-auth.header />
             </x-slot>
-            <p class="text-center font-semibold text-srvn-orange">
-                Simrace Vereniging Nederland
-            </p>
 
             <!-- Validation Errors -->
             <x-auth.validation-errors class="mb-3"
@@ -112,17 +107,18 @@
 
             {{-- Form --}}
             <form method="POST"
-                  action="{{ route('register') }}">
+                  action="{{ route('register') }}"
+                  class="space-y-6">
                 @csrf
 
                 <!-- Name -->
-                <div class="mt-9 flex space-x-6">
-                    <div>
+                <div class="flex space-x-3">
+                    <div class="w-full">
                         <x-input.label for="first_name"
                                        :value="__('Voornaam')"
                                        class="hidden" />
                         <x-input.text id="first_name"
-                                      class="mt-1 block w-full"
+                                      class="block w-full"
                                       type="text"
                                       name="first_name"
                                       :value="old('first_name')"
@@ -130,15 +126,13 @@
                                       required
                                       autofocus />
                     </div>
-                    {{-- </div>
 
-                <div class="mt-6"> --}}
-                    <div>
+                    <div class="w-full">
                         <x-input.label for="last_name"
                                        :value="__('Achternaam')"
                                        class="hidden" />
                         <x-input.text id="last_name"
-                                      class="mt-1 block w-full"
+                                      class="block w-full"
                                       type="text"
                                       name="last_name"
                                       :value="old('last_name')"
@@ -149,45 +143,39 @@
                 </div>
 
                 <!-- Email Address -->
-                <div class="mt-6">
-                    <x-input.label for="email"
-                                   :value="__('Emailadres')"
-                                   class="hidden" />
-                    <x-input.text id="email"
-                                  class="mt-1 block w-full"
-                                  type="email"
-                                  name="email"
-                                  :value="old('email')"
-                                  placeholder="Emailadres"
-                                  required />
-                </div>
+                <x-input.label for="email"
+                               :value="__('Emailadres')"
+                               class="hidden" />
+                <x-input.text id="email"
+                              class="block w-full"
+                              type="email"
+                              name="email"
+                              :value="old('email')"
+                              placeholder="Emailadres"
+                              required />
 
                 <!-- Password -->
-                <div class="mt-6">
-                    <x-input.label for="password"
-                                   :value="__('Wachtwoord')"
-                                   class="hidden" />
-                    <x-input.text id="password"
-                                  class="mt-1 block w-full"
-                                  type="password"
-                                  name="password"
-                                  placeholder="Wachtwoord"
-                                  required
-                                  autocomplete="new-password" />
-                </div>
+                <x-input.label for="password"
+                               :value="__('Wachtwoord')"
+                               class="hidden" />
+                <x-input.text id="password"
+                              class="block w-full"
+                              type="password"
+                              name="password"
+                              placeholder="Wachtwoord"
+                              required
+                              autocomplete="new-password" />
 
                 <!-- Confirm Password -->
-                <div class="mt-6">
-                    <x-input.label for="password_confirmation"
-                                   :value="__('Bevestig wachtwoord')"
-                                   class="hidden" />
-                    <x-input.text id="password_confirmation"
-                                  class="mt-1 block w-full"
-                                  type="password"
-                                  name="password_confirmation"
-                                  placeholder="Bevestig wachtwoord"
-                                  required />
-                </div>
+                <x-input.label for="password_confirmation"
+                               :value="__('Bevestig wachtwoord')"
+                               class="hidden" />
+                <x-input.text id="password_confirmation"
+                              class="block w-full"
+                              type="password"
+                              name="password_confirmation"
+                              placeholder="Bevestig wachtwoord"
+                              required />
 
                 {{-- Buttons --}}
                 <x-auth.button-container>
@@ -199,25 +187,27 @@
                     </x-button>
                 </x-auth.button-container>
 
-                {{-- Footnote --}}
-                <div class="mt-9 border-t border-neutral-300">
-                    <p class="mt-6 text-xs text-neutral-500">
-                        Door verder te gaan, ga je akkoord met de
-                        <a href="#"
-                           class="font-semibold text-srvn-orange hover:underline">
-                            Algemene Voorwaarden</a>.
-                        Ook verklaar je
-                        <span class="font-semibold text-srvn-orange">
-                            18 jaar
-                        </span>
-                        of ouder te zijn,
-                        <span class="font-semibold text-srvn-orange">
-                            of
-                        </span>
-                        heb je toestemming van je ouders om je aan te melden bij SRVN.
-                    </p>
-                </div>
             </form>
+
+            {{-- Footnote --}}
+            <div class="mt-9 border-t border-neutral-300">
+                <p class="mt-6 text-sm text-neutral-500">
+                    Door verder te gaan, ga je akkoord met de
+                    <a href="#"
+                       class="font-semibold text-srvn-orange hover:underline">
+                        Algemene Voorwaarden</a>.
+                    Ook verklaar je
+                    <span class="font-semibold text-srvn-orange">
+                        18 jaar
+                    </span>
+                    of ouder te zijn,
+                    <span class="font-semibold text-srvn-orange">
+                        of
+                    </span>
+                    heb je toestemming van je ouders om je aan te melden bij SRVN.
+                </p>
+            </div>
+
         </x-auth.container>
     </div>
 </x-auth-layout>
