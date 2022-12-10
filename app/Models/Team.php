@@ -24,7 +24,7 @@ class Team extends Model
         'teammanager'
     ];
 
-    public function user(): BelongsTo
+    public function teammanager(): BelongsTo
     {
         return $this->belongsTo(User::class);
     }
