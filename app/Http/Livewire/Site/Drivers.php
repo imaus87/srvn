@@ -26,7 +26,7 @@ class Drivers extends Component
     public function getDrivers(): Collection
     {
         if (empty($this->search)) {
-            $drivers = User::orderBy('start_nr')->get();
+            $drivers = User::orderBy('start_nr')->limit(30)->get();
 
             return $drivers;
         }

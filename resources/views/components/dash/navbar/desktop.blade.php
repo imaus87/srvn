@@ -1,4 +1,4 @@
-<div class="relative w-full bg-white px-6 font-medium shadow-md dark:bg-neutral-800">
+<div class="relative w-full bg-white px-6 font-oxanium font-medium shadow-md dark:bg-neutral-800">
     <div class="relative mx-auto flex w-full items-center justify-between py-3">
         {{-- Main Logo --}}
         <a href="{{ route('home') }}">

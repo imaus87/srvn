@@ -9,6 +9,7 @@
 /public/robots.txt
 /public/sw.js
 /public/uploads
+/public/vendor
 /storage/*.key
 /storage/clockwork
 /vendor

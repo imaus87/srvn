@@ -18,23 +18,22 @@
     <livewire:styles />
 </head>
 
-<body class="dark antialiased">
-    <div id="app"
-         class="bg-srvn-gray font-sans text-neutral-800 dark:bg-neutral-900 dark:text-neutral-100">
-
-        <header class="fixed w-full">
-            <x-dash.navbar.desktop />
-        </header>
-
-        <div class="container mx-auto grid h-screen grid-cols-[320px_1fr] pt-25">
-            <aside class="fixed col-start-1 h-full w-80">
-                <x-dash.sidebar />
-            </aside>
-            <main class="col-start-2 h-full overflow-auto">
-                {{ $slot }}
-            </main>
+<body class="antialiased">
+    <div class="dark">
+        <div id="app"
+             class="min-h-screen bg-srvn-gray font-titilliumweb text-neutral-800 dark:bg-neutral-900 dark:text-neutral-100">
+            <header class="fixed w-full">
+                <x-dash.navbar.desktop />
+            </header>
+            <div class="container mx-auto grid grid-cols-[320px_1fr] pt-16">
+                <aside class="fixed col-start-1 h-full w-80">
+                    <x-dash.sidebar />
+                </aside>
+                <main class="col-start-2 h-full pt-9">
+                    {{ $slot }}
+                </main>
+            </div>
         </div>
-
     </div>
 
     <livewire:scripts />
