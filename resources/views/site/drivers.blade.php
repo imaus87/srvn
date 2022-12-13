@@ -1,7 +1,7 @@
-<section>
-    <h2 class="border-t-8 border-neutral-800 pt-6 font-oxanium text-4xl font-bold lg:text-6xl">
+<section class="px-6">
+    <x-h2>
         Rijders 2022-2
-    </h2>
+    </x-h2>
     <div class="items-center justify-between pt-6 lg:flex">
         {{-- <p class="max-w-xl">
             Bekijk de officiële line-up van dit seizoen van het NK SimRacen! Zie het huidige aantal punten en de positie
