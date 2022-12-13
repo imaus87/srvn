@@ -19,7 +19,7 @@
 </head>
 
 <body class="antialiased">
-    <div class="dark">
+    <div class="">
         <div id="app"
              class="min-h-screen bg-srvn-gray font-titilliumweb text-neutral-800 dark:bg-neutral-900 dark:text-neutral-100">
             <header class="fixed w-full">
