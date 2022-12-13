@@ -33,11 +33,15 @@
             </div>
         </header>
 
-        <main class="h-full overflow-auto px-6 pb-9 pt-23 lg:pt-12">
+        <main class="h-full overflow-auto pb-9 pt-23 lg:pt-12">
             <div class="mx-auto max-w-7xl">
                 {{ $slot }}
             </div>
         </main>
+
+        <Footer>
+            <x-footer />
+        </Footer>
 
     </div>
 
