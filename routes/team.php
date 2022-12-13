@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Livewire\Dash\Team\Dashboard;
+use App\Http\Livewire\Dash\Team\Information;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', Dashboard::class)->name('dashboard');
+
+Route::get('/info', Information::class)->name('info');
