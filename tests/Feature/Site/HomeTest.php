@@ -14,3 +14,12 @@ test('the page shows articles', function () {
    // Assert / Then
 
 })->skip('Test not written.');
+
+test('the callout component is visible', function () {
+   // Arrange / Given
+
+   // Act / When
+
+   // Assert / Then
+
+})->skip('Test not written.');

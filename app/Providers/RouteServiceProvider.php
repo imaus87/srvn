@@ -40,7 +40,8 @@ class RouteServiceProvider extends ServiceProvider
             });
 
             Route::middleware('web', 'auth', 'verified')->domain('http://mijn.' . config('app.domain'))->group(function () {
-                Route::name('driver.')
+                Route::prefix('persoonlijk')
+                    ->name('driver.')
                     ->namespace($this->namespace)
                     ->group(base_path('routes/driver.php'));
 

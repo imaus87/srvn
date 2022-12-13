@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Livewire\Dash\Driver\Dashboard;
+use App\Http\Livewire\Dash\Driver\Protesten;
+use App\Http\Livewire\Dash\Driver\Team;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', Dashboard::class)->name('dashboard');
+Route::get('/team', Team::class)->name('team');
+Route::get('/protesten', Protesten::class)->name('protesten');

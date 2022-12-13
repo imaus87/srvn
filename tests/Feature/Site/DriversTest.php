@@ -23,3 +23,21 @@ it('shows a list of drivers', function () {
    // Assert / Then
 
 })->skip('Test not written.');
+
+it('shows a searchbox', function () {
+   // Arrange / Given
+
+   // Act / When
+
+   // Assert / Then
+
+})->skip('Test not written.');
+
+it('can search for a driver', function () {
+   // Arrange / Given
+
+   // Act / When
+
+   // Assert / Then
+
+})->skip('Test not written.');
