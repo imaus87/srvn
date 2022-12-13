@@ -1,11 +1,11 @@
 <div x-on:scroll.window="showBar = (window.scrollY > 1) ? true : false"
      x-bind:class="showBar && '!-translate-y-[56px]'"
-     class="shadow-b bg-white px-6 font-medium shadow-md transition-transform delay-[0ms] duration-200">
+     class="shadow-b bg-white font-medium shadow-md transition-transform delay-[0ms] duration-200">
     {{-- https://github.com/tailwindlabs/tailwindcss/discussions/3028 --}}
     {{-- https://www.revolut.com/ --}}
 
     {{-- Navbar Desktop --}}
-    <div class="mx-auto max-w-7xl">
+    <div class="mx-auto max-w-7xl px-6">
 
         {{-- Secondary Navbar --}}
         <nav aria-label="Secondary Navigation"
