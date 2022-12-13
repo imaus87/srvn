@@ -4,19 +4,21 @@
         {{-- Selling Points Section --}}
         <div class="flex min-h-screen w-full items-center bg-neutral-900 p-6 lg:p-12">
             <div class="relative mx-auto flex flex-col justify-center">
-                <h1 class="pl-8 text-xl font-semibold text-neutral-300 lg:text-2xl">
+                <h1 class="px-8 text-2xl font-semibold text-neutral-300 lg:text-3xl">
                     Doe je gordel om en wordt lid van dé<br class="hidden lg:block"> nederlandse simrace vereniging!
                 </h1>
 
                 {{-- List --}}
-                <ul class="mt-9 text-sm font-medium text-neutral-500 lg:text-base">
+                <ul class="mt-9 text-base font-medium text-neutral-500 lg:text-lg">
                     <li class="flex items-center pb-6">
-                        <x-heroicon-s-check class="mr-3 h-5 text-srvn-orange lg:h-6" />
+                        <div class="mt-1">
+                          <x-heroicon-s-check class="mr-3 h-6 text-srvn-orange lg:h-7" />
+                        </div>
                         Maak 24/7 gebruik van onze raceservers
                     </li>
                     <li class="flex items-center pb-6">
                         <div class="pb-11 lg:pb-12">
-                            <x-heroicon-s-check class="mr-3 h-5 text-srvn-orange lg:h-6" />
+                            <x-heroicon-s-check class="mr-3 h-6 text-srvn-orange lg:h-7" />
                         </div>
                         <div>
                             Doe mee aan het NK simracen:<br>
@@ -27,7 +29,7 @@
                     </li>
                     <li class="flex items-center pb-6">
                         <div class="pb-11 lg:pb-12">
-                            <x-heroicon-s-check class="mr-3 h-5 text-srvn-orange lg:h-6" />
+                            <x-heroicon-s-check class="mr-3 h-6 text-srvn-orange lg:h-7" />
                         </div>
                         <div>
                             Rijdt mee in onze evenementen:<br>
@@ -37,12 +39,14 @@
                         </div>
                     </li>
                     <li class="flex items-center pb-6">
-                        <x-heroicon-s-check class="mr-3 h-5 text-srvn-orange lg:h-6" />
+                        <div class="mt-1">
+                          <x-heroicon-s-check class="mr-3 h-6 text-srvn-orange lg:h-7" />
+                        </div>
                         Krijg je eigen auto in de mods van SRVN
                     </li>
                     <li class="flex items-center pb-6">
                         <div class="pb-11 lg:pb-12">
-                            <x-heroicon-s-check class="mr-3 h-5 text-srvn-orange lg:h-6" />
+                            <x-heroicon-s-check class="mr-3 h-6 text-srvn-orange lg:h-7" />
                         </div>
                         <div>
                             Kom naar de Algemene Ledenvergadering<br class="hidden lg:block">
