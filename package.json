@@ -36,6 +36,7 @@
         "@marcreichel/alpine-auto-animate": "^1.0.0",
         "@vitejs/plugin-vue": "^3.0.3",
         "alpinejs": "^3.10.3",
+        "tailwind-scrollbar-hide": "^1.1.7",
         "tailwindcss-hyphens": "^0.1.0",
         "vue": "^3.2.36",
         "vue-loader": "^17.0.0"
