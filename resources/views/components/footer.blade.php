@@ -1,61 +1,95 @@
 <div class="bg-neutral-900 text-neutral-300">
-    <div class="mx-auto max-w-7xl p-6 pt-12">
+    <div class="mx-auto max-w-7xl px-6 py-12">
 
-        <div class="sm:flex space-x-0 space-y-6 sm:space-x-6 sm:space-y-0">
+        <div class="space-x-0 space-y-6 sm:flex sm:space-x-6 sm:space-y-0">
 
-          <div class="flex space-x-3">
-            <x-h6>Word lid!</x-h6>
-            <div class="space-y-3">
-              <p class="text-neutral-500 max-w-sm">
-                Iedereen kan meedoen bij SRVN! Verdien je onder de draagkracht vrije voet? Geen probleem!
-              </p>
-              <a href="#" class="flex items-center">
-                <span class="font-medium uppercase">Vraag kwijtschelding aan</span>
-                <x-heroicon-s-chevron-double-right class="h-4 w-4 text-neutral-300" />
-              </a>
+            <div class="flex space-x-3">
+                <x-h6 class=" w-19 sm:w-auto">Missie</x-h6>
+                <div class="space-y-3">
+                    <p class="max-w-sm text-neutral-500">
+                        Iedereen kan meedoen bij SRVN! Verdien je minder dan de draagkrachtvrije voet? Geen probleem!
+                    </p>
+                    <a href="#" class="flex items-center">
+                        <span class="font-oxanium font-medium uppercase">Vraag kwijtschelding aan</span>
+                        <div class="-mt-0.5">
+                            <x-heroicon-s-chevron-double-right class="h-4 w-4 text-neutral-300" />
+                        </div>
+                    </a>
+                </div>
             </div>
-          </div>
-          <div class="flex space-x-3">
-              <x-h6>Website</x-h6>
-              <nav class="text-neutral-500">
-                <ul>
-                  <li><a href="#">Register</a></li>
-                  <li><a href="#">Cookie Instellingen</a></li>
-                  <li><a href="#">Archief</a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#"></a></li>
-                </ul>
-              </nav>
-          </div>
-          <div class="flex space-x-3">
-              <x-h6>Vereniging</x-h6>
-              <nav class="text-neutral-500">
-                <ul>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#"></a></li>
-                  <li><a href="#">Perskit</a></li>
-                  <li><a href="#">Sponsoren</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </nav>
-          </div>
-          <div class="flex space-x-3">
-              <x-h6>Juridisch</x-h6>
-              <nav class="text-neutral-500">
-                <ul>
-                  <li><a href="#">Algemene Voorwaarden</a></li>
-                  <li><a href="#">Gebruikersvoorwaarden</a></li>
-                  <li><a href="#">Privacybeleid</a></li>
-                  <li><a href="#">KvK 52889432</a></li>
-                  <li><a href="#"></a></li>
-                </ul>
-              </nav>
-          </div>
+            <div class="flex space-x-3">
+                <x-h6 class=" w-19 sm:w-auto">Competitie</x-h6>
+                <nav class="text-neutral-500">
+                    <ul>
+                        <li><a href="#">Schrijf je in!</a></li>
+                        <li><a href="#">Race reglement</a></li>
+                        <li><a href="#">Commissies</a></li>
+                        <li><a href="#">Archief</a></li>
+                        <li><a href="#">Prijzen</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flex space-x-3">
+                <x-h6 class=" w-19 sm:w-auto">Vereniging</x-h6>
+                <nav class="text-neutral-500">
+                    <ul>
+                        <li><a href="#">Over ons</a></li>
+                        <li><a href="#">Sponsoren</a></li>
+                        <li><a href="#">Studentenkorting</a></li>
+                        <li><a href="#">Kwijtschelding</a></li>
+                        <li><a href="#">Perskit</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
 
         </div>
 
-        <div class="flex items-center justify-between mt-12">
+        {{-- <div class="grid grid-cols-1 space-x-0 space-y-6 sm:grid-cols-5 sm:space-x-6 sm:space-y-0">
+
+            <div class="flex space-x-3 col-span-2">
+                <x-h6 class=" w-19 sm:w-auto grow">Missie</x-h6>
+                <div class="space-y-3 shrink">
+                    <p class=" text-neutral-500">
+                        Iedereen kan meedoen bij SRVN! Verdien je minder dan de draagkrachtvrije voet? Geen probleem!
+                    </p>
+                    <a href="#" class="flex items-center">
+                        <span class="font-oxanium font-medium uppercase">Vraag kwijtschelding aan</span>
+                        <div class="-mt-0.5">
+                            <x-heroicon-s-chevron-double-right class="h-4 w-4 text-neutral-300" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="flex space-x-3">
+                <x-h6 class=" w-19 sm:w-auto">Competitie</x-h6>
+                <nav class="text-neutral-500">
+                    <ul>
+                        <li><a href="#">Schrijf je in!</a></li>
+                        <li><a href="#">Race reglement</a></li>
+                        <li><a href="#">Commissies</a></li>
+                        <li><a href="#">Archief</a></li>
+                        <li><a href="#">Prijzen</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flex space-x-3">
+                <x-h6 class=" w-19 sm:w-auto">Vereniging</x-h6>
+                <nav class="text-neutral-500">
+                    <ul>
+                        <li><a href="#">Over ons</a></li>
+                        <li><a href="#">Sponsoren</a></li>
+                        <li><a href="#">Studentenkorting</a></li>
+                        <li><a href="#">Kwijtschelding</a></li>
+                        <li><a href="#">Perskit</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div> --}}
+
+        <div class="mt-12 flex items-center justify-between">
             <x-logo.100 class="h-6 w-[100px]" />
             <div class="flex items-center space-x-3">
                 <svg
@@ -84,11 +118,41 @@
             </div>
         </div>
 
-        <div
-             class="mt-3 w-full border-t border-neutral-300 border-opacity-25 text-center text-sm font-light text-neutral-500">
-            <p class="pt-6">
-                &copy; 2022 SimRace Vereniging Nederland. Alle rechten voorbehouden.
-            </p>
+        <div class="mt-3 w-full border-t border-neutral-500 border-opacity-25">
+            <div class="flex flex-col sm:flex-row pt-6">
+                <span class="font-bold text-neutral-500 mr-3">
+                    &copy; 2022 SimRace Vereniging Nederland
+                </span>
+                <nav class="text-neutral-500 leading-relaxed mt-3 sm:mt-0">
+                    <ul class="flex flex-wrap items-center">
+                        <li class="mr-3">
+                            <a href="https://www.kvk.nl/orderstraat/product-kiezen/?kvknummer=52889432">
+                                KvK 52889432
+                            </a>
+                        </li>
+                        <li class="mr-3">
+                            <a href="#">
+                                Algemene Voorwaarden
+                            </a>
+                        </li>
+                        <li class="mr-3">
+                            <a href="#">
+                                Gebruikersvoorwaarden
+                            </a>
+                        </li>
+                        <li class="mr-3">
+                            <a href="#">
+                                Privacybeleid
+                            </a>
+                        </li>
+                        <li class="mr-3">
+                            <a href="#">
+                                Cookie instellingen
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
 
     </div>
