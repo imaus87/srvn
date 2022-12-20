@@ -130,7 +130,7 @@
             <a href="{{ route('register') }}"
                x-bind:class="navOpen && '!opacity-100 !delay-[0ms]'"
                class="mb-6 mt-9 shrink grow-0 basis-auto text-center font-semibold text-srvn-orange opacity-0 transition-opacity delay-[0ms] duration-500">
-                Wordt lid voor €25 per jaar!
+                Word lid voor €25 per jaar!
             </a>
         </nav>
 

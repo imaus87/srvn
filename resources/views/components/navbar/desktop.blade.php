@@ -15,7 +15,7 @@
             <div class="flex w-full items-center">
                 <a href="{{ route('register') }}"
                    class="font-semibold text-srvn-orange">
-                    Wordt lid voor €25 per jaar!
+                    Word lid voor €25 per jaar!
                 </a>
                 <ul class="flex text-neutral-500">
                     <li class="ml-6 flex items-center">
