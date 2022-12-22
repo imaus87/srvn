@@ -41,7 +41,16 @@
         </main>
 
         <Footer>
-            <x-footer />
+            <div class="bg-neutral-900 text-neutral-300">
+                <div class="mx-auto max-w-7xl px-6 py-12">
+
+                    <div class="mb-18">
+                        <x-news-signup />
+                    </div>
+
+                    <x-footer />
+                </div>
+            </div>
         </Footer>
 
     </div>
