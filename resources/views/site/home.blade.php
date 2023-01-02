@@ -1,5 +1,7 @@
 <div>
 
+    <x-news-callout />
+
     <x-register-callout />
 
     <section class="mt-9">
