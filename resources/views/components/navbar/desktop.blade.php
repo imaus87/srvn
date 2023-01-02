@@ -5,7 +5,7 @@
     {{-- https://www.revolut.com/ --}}
 
     {{-- Navbar Desktop --}}
-    <div class="mx-auto max-w-7xl px-6">
+    <div class="xl:ml-auto max-w-7xl px-6">
 
         {{-- Secondary Navbar --}}
         <nav aria-label="Secondary Navigation"
