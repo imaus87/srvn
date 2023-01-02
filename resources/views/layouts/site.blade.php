@@ -22,7 +22,7 @@
 
 <body x-data="{ showBar: false, navOpen: false }"
       x-bind:class="navOpen && '!overflow-hidden !fixed !w-full'"
-      class="h-screen w-screen bg-srvn-gray font-titilliumweb text-neutral-800 antialiased">
+      class="min-h-screen w-screen bg-srvn-gray font-titilliumweb text-neutral-800 antialiased">
     <div id="app">
 
         <header>
@@ -34,15 +34,15 @@
             </div>
         </header>
 
-        <main class="h-full overflow-auto pb-9 pt-23 lg:pt-12">
-            <div class="mx-auto max-w-7xl">
+        <main class="h-full pb-9 pt-23 lg:pt-12">
+
                 {{ $slot }}
-            </div>
+
         </main>
 
         <Footer>
             <div class="bg-neutral-900 text-neutral-300">
-                <div class="mx-auto max-w-7xl px-6 py-12">
+                <div class="xl:ml-auto max-w-7xl px-6 py-12">
 
                     <div class="mb-18">
                         <x-news-signup />

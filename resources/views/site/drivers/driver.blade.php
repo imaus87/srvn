@@ -1,5 +1,5 @@
 <div>
-    <section class="gap-12 px-6 sm:flex">
+    <section class="xl:ml-auto max-w-7xl gap-12 px-6 sm:flex">
         <div class="w-full sm:w-96">
             <div class="aspect-w-1 aspect-h-1 h-0 w-full overflow-hidden rounded-lg">
                 <img src="../img/rene-en-kind.jpg"
@@ -65,7 +65,7 @@
             </ul>
         </div>
     </section>
-    <section class="mt-9">
+    <section class="xl:ml-auto mt-9 max-w-7xl">
         <x-h3 class="pl-6">Teams</x-h3>
         <nav>
             <ul class="flex snap-x snap-mandatory gap-3 overflow-x-auto py-3 scrollbar-hide">
@@ -90,7 +90,7 @@
             </ul>
         </nav>
     </section>
-    <section class="mt-6">
+    <section class="xl:ml-auto mt-6 max-w-7xl">
         <x-h3 class="pl-6">Kampioenschappen</x-h3>
         <nav>
             <ul class="flex snap-x snap-mandatory gap-3 overflow-x-auto py-3 scrollbar-hide">
@@ -146,7 +146,7 @@
             </ul>
         </nav>
     </section>
-    <section class="mt-9 px-6">
+    <section class="xl:ml-auto mt-9 max-w-7xl px-6">
         <x-h3>Biografie</x-h3>
         <div class="mt-6 max-w-3xl space-y-3 text-lg">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui veritatis est quasi delectus ducimus neque
@@ -163,8 +163,8 @@
     </section>
     <section class="relative mt-6 h-96">
         <ul
-            class="absolute top-0 left-0 bottom-0 -right-96 z-50 flex h-96 snap-x snap-mandatory gap-3 overflow-x-auto py-3 scrollbar-hide">
-            <li class="flex-shrink-0 snap-center snap-always first:snap-start first:pl-6 last:snap-end last:pr-6">
+            class="flex h-96 snap-x snap-mandatory gap-3 overflow-x-auto py-3 scrollbar-hide">
+            <li class=" first:pl-6 xl:first:pl-snap flex-shrink-0 snap-center snap-always first:snap-start last:snap-end last:pr-6">
                 <img src="https://pbs.twimg.com/media/FRP0eGnXsAApx9o?format=jpg&name=large"
                      class="h-full w-full rounded-lg object-cover object-center"
                      alt="#">
@@ -186,7 +186,7 @@
             </li>
         </ul>
     </section>
-    <section class="mt-9">
+    <section class="xl:ml-auto mt-9 max-w-7xl">
         <x-h3 class="pl-6">Verder lezen</x-h3>
         <nav>
             <ul class="flex snap-x snap-mandatory gap-3 overflow-x-auto py-3 scrollbar-hide">

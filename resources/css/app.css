@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
+@layer utilities {
+
+    .ml-auto {
+        margin-left: calc((100vw - 80rem) / 2);
+    }
+
+    .pl-auto {
+        padding-left: calc((100vw - 80rem) / 2);
+    }
+
+    .pl-snap {
+        padding-left: calc((100vw - 80rem) / 2 + 1.5rem);
+    }
+
+}
+
 @tailwind utilities;
