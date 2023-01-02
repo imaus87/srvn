@@ -15,29 +15,35 @@
             <div class="flex w-full items-center">
                 <a href="{{ route('register') }}"
                    class="font-semibold text-srvn-orange">
-                    Word lid voor €25 per jaar!
+                    Klaar om in te stappen?
+                    {{-- Word lid voor €25 per jaar! --}}
                 </a>
                 <ul class="flex text-neutral-500">
                     <li class="ml-6 flex items-center">
-                        <x-heroicon-s-check class="mr-1 h-4 text-srvn-orange" />
-                        24/7 raceservers
+                        <x-heroicon-o-trophy class="mr-1 h-4 text-srvn-orange" />
+                        Officiël kampioenschap
+                        {{-- 24/7 raceservers --}}
                     </li>
                     <li class="ml-6 flex items-center">
-                        <x-heroicon-s-check class="mr-1 h-4 text-srvn-orange" />
-                        Kampioenschappen
+                        <x-heroicon-o-user-group class="mr-1 h-4 text-srvn-orange" />
+                        {{-- Winter- en zomerstop --}}
+                        Open evenementen
+                        {{-- Kampioenschappen --}}
                     </li>
                     <li class="ml-6 flex items-center">
-                        <x-heroicon-s-check class="mr-1 h-4 text-srvn-orange" />
-                        Evenementen
+                        <x-heroicon-o-paint-brush class="mr-1 h-4 text-srvn-orange" />
+                        Eigen liveries
+                        {{-- Evenementen --}}
                     </li>
                     <li class="ml-6 flex items-center">
-                        <x-heroicon-s-check class="mr-1 h-4 text-srvn-orange" />
-                        Eigen livery
+                        <x-heroicon-o-user-circle class="mr-1 h-4 text-srvn-orange" />
+                        Gratis Account
+                        {{-- Eigen livery --}}
                     </li>
-                    <li class="ml-6 flex items-center">
+                    {{-- <li class="ml-6 flex items-center">
                         <x-heroicon-s-check class="mr-1 h-4 text-srvn-orange" />
                         2x ALV
-                    </li>
+                    </li> --}}
                 </ul>
             </div>
 
