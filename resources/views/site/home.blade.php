@@ -4,7 +4,7 @@
 
     <x-register-callout />
 
-    <section class="mt-9">
+    <section class="mt-9 xl:ml-auto max-w-7xl">
         <x-h3 class="pl-6">Verder neuzen</x-h3>
         <nav>
             <ul class="flex snap-x snap-mandatory gap-3 overflow-x-auto py-3 scrollbar-hide">

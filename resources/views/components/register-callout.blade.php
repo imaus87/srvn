@@ -1,5 +1,5 @@
-<section class="bg-neutral-900 text-neutral-300 sm:rounded-lg">
-    <div class="mx-auto w-full max-w-7xl px-6 py-12">
+<section class="bg-neutral-900 text-neutral-300 sm:rounded-lg xl:ml-auto max-w-7xl">
+    <div class="w-full px-6 py-12">
 
         <div class="pb-9 text-center">
             <x-h3 class="text-2xl font-semibold lg:text-3xl">
