@@ -46,6 +46,14 @@
                 <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[200ms]'"
                     class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[200ms] duration-500">
                     <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
+                    <a class="{{ Route::is('news') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center hover:font-medium hover:text-srvn-orange"
+                       href="{{ route('news') }}">
+                        <span>Nieuws</span>
+                    </a>
+                </li>
+                <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[200ms]'"
+                    class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[200ms] duration-500">
+                    <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
                     <a class="{{ Route::is('schedule') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center hover:font-medium hover:text-srvn-orange"
                        href="{{ route('schedule') }}">
                         <span>Kalender</span>
@@ -127,10 +135,11 @@
             </div>
 
             {{-- Callout --}}
-            <a href="{{ route('register') }}"
+            <a href="{{ route('get-in') }}"
                x-bind:class="navOpen && '!opacity-100 !delay-[0ms]'"
                class="mb-6 mt-9 shrink grow-0 basis-auto text-center font-semibold text-srvn-orange opacity-0 transition-opacity delay-[0ms] duration-500">
-                Word lid voor €25 per jaar!
+                Klaar om in te stappen?
+                {{-- Word lid voor €25 per jaar! --}}
             </a>
         </nav>
 
