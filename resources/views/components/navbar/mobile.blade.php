@@ -4,7 +4,7 @@
     {{-- Navbar Mobile --}}
     <div class="relative z-50 bg-white">
         <div x-bind:class="navOpen && '!translate-y-[12px]'"
-             class="flex w-full items-center justify-between px-6 py-3 transition-transform duration-500">
+             class="flex w-full items-center justify-between px-2.5 sm:px-6 py-3 transition-transform duration-500">
             <button x-on:click="navOpen = !navOpen"
                     class="relative mt-0 h-8 w-8">
                 <div x-show="!navOpen"

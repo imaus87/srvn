@@ -3,7 +3,7 @@
     <section class="space-x-0 space-y-6 sm:flex sm:space-x-6 sm:space-y-0">
 
         <div class="flex space-x-3">
-            <x-h6 class="w-19 sm:w-auto">Missie</x-h6>
+            <x-h6 class="w-19 shrink-0 sm:w-auto">Missie</x-h6>
             <div class="space-y-3">
                 <p class="max-w-sm text-neutral-500">
                     Iedereen kan meedoen bij SRVN! Verdien je minder dan de draagkrachtvrije voet? Geen probleem!
@@ -88,8 +88,8 @@
 
         </section> --}}
 
-    <section class="mt-12 flex items-center justify-between">
-        <x-logo.100 class="h-6 w-[100px]" />
+    <section class="mt-9 flex items-center justify-between">
+        <x-logo.300 class="h-6 w-[100px]" />
         <div class="flex items-center space-x-3">
             <svg
                  class="bi bi-facebook h-6 w-6"
@@ -118,12 +118,15 @@
     </section>
 
     <section class="mt-3 w-full border-t border-neutral-500 border-opacity-25">
-        <div class="flex flex-col pt-6 sm:flex-row">
-            <span class="mr-3 font-bold text-neutral-500">
+        <div class="pt-6">
+            <span class="mr-3 font-bold text-neutral-500 sm:hidden">
                 &copy; 2022 SimRace Vereniging Nederland
             </span>
             <nav class="mt-3 leading-relaxed text-neutral-500 sm:mt-0">
                 <ul class="flex flex-wrap items-center">
+                    <span class="mr-3 font-bold text-neutral-500 hidden sm:block">
+                        &copy; 2022 SimRace Vereniging Nederland
+                    </span>
                     <li class="mr-3">
                         <a href="https://www.kvk.nl/orderstraat/product-kiezen/?kvknummer=52889432">
                             KvK 52889432
