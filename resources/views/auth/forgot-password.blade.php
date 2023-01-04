@@ -42,7 +42,7 @@
             </div>
             @if (Route::has('login'))
                 <div class="">
-                    <x-link href="{{ route('login') }}">
+                    <x-link-auth href="{{ route('login') }}">
                         {{ __('Terug naar inloggen?') }}
                     </x-link>
                 </div>
