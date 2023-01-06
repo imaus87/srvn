@@ -9,9 +9,10 @@
                     Iedereen kan meedoen bij SRVN! Verdien je minder dan de draagkrachtvrije voet? Geen probleem!
                 </p>
                 <a href="#" class="flex items-center">
-                    <span class="font-oxanium font-medium uppercase">Vraag kwijtschelding aan</span>
+                    <span class="font-oxanium font-medium uppercase">Bekijk onze missie</span>
+                    {{-- <span class="font-oxanium font-medium uppercase">Vraag kwijtschelding aan</span> --}}
                     <div class="-mt-0.5">
-                        <x-heroicon-s-chevron-double-right class="h-4 w-4 text-neutral-300" />
+                        <x-heroicon-s-chevron-double-right class="h-5 w-5 text-neutral-300" />
                     </div>
                 </a>
             </div>

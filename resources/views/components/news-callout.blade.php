@@ -3,7 +3,7 @@
         <a href="{{ route('news') }}"
            class="flex items-center">
             <x-h2>Nieuws</x-h2>
-            <x-heroicon-o-chevron-double-right class="h-7 lg:hidden" />
+            <x-heroicon-o-chevron-double-right class="h-8 lg:hidden" />
         </a>
         {{-- <div class="flex items-center mb-1.5 lg:mb-2">
           <x-link-secondary class="text-sm uppercase">

@@ -69,7 +69,7 @@
 
         <div class="flex items-center justify-center pt-6">
             <x-button
-                      class="mx-6 w-full max-w-lg border-srvn-orange/40 bg-srvn-orange/90 hover:border-srvn-orange/90 hover:text-neutral-300">
+                      class="w-full max-w-lg border-srvn-orange/40 bg-srvn-orange/90 hover:border-srvn-orange/90 hover:text-neutral-300">
                 Klaar om in te stappen?
                 {{-- Lees meer over hoe SRVN werkt / wij werken --}}
             </x-button>
