@@ -6,20 +6,20 @@
           action="{{ route('login') }}"
           class="space-y-6">
         @csrf
-        <div class="items-center sm:flex">
+        <div class="items-center md:flex">
             <!-- Email Address -->
             <x-input.label for="email"
                            :value="__('Emailadres')"
                            class="hidden" />
             <x-input.text id="email"
-                          class="mb-3 block w-full border-opacity-25 bg-neutral-900 sm:mb-0 sm:mr-3 sm:max-w-sm"
+                          class="mb-3 block w-full border-opacity-25 bg-neutral-900 md:mb-0 md:mr-3 md:max-w-sm"
                           type="email"
                           name="email"
                           :value="old('email')"
                           required
                           placeholder="Emailadres" />
             <x-button
-                      class="w-full border-srvn-orange/40 bg-srvn-orange/90 hover:border-srvn-orange/90 hover:text-neutral-300 sm:w-auto">
+                      class="w-full border-srvn-orange/40 bg-srvn-orange/90 hover:border-srvn-orange/90 hover:text-neutral-300 md:w-auto">
                 {{ __('Schrijf je in voor onze nieuwsbrief!') }}
             </x-button>
         </div>

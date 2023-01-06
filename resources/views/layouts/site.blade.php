@@ -36,15 +36,15 @@
 
         <main class="h-full pb-6 pt-23 lg:pt-9">
 
-                {{ $slot }}
+            {{ $slot }}
 
         </main>
 
         <Footer>
             <div class="bg-neutral-900 text-neutral-300">
-                <div class="xl:ml-auto max-w-7xl px-3 sm:px-6 py-9">
+                <div class="max-w-7xl px-3 py-9 md:px-6 xl:ml-auto">
 
-                    <div class="mb-12">
+                    <div class="mb-9">
                         <x-news-signup />
                     </div>
 

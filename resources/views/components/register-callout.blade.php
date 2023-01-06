@@ -1,5 +1,5 @@
-<section class="mx-3 overflow-hidden bg-neutral-900 text-neutral-300 md:mx-0 lg:mx-6 lg:rounded-lg">
-    <div class="py-9 sm:px-6 lg:px-9">
+<section class="mx-3 overflow-hidden bg-neutral-900 text-neutral-300 lg:mx-6 lg:rounded-lg">
+    <div class="py-9 md:px-6 lg:px-9">
 
         <div class="pb-6 text-center">
             <x-h3 class="text-2xl font-semibold lg:text-3xl">

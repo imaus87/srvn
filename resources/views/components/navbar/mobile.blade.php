@@ -4,7 +4,7 @@
     {{-- Navbar Mobile --}}
     <div class="relative z-50 bg-white">
         <div x-bind:class="navOpen && '!translate-y-[12px]'"
-             class="flex w-full items-center justify-between px-2.5 sm:px-6 py-3 transition-transform duration-500">
+             class="flex w-full items-center justify-between px-2.5 py-3 transition-transform duration-500 md:px-6">
             <button x-on:click="navOpen = !navOpen"
                     class="relative mt-0 h-8 w-8">
                 <div x-show="!navOpen"
@@ -45,41 +45,41 @@
             <ul class="flex flex-col space-y-3">
                 <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[200ms]'"
                     class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[200ms] duration-500">
-                    <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
                     <a class="{{ Route::is('news') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center hover:font-medium hover:text-srvn-orange"
                        href="{{ route('news') }}">
+                        <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
                         <span>Nieuws</span>
                     </a>
                 </li>
                 <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[200ms]'"
                     class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[200ms] duration-500">
-                    <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
                     <a class="{{ Route::is('schedule') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center hover:font-medium hover:text-srvn-orange"
                        href="{{ route('schedule') }}">
+                        <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
                         <span>Kalender</span>
                     </a>
                 </li>
                 <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[300ms]'"
                     class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[300ms] duration-500">
-                    <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
                     <a class="{{ Route::is('standings') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center hover:font-medium hover:text-srvn-orange"
                        href="{{ route('standings') }}">
+                        <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
                         <span>Klassement</span>
                     </a>
                 </li>
                 <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[400ms]'"
                     class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[400ms] duration-500">
-                    <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
                     <a class="{{ Route::is('drivers') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center hover:font-medium hover:text-srvn-orange"
                        href="{{ route('drivers') }}">
+                        <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
                         <span>Rijders</span>
                     </a>
                 </li>
                 <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[500ms]'"
                     class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[500ms] duration-500">
-                    <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
                     <a class="{{ Route::is('teams') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center hover:font-medium hover:text-srvn-orange"
                        href="{{ route('teams') }}">
+                        <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
                         <span>Teams</span>
                     </a>
                 </li>

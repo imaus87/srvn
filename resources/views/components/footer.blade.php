@@ -1,11 +1,11 @@
 <div>
 
-    <section class="space-x-0 space-y-6 sm:flex sm:space-x-6 sm:space-y-0">
+    <section class="space-x-0 space-y-6 sm:flex sm:space-x-3 sm:space-y-0 md:space-x-6">
 
         <div class="flex space-x-3">
             <x-h6 class="w-19 shrink-0 sm:w-auto">Missie</x-h6>
             <div class="space-y-3">
-                <p class="max-w-sm text-neutral-500">
+                <p class="max-w-xs text-neutral-500 lg:max-w-sm">
                     Iedereen kan meedoen bij SRVN! Verdien je minder dan de draagkrachtvrije voet? Geen probleem!
                 </p>
                 <a href="#" class="flex items-center">
@@ -125,7 +125,7 @@
             </span>
             <nav class="mt-3 leading-relaxed text-neutral-500 sm:mt-0">
                 <ul class="flex flex-wrap items-center">
-                    <span class="mr-3 font-bold text-neutral-500 hidden sm:block">
+                    <span class="mr-3 hidden font-bold text-neutral-500 sm:block">
                         &copy; 2022 SimRace Vereniging Nederland
                     </span>
                     <li class="mr-3">
