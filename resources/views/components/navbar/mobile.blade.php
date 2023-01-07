@@ -37,7 +37,7 @@
          class="absolute top-0 z-40 mb-0 flex h-0 w-full flex-col overflow-hidden bg-white pt-0 transition-all duration-500">
 
         {{-- Internal Links --}}
-        <nav class="shrink grow-0 basis-auto bg-white px-3 pt-3">
+        <nav class="shrink grow-0 basis-auto bg-white px-3 pt-3 md:px-6">
             <h2 x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[100ms]'"
                 class="translate-x-[-5%] pb-6 text-sm font-medium uppercase text-neutral-400 opacity-0 transition-all delay-[100ms] duration-500">
                 Intern
@@ -98,7 +98,7 @@
 
         {{-- External Links --}}
         <nav class="flex shrink grow basis-auto flex-col justify-between bg-srvn-gray">
-            <div class="shrink-0 grow basis-auto px-3">
+            <div class="shrink-0 grow basis-auto px-3 md:px-6">
                 <h2 x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[125ms]'"
                     class="translate-x-[-5%] pt-9 pb-6 text-sm font-medium uppercase text-neutral-400 opacity-0 transition-all delay-[125ms] duration-500">
                     Extern

@@ -22,7 +22,7 @@
             <nav class="text-neutral-500">
                 <ul>
                     <li><a href="#">Schrijf je in!</a></li>
-                    <li><a href="#">Race reglement</a></li>
+                    <li><a href="#">Reglementen</a></li>
                     <li><a href="#">Commissies</a></li>
                     <li><a href="#">Archief</a></li>
                     <li><a href="#">Prijzen</a></li>

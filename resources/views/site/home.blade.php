@@ -2,7 +2,7 @@
 
     <x-news-callout />
 
-    <div class="max-w-7xl bg-neutral-900 md:bg-transparent xl:ml-auto">
+    <div class="max-w-7xl bg-neutral-900 lg:bg-transparent xl:ml-auto">
         <x-register-callout />
     </div>
 
