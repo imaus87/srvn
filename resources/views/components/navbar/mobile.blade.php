@@ -9,11 +9,11 @@
                     class="relative mt-0 h-8 w-8">
                 <div x-show="!navOpen"
                      class="absolute inset-0">
-                    <x-heroicon-o-bars-2 class="h-8 text-srvn-orange" />
+                    <x-heroicon-o-bars-2 class="-ml-[1px] h-8 text-srvn-orange" />
                 </div>
                 <div x-show="navOpen"
                      class="absolute inset-0">
-                    <x-heroicon-o-x-mark class="h-8 text-srvn-orange" />
+                    <x-heroicon-o-x-mark class="-ml-[1px] h-8 text-srvn-orange" />
                 </div>
             </button>
             <a href="{{ route('home') }}">
@@ -25,7 +25,7 @@
             <div>
                 <a class="h-8 font-semibold text-srvn-orange"
                    href="{{ route('login') }}">
-                    <x-heroicon-o-user class="h-6" />
+                    <x-heroicon-o-user class="mr-[2px] h-6" />
                 </a>
             </div>
         </div>
@@ -44,42 +44,42 @@
             </h2>
             <ul class="flex flex-col space-y-3">
                 <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[200ms]'"
-                    class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[200ms] duration-500">
-                    <a class="{{ Route::is('news') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center hover:font-medium hover:text-srvn-orange"
+                    class="flex translate-x-[-5%] items-center opacity-0 transition-all delay-[200ms] duration-500">
+                    <a class="{{ Route::is('news') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center space-x-2 hover:font-medium hover:text-srvn-orange"
                        href="{{ route('news') }}">
-                        <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
+                        <x-heroicon-o-chevron-double-right class="-ml-[3px] h-5 text-srvn-orange" />
                         <span>Nieuws</span>
                     </a>
                 </li>
                 <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[200ms]'"
-                    class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[200ms] duration-500">
-                    <a class="{{ Route::is('schedule') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center hover:font-medium hover:text-srvn-orange"
+                    class="flex translate-x-[-5%] items-center opacity-0 transition-all delay-[200ms] duration-500">
+                    <a class="{{ Route::is('schedule') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center space-x-2 hover:font-medium hover:text-srvn-orange"
                        href="{{ route('schedule') }}">
-                        <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
+                        <x-heroicon-o-chevron-double-right class="-ml-[3px] h-5 text-srvn-orange" />
                         <span>Kalender</span>
                     </a>
                 </li>
                 <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[300ms]'"
-                    class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[300ms] duration-500">
-                    <a class="{{ Route::is('standings') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center hover:font-medium hover:text-srvn-orange"
+                    class="flex translate-x-[-5%] items-center opacity-0 transition-all delay-[300ms] duration-500">
+                    <a class="{{ Route::is('standings') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center space-x-2 hover:font-medium hover:text-srvn-orange"
                        href="{{ route('standings') }}">
-                        <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
+                        <x-heroicon-o-chevron-double-right class="-ml-[3px] h-5 text-srvn-orange" />
                         <span>Klassement</span>
                     </a>
                 </li>
                 <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[400ms]'"
-                    class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[400ms] duration-500">
-                    <a class="{{ Route::is('drivers') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center hover:font-medium hover:text-srvn-orange"
+                    class="flex translate-x-[-5%] items-center opacity-0 transition-all delay-[400ms] duration-500">
+                    <a class="{{ Route::is('drivers') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center space-x-2 hover:font-medium hover:text-srvn-orange"
                        href="{{ route('drivers') }}">
-                        <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
+                        <x-heroicon-o-chevron-double-right class="-ml-[3px] h-5 text-srvn-orange" />
                         <span>Rijders</span>
                     </a>
                 </li>
                 <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[500ms]'"
-                    class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[500ms] duration-500">
-                    <a class="{{ Route::is('teams') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center hover:font-medium hover:text-srvn-orange"
+                    class="flex translate-x-[-5%] items-center opacity-0 transition-all delay-[500ms] duration-500">
+                    <a class="{{ Route::is('teams') ? 'text-srvn-orange font-medium' : '' }} flex w-full items-center space-x-2 hover:font-medium hover:text-srvn-orange"
                        href="{{ route('teams') }}">
-                        <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
+                        <x-heroicon-o-chevron-double-right class="-ml-[3px] h-5 text-srvn-orange" />
                         <span>Teams</span>
                     </a>
                 </li>
@@ -105,29 +105,29 @@
                 </h2>
                 <ul class="flex flex-col space-y-3">
                     <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[250ms]'"
-                        class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[250ms] duration-500">
-                        <x-heroicon-o-arrow-top-right-on-square class="-mt-0.5 h-5 text-srvn-orange" />
-                        <a class="flex w-full items-center hover:text-srvn-orange"
+                        class="flex translate-x-[-5%] items-center opacity-0 transition-all delay-[250ms] duration-500">
+                        <a class="flex w-full items-center hover:text-srvn-orange space-x-2"
                            href="https://srvn.liveracers.com/League"
                            target="_blank">
+                            <x-heroicon-o-arrow-top-right-on-square class="-mt-0.5 -ml-[1px] h-5 text-srvn-orange" />
                             <span>LiveRacers</span>
                         </a>
                     </li>
                     <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[375ms]'"
-                        class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[375ms] duration-500">
-                        <x-heroicon-o-arrow-top-right-on-square class="-mt-0.5 h-5 text-srvn-orange" />
-                        <a class="flex w-full items-center hover:text-srvn-orange"
+                        class="flex translate-x-[-5%] items-center opacity-0 transition-all delay-[375ms] duration-500">
+                        <a class="flex w-full items-center hover:text-srvn-orange space-x-2"
                            href="https://forum.srvn.nl/"
                            target="_blank">
+                            <x-heroicon-o-arrow-top-right-on-square class="-mt-0.5 -ml-[1px] h-5 text-srvn-orange" />
                             <span>Forum</span>
                         </a>
                     </li>
                     <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[500ms]'"
-                        class="flex translate-x-[-5%] items-center space-x-2 opacity-0 transition-all delay-[500ms] duration-500">
-                        <x-heroicon-o-arrow-top-right-on-square class="-mt-0.5 h-5 text-srvn-orange" />
-                        <a class="flex w-full items-center hover:text-srvn-orange"
+                        class="flex translate-x-[-5%] items-center opacity-0 transition-all delay-[500ms] duration-500">
+                        <a class="flex w-full items-center hover:text-srvn-orange space-x-2"
                            href="https://discord.com/invite/U5rs68Q9CQ"
                            target="_blank">
+                            <x-heroicon-o-arrow-top-right-on-square class="-mt-0.5 -ml-[1px] h-5 text-srvn-orange" />
                             <span>Discord</span>
                         </a>
                     </li>
