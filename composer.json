@@ -16,10 +16,10 @@
         "livewire/livewire": "^2.10",
         "orchestra/parser": "^7.0",
         "spatie/laravel-permission": "^5.5",
-        "spatie/laravel-ray": "^1.31",
         "tonysm/turbo-laravel": "^1.5"
     },
     "require-dev": {
+        "spatie/laravel-ray": "^1.31",
         "barryvdh/laravel-ide-helper": "^2.12",
         "fakerphp/faker": "^1.9.1",
         "laravel/pint": "^1.0",
