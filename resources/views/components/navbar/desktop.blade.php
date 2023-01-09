@@ -13,7 +13,7 @@
 
             {{-- Call To Action --}}
             <div class="flex w-full items-center">
-                <a href="{{ route('register') }}"
+                <a href="{{ route('get-in') }}"
                    class="font-semibold text-srvn-orange">
                     Klaar om in te stappen?
                     {{-- Word lid voor €25 per jaar! --}}
@@ -91,6 +91,12 @@
             <nav aria-label="Primary Navigation"
                  class="flex w-full items-center justify-between">
                 <ul class="flex h-full font-oxanium">
+                    <li class="h-full">
+                        <a class="{{ Route::is('news') ? 'text-srvn-orange font-medium' : '' }} flex h-full w-full items-center px-3 hover:font-medium hover:text-srvn-orange"
+                           href="{{ route('news') }}">
+                            <span>Nieuws</span>
+                        </a>
+                    </li>
                     <li class="h-full">
                         <a class="{{ Route::is('schedule') ? 'text-srvn-orange font-medium' : '' }} flex h-full w-full items-center px-3 hover:font-medium hover:text-srvn-orange"
                            href="{{ route('schedule') }}">

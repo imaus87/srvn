@@ -1,4 +1,4 @@
-<section class="px-6">
+<section class="px-3 sm:px-6 xl:ml-auto max-w-7xl">
     <x-h2>
         Rijders 2022-2
     </x-h2>

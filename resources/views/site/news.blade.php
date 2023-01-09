@@ -1,0 +1,3 @@
+<div>
+    Nieuws
+</div>

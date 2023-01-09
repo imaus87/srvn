@@ -46,7 +46,7 @@
 
             <x-auth.button-container>
                 @if (Route::has('password.request'))
-                    <x-link href="{{ route('password.request') }}">
+                    <x-link-auth href="{{ route('password.request') }}">
                         {{ __('Wachtwoord vergeten?') }}
                     </x-link>
                 @endif
@@ -59,7 +59,7 @@
         <div class="mt-9 border-t border-neutral-300 text-center">
             @if (Route::has('register'))
                 <div class="mt-6">
-                    <x-link href="{{ route('register') }}">
+                    <x-link-auth href="{{ route('register') }}">
                         {{ __('Nog geen account?') }}
                     </x-link>
                 </div>
