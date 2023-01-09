@@ -4,7 +4,7 @@
             <x-auth.header />
         </x-slot>
 
-        <p class="mt-6 text-neutral-800">
+        <p class="mt-2 text-neutral-800">
             Vul het <span class="font-semibold text-neutral-900">emailadres van je SRVN account</span> in om je wachtwoord opnieuw in te stellen.
         </p>
 
@@ -18,7 +18,7 @@
 
         <form method="POST"
               action="{{ route('password.email') }}"
-              class="space-y-6">
+              class="space-y-3">
             @csrf
 
             <!-- Email Address -->
@@ -35,13 +35,13 @@
                           placeholder="Emailadres"
                           autofocus />
 
-            <div class=" flex items-center">
+            <div class=" flex items-center pt-3">
                 <x-button class="w-full">
-                    {{ __('Nieuw wachtwoord aanvragen') }}
+                    {{ __('Stel opnieuw in') }}
                 </x-button>
             </div>
             @if (Route::has('login'))
-                <div class="">
+                <div class="pt-3">
                     <x-link-auth href="{{ route('login') }}">
                         {{ __('Terug naar inloggen?') }}
                     </x-link>
