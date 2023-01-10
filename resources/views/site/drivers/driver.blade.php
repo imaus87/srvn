@@ -65,11 +65,11 @@
             </ul>
         </div>
     </section>
-    <section class="mt-9 max-w-7xl xl:ml-auto">
-        <x-h3 class="pl-6">Teams</x-h3>
+    <section class="mt-8">
+        <x-h3 class="pl-3 md:pl-6 max-w-7xl xl:ml-auto">Teams</x-h3>
         <nav>
             <ul class="flex snap-x snap-mandatory gap-3 overflow-x-auto py-3 scrollbar-hide">
-                <li class="flex snap-center snap-always first:snap-start first:pl-6 last:snap-end last:pr-6">
+                <li class="xl:first:pl-snap flex snap-center snap-always first:snap-start first:pl-3 md:first:pl-6 last:snap-end last:pr-3 md:last:pr-6">
                     <a href="#"
                        class="flex w-72 grow flex-col items-center rounded-md bg-white p-6 shadow-md">
                         <img src="https://www.srvn.nl/klassement/design/liveries_2019-1/dtcc/Rene-Hoogterp.gif"
@@ -78,7 +78,7 @@
                         <span class="inline-block w-full flex-none text-center">GNCR Motorsports</span>
                     </a>
                 </li>
-                <li class="flex snap-center snap-always first:snap-start first:pl-6 last:snap-end last:pr-6">
+                <li class="xl:first:pl-snap flex snap-center snap-always first:snap-start first:pl-3 md:first:pl-6 last:snap-end last:pr-3 md:last:pr-6">
                     <a href="#"
                        class="flex w-72 grow flex-col items-center rounded-md bg-white p-6 shadow-md">
                         <img src="../img/anillusion-racing.svg"
@@ -90,11 +90,11 @@
             </ul>
         </nav>
     </section>
-    <section class="mt-6 max-w-7xl xl:ml-auto">
-        <x-h3 class="pl-6">Kampioenschappen</x-h3>
+    <section class="mt-5">
+        <x-h3 class="pl-3 md:pl-6 max-w-7xl xl:ml-auto">Kampioenschappen</x-h3>
         <nav>
             <ul class="flex snap-x snap-mandatory gap-3 overflow-x-auto py-3 scrollbar-hide">
-                <li class="flex snap-center snap-always first:snap-start first:pl-6 last:snap-end last:pr-6">
+                <li class="xl:first:pl-snap flex snap-center snap-always first:snap-start first:pl-3 md:first:pl-6 last:snap-end last:pr-3 md:last:pr-6">
                     <a href="#"
                        class="flex w-72 grow flex-col items-center rounded-md bg-white p-6 shadow-md">
                         <img src="https://www.srvn.nl/klassement/design/liveries/nk_f2_2021-1/Maurice-Willems.gif"
@@ -108,7 +108,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="flex snap-center snap-always first:snap-start first:pl-6 last:snap-end last:pr-6">
+                <li class="xl:first:pl-snap flex snap-center snap-always first:snap-start first:pl-3 md:first:pl-6 last:snap-end last:pr-3 md:last:pr-6">
                     <a href="#"
                        class="flex w-72 grow flex-col items-center rounded-md bg-white p-6 shadow-md">
                         <img src="https://www.srvn.nl/klassement/design/liveries/gt_2020-2/Mark-de-Vries.gif"
@@ -122,7 +122,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="flex snap-center snap-always first:snap-start first:pl-6 last:snap-end last:pr-6">
+                <li class="xl:first:pl-snap flex snap-center snap-always first:snap-start first:pl-3 md:first:pl-6 last:snap-end last:pr-3 md:last:pr-6">
                     <a href="#"
                        class="flex w-72 grow flex-col items-center rounded-md bg-white p-6 shadow-md">
                         <img src="https://www.srvn.nl/klassement/design/liveries_2019-1/dtcc/Rene-Hoogterp.gif"
@@ -136,7 +136,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="flex snap-center snap-always first:snap-start first:pl-6 last:snap-end last:pr-6">
+                <li class="xl:first:pl-snap flex snap-center snap-always first:snap-start first:pl-3 md:first:pl-6 last:snap-end last:pr-3 md:last:pr-6">
                     <a href="#"
                        class="flex w-72 grow flex-col items-center justify-center space-y-3 rounded-md border border-srvn-orange p-6">
                         <span class="text-center">Opzoek naar kampioenschappen van voorgaande jaren?</span>
@@ -146,7 +146,7 @@
             </ul>
         </nav>
     </section>
-    <section class="mt-9 max-w-7xl px-6 xl:ml-auto">
+    <section class="mt-5 max-w-7xl px-3 md:px-6 xl:ml-auto">
         <x-h3>Biografie</x-h3>
         <div class="mt-6 max-w-3xl space-y-3 text-lg">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui veritatis est quasi delectus ducimus neque
@@ -161,7 +161,7 @@
                 vero.</p>
         </div>
     </section>
-    <section class="relative mt-6 h-96">
+    <section class="relative mt-2 h-96">
         <ul class="flex h-96 snap-x snap-mandatory gap-3 overflow-x-auto py-3 scrollbar-hide">
             <li
                 class="xl:first:pl-snap flex-shrink-0 snap-center snap-always first:snap-start first:pl-3 last:snap-end last:pr-6 sm:first:pl-6">
@@ -186,11 +186,11 @@
             </li>
         </ul>
     </section>
-    <section class="mt-9 max-w-7xl xl:ml-auto">
-        <x-h3 class="pl-6">Verder lezen</x-h3>
+    <section class="mt-5">
+        <x-h3 class="pl-3 md:pl-6 max-w-7xl xl:ml-auto">Verder lezen</x-h3>
         <nav>
             <ul class="flex snap-x snap-mandatory gap-3 overflow-x-auto py-3 scrollbar-hide">
-                <li class="flex snap-center snap-always first:snap-start first:pl-6 last:snap-end last:pr-6">
+                <li class="xl:first:pl-snap flex snap-center snap-always first:snap-start first:pl-3 md:first:pl-6 last:snap-end last:pr-3 md:last:pr-6">
                     <a href="#"
                        class="flex w-72 grow flex-col items-center rounded-md bg-white p-6 shadow-md">
                         <img src="https://www.srvn.nl/klassement/design/liveries/nk_f2_2021-1/Robin-de-Jong.gif"
@@ -201,7 +201,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="flex snap-center snap-always first:snap-start first:pl-6 last:snap-end last:pr-6">
+                <li class="xl:first:pl-snap flex snap-center snap-always first:snap-start first:pl-3 md:first:pl-6 last:snap-end last:pr-3 md:last:pr-6">
                     <a href="#"
                        class="flex w-72 grow flex-col items-center justify-end rounded-md bg-white bg-cover bg-bottom p-6 shadow-md"
                        style="background-image: url(https://srvn.nl//images/circuits/crop_small/circuit-map-monza.png)">
@@ -216,7 +216,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="flex snap-center snap-always first:snap-start first:pl-6 last:snap-end last:pr-6">
+                <li class="xl:first:pl-snap flex snap-center snap-always first:snap-start first:pl-3 md:first:pl-6 last:snap-end last:pr-3 md:last:pr-6">
                     <a href="#"
                        class="flex w-72 grow flex-col items-center rounded-md bg-white p-6 shadow-md">
                         <img src="https://www.srvn.nl/klassement/design/liveries/nk_f2_2021-1/Robin-de-Jong.gif"
@@ -227,7 +227,7 @@
                         </div>
                     </a>
                 </li>
-                {{-- <li class="flex snap-center snap-always first:snap-start first:pl-6 last:snap-end last:pr-6">
+                {{-- <li class="xl:first:pl-snap flex snap-center snap-always first:snap-start first:pl-3 md:first:pl-6 last:snap-end last:pr-3 md:last:pr-6">
                     <a href="#"
                        class="flex w-72 grow flex-col items-center justify-center rounded-md bg-white p-6 shadow-md">
                         <div class="grow h-32">
@@ -243,7 +243,7 @@
                         </div>
                     </a>
                 </li> --}}
-                <li class="flex snap-center snap-always first:snap-start first:pl-6 last:snap-end last:pr-6">
+                <li class="xl:first:pl-snap flex snap-center snap-always first:snap-start first:pl-3 md:first:pl-6 last:snap-end last:pr-3 md:last:pr-6">
                     <a href="#"
                        class="flex w-72 grow flex-col items-center rounded-md bg-white p-6 shadow-md">
                         <img src="../img/anillusion-racing.svg"

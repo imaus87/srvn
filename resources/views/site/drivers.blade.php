@@ -31,7 +31,7 @@
             {{-- </form> --}}
         </div>
     </div>
-    <ul class="grid grid-cols-1 gap-3 pt-6 font-oxanium lg:grid-cols-2 lg:pt-9">
+    <ul class="grid grid-cols-1 gap-3 pt-6 pb-3 font-oxanium md:grid-cols-2">
         @foreach ($drivers as $driver)
             <li class="group rounded-md bg-white shadow-md transition-all duration-150 hover:bg-neutral-800">
                 {{-- <div class="flex items-center justify-between pb-2">
