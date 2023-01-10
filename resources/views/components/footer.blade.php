@@ -26,6 +26,7 @@
                     <li><a href="#">Commissies</a></li>
                     <li><a href="#">Archief</a></li>
                     <li><a href="#">Prijzen</a></li>
+                    <li><a href="#">FAQ</a></li>
                 </ul>
             </nav>
         </div>
