@@ -72,7 +72,7 @@
                 Klaar om in te stappen?
                 Lees meer over hoe SRVN werkt / wij werken
             </x-button> --}}
-            <a href="{{ route('download') }}"
+            <a href="{{ route('get-in') }}"
                class="flex w-full max-w-lg items-center justify-center space-x-1 rounded border-2 border-srvn-orange bg-srvn-orange px-3 py-2 text-lg font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-neutral-800 dark:border-srvn-orange/40 dark:bg-srvn-orange/90 dark:hover:border-srvn-orange/90 dark:hover:text-neutral-300">
                 Klaar om in te stappen?
             </a>
