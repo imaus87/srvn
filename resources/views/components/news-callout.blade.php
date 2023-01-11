@@ -1,7 +1,7 @@
 <section class="mb-9 max-w-7xl px-3 md:px-6 xl:ml-auto">
     <nav>
         <a href="{{ route('news') }}"
-           class="flex items-center">
+           class="inline-flex items-center">
             <x-h2>Nieuws</x-h2>
             <x-heroicon-o-chevron-double-right class="h-8 lg:hidden" />
         </a>
@@ -183,11 +183,13 @@
             </li>
         </ul>
     </nav>
-    <div class="mt-6 flex items-center justify-center">
+    <div class="mt-6 text-center">
         <x-link-primary href="{{ route('news') }}"
-                        class="uppercase">
-            Bekijk het laatste nieuws
+                        class="uppercase inline-flex items-center">
+            <span>
+              Bekijk het laatste nieuws
+            </span>
+            <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
         </x-link-primary>
-        <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
     </div>
 </section>
