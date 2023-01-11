@@ -6,6 +6,8 @@
         <x-register-callout />
     </div>
 
+    <x-download-callout />
+
     <section class="mt-8 max-w-7xl xl:ml-auto">
         <x-h3 class="pl-3 md:pl-6">Verder neuzen</x-h3>
         <nav>
