@@ -86,13 +86,52 @@
             </ul>
 
             {{-- Mijn SRVN Button --}}
-            <div x-bind:class="navOpen && '!opacity-100 !delay-[0ms]'"
+            {{-- <div x-bind:class="navOpen && '!opacity-100 !delay-[0ms]'"
                  class="flex items-center pt-6 pb-9 opacity-0 transition-opacity delay-[0ms] duration-500">
                 <a href="{{ route('driver.dashboard') }}"
                    class="flex w-full items-center justify-center space-x-1 rounded border-2 border-srvn-orange bg-srvn-orange px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-neutral-800">
                     <x-heroicon-o-user class="h-6" />
                     <span>Mijn SRVN</span>
                 </a>
+            </div> --}}
+            <div x-bind:class="navOpen && '!opacity-100 !delay-[0ms]'"
+                 class="w-full pt-6 pb-9 opacity-0 transition-opacity delay-[0ms] duration-500">
+                <ul class="flex flex-col items-center justify-center space-y-6">
+                    <li>
+                        <a href="{{ route('register') }}"
+                           class="font-semibold hover:text-srvn-orange">
+                            Stap in
+                        </a>
+                    </li>
+                    <li class="w-full">
+                        <a href="{{ route('driver.dashboard') }}"
+                           class="flex w-full items-center justify-center space-x-1 rounded border-2 border-srvn-orange bg-srvn-orange px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-neutral-800">
+                            {{-- <x-heroicon-o-arrow-right-on-rectangle class="h-5" /> --}}
+                            <span>Mijn SRVN</span>
+                            {{-- Schrijf in --}}
+                        </a>
+                    </li>
+                    <div class="flex items-center space-x-3">
+                        <li>
+                            <a href="#"
+                               class="hover:text-srvn-orange">
+                                <x-heroicon-o-device-phone-mobile class="h-5" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                               class="hover:text-srvn-orange">
+                                <x-heroicon-o-wrench class="h-5" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                               class="hover:text-srvn-orange">
+                                <x-heroicon-o-moon class="h-5" />
+                            </a>
+                        </li>
+                    </div>
+                </ul>
             </div>
         </nav>
 
@@ -106,7 +145,7 @@
                 <ul class="flex flex-col space-y-3">
                     <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[250ms]'"
                         class="flex translate-x-[-5%] items-center opacity-0 transition-all delay-[250ms] duration-500">
-                        <a class="flex w-full items-center hover:text-srvn-orange space-x-2"
+                        <a class="flex w-full items-center space-x-2 hover:text-srvn-orange"
                            href="https://srvn.liveracers.com/League"
                            target="_blank">
                             <x-heroicon-o-arrow-top-right-on-square class="-mt-0.5 -ml-[1px] h-5 text-srvn-orange" />
@@ -115,7 +154,7 @@
                     </li>
                     <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[375ms]'"
                         class="flex translate-x-[-5%] items-center opacity-0 transition-all delay-[375ms] duration-500">
-                        <a class="flex w-full items-center hover:text-srvn-orange space-x-2"
+                        <a class="flex w-full items-center space-x-2 hover:text-srvn-orange"
                            href="https://forum.srvn.nl/"
                            target="_blank">
                             <x-heroicon-o-arrow-top-right-on-square class="-mt-0.5 -ml-[1px] h-5 text-srvn-orange" />
@@ -124,7 +163,7 @@
                     </li>
                     <li x-bind:class="navOpen && '!opacity-100 !translate-x-0 !delay-[500ms]'"
                         class="flex translate-x-[-5%] items-center opacity-0 transition-all delay-[500ms] duration-500">
-                        <a class="flex w-full items-center hover:text-srvn-orange space-x-2"
+                        <a class="flex w-full items-center space-x-2 hover:text-srvn-orange"
                            href="https://discord.com/invite/U5rs68Q9CQ"
                            target="_blank">
                             <x-heroicon-o-arrow-top-right-on-square class="-mt-0.5 -ml-[1px] h-5 text-srvn-orange" />
