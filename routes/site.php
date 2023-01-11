@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Site\Download;
 use App\Http\Livewire\Site\Home;
 use App\Http\Livewire\Site\Teams;
 use App\Http\Livewire\Site\Drivers;
@@ -28,3 +29,4 @@ Route::get('/rijders', Drivers::class)->name('drivers');
 Route::get('/rijders/{driver}', Driver::class)->name('driver');
 Route::get('/teams', Teams::class)->name('teams');
 Route::get('/instappen', GetIn::class)->name('get-in');
+Route::get('/download', Download::class)->name('download');
