@@ -15,17 +15,19 @@
                  class="z-10 -ml-21 h-88">
         </div>
         <div>
-            <div class="hidden items-center space-x-3 rounded-md bg-white p-3 shadow-md md:flex">
-                <x-qr-code />
-                <div class="pr-3">
-                    <p class="shrink-0 text-neutral-500">
-                        Scan om te installeren
-                        {{-- Scan om te Downloaden --}}
-                    </p>
-                    <p class="text-lg font-semibold">
-                        iOS & Android
-                    </p>
-                </div>
+            <div class="shrink grow-0">
+              <div class="hidden items-center space-x-3 rounded-md bg-white p-3 shadow-md md:flex">
+                  <x-qr-code />
+                  <div class="pr-3">
+                      <p class="shrink-0 text-neutral-500">
+                          Scan om te installeren
+                          {{-- Scan om te Downloaden --}}
+                      </p>
+                      <p class="text-lg font-semibold">
+                          iOS & Android
+                      </p>
+                  </div>
+              </div>
             </div>
             <div class="flex items-center justify-center md:hidden">
                 <a href="#">
