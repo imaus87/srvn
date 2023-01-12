@@ -19,7 +19,8 @@
                 <x-qr-code />
                 <div class="pr-3">
                     <p class="shrink-0 text-neutral-500">
-                        Scan om te Downloaden
+                        Scan om te installeren
+                        {{-- Scan om te Downloaden --}}
                     </p>
                     <p class="text-lg font-semibold">
                         iOS & Android
