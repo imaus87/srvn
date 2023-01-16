@@ -21,7 +21,6 @@
     },
     "require-dev": {
         "spatie/laravel-ray": "^1.31",
-        "barryvdh/laravel-ide-helper": "^2.12",
         "fakerphp/faker": "^1.9.1",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.0.1",
