@@ -179,7 +179,9 @@
                  class="mt-6 flex shrink-0 grow justify-center opacity-0 transition-opacity delay-[250ms] duration-250">
                 <div class="shrink grow-0">
                     <div class="hidden items-center space-x-3 rounded-md bg-white p-3 shadow-md md:flex">
-                        <x-qr-code />
+                        <div class="dark:border-4 dark:border-white">
+                            <x-qr-code />
+                        </div>
                         <div class="pr-3">
                             <p class="shrink-0 text-neutral-500">
                                 Scan om te installeren
