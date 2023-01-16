@@ -14,7 +14,7 @@
 
         <form method="POST"
               action="{{ route('login') }}"
-              class="space-y-6">
+              class="space-y-3">
             @csrf
 
             <!-- Email Address -->
@@ -46,9 +46,11 @@
 
             <x-auth.button-container>
                 @if (Route::has('password.request'))
-                    <x-link-auth href="{{ route('password.request') }}">
-                        {{ __('Wachtwoord vergeten?') }}
-                    </x-link>
+                    <div class="pt-6 md:pt-0">
+                        <x-link-auth href="{{ route('password.request') }}">
+                            {{ __('Wachtwoord vergeten?') }}
+                            </x-link>
+                    </div>
                 @endif
 
                 <x-button>
@@ -61,7 +63,7 @@
                 <div class="mt-6">
                     <x-link-auth href="{{ route('register') }}">
                         {{ __('Nog geen account?') }}
-                    </x-link>
+                        </x-link>
                 </div>
             @endif
         </div>

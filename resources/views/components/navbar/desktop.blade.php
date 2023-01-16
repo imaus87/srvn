@@ -5,7 +5,8 @@
     {{-- https://www.revolut.com/ --}}
 
     {{-- Navbar Desktop --}}
-    <div class="xl:ml-auto max-w-7xl px-6">
+    {{-- <div class="max-w-7xl px-6 xl:ml-auto"> --}}
+    <div class="mx-auto max-w-2560 px-6">
 
         {{-- Secondary Navbar --}}
         <nav aria-label="Secondary Navigation"
@@ -49,7 +50,7 @@
 
             {{-- External Navigation --}}
             <div>
-                <ul class="flex w-full items-center">
+                <ul class="flex w-full items-center text-neutral-800">
                     <li class="ml-6 hover:underline">
                         <a href="https://srvn.liveracers.com/League"
                            target="_blank">
@@ -122,14 +123,41 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="flex h-full items-center space-x-3">
+                <ul class="flex h-full items-center space-x-6">
+                    <li>
+                        <a href="{{ route('register') }}"
+                           class="font-semibold hover:text-srvn-orange">
+                            Stap in
+                        </a>
+                    </li>
                     <li>
                         <a href="{{ route('driver.dashboard') }}"
                            class="flex items-center justify-center space-x-1 rounded border-2 border-srvn-orange bg-srvn-orange px-3 py-2 font-semibold text-white transition duration-150 ease-in-out hover:bg-transparent hover:text-neutral-800">
-                            <x-heroicon-o-user class="h-6" />
+                            {{-- <x-heroicon-o-arrow-right-on-rectangle class="h-5" /> --}}
                             <span>Mijn SRVN</span>
+                            {{-- Schrijf in --}}
                         </a>
                     </li>
+                    <div class="flex items-center space-x-3">
+                        <li>
+                            <a href="#"
+                               class="hover:text-srvn-orange">
+                                <x-heroicon-o-device-phone-mobile class="h-5" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                               class="hover:text-srvn-orange">
+                                <x-heroicon-o-wrench class="h-5" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                               class="hover:text-srvn-orange">
+                                <x-heroicon-o-moon class="h-5" />
+                            </a>
+                        </li>
+                    </div>
                 </ul>
             </nav>
         </div>

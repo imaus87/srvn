@@ -1,9 +1,9 @@
-<section class="mb-9 max-w-7xl px-3 sm:px-6 xl:ml-auto">
+<section class="mb-9 max-w-7xl px-3 md:px-6 xl:ml-auto">
     <nav>
         <a href="{{ route('news') }}"
-           class="flex items-center">
+           class="inline-flex items-center">
             <x-h2>Nieuws</x-h2>
-            <x-heroicon-o-chevron-double-right class="h-7 lg:hidden" />
+            <x-heroicon-o-chevron-double-right class="h-8 lg:hidden" />
         </a>
         {{-- <div class="flex items-center mb-1.5 lg:mb-2">
           <x-link-secondary class="text-sm uppercase">
@@ -17,7 +17,7 @@
             <li class="overflow-hidden rounded-md bg-white shadow-md">
                 <a href="#"
                    class="flex lg:block lg:space-y-3">
-                    <div class="relative h-32 w-25 shrink-0 lg:h-36 lg:w-auto">
+                    <div class="relative h-32 w-25 shrink-0 sm:h-[148px] md:h-32 lg:h-36 lg:w-auto">
                         <img src="https://srvn.nl/images/blog/header-slider/header-btcc-02.jpg"
                              alt="#"
                              class="h-full w-full object-cover">
@@ -35,7 +35,7 @@
             <li class="overflow-hidden rounded-md bg-white shadow-md">
                 <a href="#"
                    class="flex lg:block lg:space-y-3">
-                    <div class="relative h-32 w-25 shrink-0 lg:h-36 lg:w-auto">
+                    <div class="relative h-32 w-25 shrink-0 sm:h-[148px] md:h-32 lg:h-36 lg:w-auto">
                         <img src="https://srvn.nl/images/blog/header-slider/endurance1.png"
                              alt="#"
                              class="h-full w-full object-cover">
@@ -54,7 +54,7 @@
             <li class="overflow-hidden rounded-md bg-white shadow-md">
                 <a href="#"
                    class="flex lg:block lg:space-y-3">
-                    <div class="relative h-32 w-25 shrink-0 lg:h-36 lg:w-auto">
+                    <div class="relative h-32 w-25 shrink-0 sm:h-[148px] md:h-32 lg:h-36 lg:w-auto">
                         <img src="https://srvn.nl/images/blog/header-slider/2023-winter-series-header.png"
                              alt="#"
                              class="h-full w-full object-cover">
@@ -72,7 +72,7 @@
             <li class="overflow-hidden rounded-md bg-white shadow-md">
                 <a href="#"
                    class="flex lg:block lg:space-y-3">
-                    <div class="relative h-32 w-25 shrink-0 lg:h-36 lg:w-auto">
+                    <div class="relative h-32 w-25 shrink-0 sm:h-[148px] md:h-32 lg:h-36 lg:w-auto">
                         <img src="https://srvn.nl/images/blog/header-slider/dtcr-race-6-brands.png"
                              alt="#"
                              class="h-full w-full object-cover">
@@ -90,7 +90,7 @@
             <li class="hidden overflow-hidden rounded-md bg-white shadow-md md:block">
                 <a href="#"
                    class="flex lg:block lg:space-y-3">
-                    <div class="relative h-32 w-25 shrink-0 lg:h-36 lg:w-auto">
+                    <div class="relative h-32 w-25 shrink-0 sm:h-[148px] md:h-32 lg:h-36 lg:w-auto">
                         <img src="https://srvn.nl/images/blog/header-slider/bathurst.png"
                              alt="#"
                              class="h-full w-full object-cover">
@@ -109,7 +109,7 @@
             <li class="hidden overflow-hidden rounded-md bg-white shadow-md md:block">
                 <a href="#"
                    class="flex lg:block lg:space-y-3">
-                    <div class="relative h-32 w-25 shrink-0 lg:h-36 lg:w-auto">
+                    <div class="relative h-32 w-25 shrink-0 sm:h-[148px] md:h-32 lg:h-36 lg:w-auto">
                         <img src="https://srvn.nl/images/blog/header-slider/2022-fpro-r6.png"
                              alt="#"
                              class="h-full w-full object-cover">
@@ -127,7 +127,7 @@
             <li class="hidden overflow-hidden rounded-md bg-white shadow-md md:block">
                 <a href="#"
                    class="flex lg:block lg:space-y-3">
-                    <div class="relative h-32 w-25 shrink-0 lg:h-36 lg:w-auto">
+                    <div class="relative h-32 w-25 shrink-0 sm:h-[148px] md:h-32 lg:h-36 lg:w-auto">
                         <img src="https://srvn.nl/images/blog/header-slider/nk-fpro.png"
                              alt="#"
                              class="h-full w-full object-cover">
@@ -146,7 +146,7 @@
             <li class="hidden overflow-hidden rounded-md bg-white shadow-md md:block">
                 <a href="#"
                    class="flex lg:block lg:space-y-3">
-                    <div class="relative h-32 w-25 shrink-0 lg:h-36 lg:w-auto">
+                    <div class="relative h-32 w-25 shrink-0 sm:h-[148px] md:h-32 lg:h-36 lg:w-auto">
                         <img src="https://srvn.nl/images/blog/header-slider/nk-enduro-2022-2-race-4.png"
                              alt="#"
                              class="h-full w-full object-cover">
@@ -165,7 +165,7 @@
             <li class="hidden overflow-hidden rounded-md bg-white shadow-md lg:block">
                 <a href="#"
                    class="flex lg:block lg:space-y-3">
-                    <div class="relative h-32 w-25 shrink-0 lg:h-36 lg:w-auto">
+                    <div class="relative h-32 w-25 shrink-0 sm:h-[148px] md:h-32 lg:h-36 lg:w-auto">
                         <img src="https://srvn.nl/images/blog/header-slider/nk-dtcr-2022-ll-race-4.png"
                              alt="#"
                              class="h-full w-full object-cover">
@@ -183,11 +183,13 @@
             </li>
         </ul>
     </nav>
-    <div class="mt-6 flex items-center justify-center">
+    <div class="mt-6 text-center">
         <x-link-primary href="{{ route('news') }}"
-                        class="uppercase">
-            Bekijk het laatste nieuws
+                        class="uppercase inline-flex items-center">
+            <span>
+              Bekijk het laatste nieuws
+            </span>
+            <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
         </x-link-primary>
-        <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
     </div>
 </section>

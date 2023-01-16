@@ -1,8 +1,66 @@
 <x-auth-layout>
-    <div class="mx-auto grid sm:grid-cols-2">
+    <div class="mx-auto grid grid-cols-1 lg:grid-cols-2">
+
+        <section class="hidden flex-col items-center justify-center bg-neutral-900 p-9 text-neutral-300 lg:flex">
+            <nav class="xl:mt-12 flex items-center justify-center overflow-hidden">
+                <ul class="grid grid-cols-1 gap-3 text-lg">
+                    <li class="max-w-xl space-y-3 rounded-md bg-neutral-500/5 p-6 shadow-md">
+                        <div class="flex items-center space-x-3">
+                            <x-heroicon-s-trophy class="h-7 w-7" />
+                            <x-h4>
+                                Officiël kampioenschap
+                            </x-h4>
+                        </div>
+                        <p class="ml-10 text-neutral-500">
+                            Rijd twee maal per jaar mee in het officiël nederlands kampioenschap simracen.
+                        </p>
+                    </li>
+                    <li class="max-w-xl space-y-3 rounded-md bg-neutral-500/5 p-6 shadow-md">
+                        <div class="flex items-center space-x-3">
+                            <x-heroicon-s-user-group class="h-7 w-7" />
+                            <x-h4>
+                                Winter- en zomerstop
+                            </x-h4>
+                        </div>
+                        <p class="ml-10 text-neutral-500">
+                            Met de winter en somer series tussen de seizoenen in verveel je je geen moment!
+                        </p>
+                    </li>
+                    <li class="max-w-xl space-y-3 rounded-md bg-neutral-500/5 p-6 shadow-md">
+                        <div class="flex items-center space-x-3">
+                            <x-heroicon-s-paint-brush class="h-7 w-7" />
+                            <x-h4>
+                                Eigen liveries
+                            </x-h4>
+                        </div>
+                        <p class="ml-10 text-neutral-500">
+                            Ontwerp en rijd rond met je eigen gemaakte livery of gebruik er een van ons.
+                        </p>
+                    </li>
+                    <li class="max-w-xl space-y-3 rounded-md bg-neutral-500/5 p-6 shadow-md">
+                        <div class="flex items-center space-x-3">
+                            <x-heroicon-s-user-circle class="h-7 w-7" />
+                            <x-h4>
+                                Gratis account
+                            </x-h4>
+                        </div>
+                        <p class="ml-10 text-neutral-500">
+                            Schrijf je nu in voor een gratis account en verken de wonderen wereld van het simracen!
+                        </p>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mt-6 hidden items-center justify-center xl:flex">
+                <x-link-primary href="{{ route('news') }}"
+                                class="uppercase">
+                    Bekijk hoe SRVN werkt
+                </x-link-primary>
+                <x-heroicon-o-chevron-double-right class="h-5 text-srvn-orange" />
+            </div>
+        </section>
 
         {{-- Selling Points Section --}}
-        <div class="flex min-h-screen w-full items-center bg-neutral-900 p-6 lg:p-12">
+        <div class="hidden min-h-screen w-full items-center bg-neutral-900 p-6 lg:p-12">
             <div class="relative mx-auto flex flex-col justify-center">
                 <h1 class="px-8 text-2xl font-semibold text-neutral-300 lg:text-3xl">
                     Doe je gordel om en wordt lid van dé<br class="hidden lg:block"> nederlandse simrace vereniging!
@@ -12,7 +70,7 @@
                 <ul class="mt-9 text-base font-medium text-neutral-500 lg:text-lg">
                     <li class="flex items-center pb-6">
                         <div class="mt-1">
-                          <x-heroicon-s-check class="mr-3 h-6 text-srvn-orange lg:h-7" />
+                            <x-heroicon-s-check class="mr-3 h-6 text-srvn-orange lg:h-7" />
                         </div>
                         Maak 24/7 gebruik van onze raceservers
                     </li>
@@ -40,7 +98,7 @@
                     </li>
                     <li class="flex items-center pb-6">
                         <div class="mt-1">
-                          <x-heroicon-s-check class="mr-3 h-6 text-srvn-orange lg:h-7" />
+                            <x-heroicon-s-check class="mr-3 h-6 text-srvn-orange lg:h-7" />
                         </div>
                         Krijg je eigen auto in de mods van SRVN
                     </li>
@@ -100,7 +158,7 @@
         </div>
 
         {{-- Auth Section --}}
-        <x-auth.container class="pt-12 pb-3 lg:p-12" id="register">
+        <x-auth.container class="" id="register">
             <x-slot name="logo">
                 <x-auth.header />
             </x-slot>
@@ -112,11 +170,11 @@
             {{-- Form --}}
             <form method="POST"
                   action="{{ route('register') }}"
-                  class="space-y-6">
+                  class="space-y-3">
                 @csrf
 
                 <!-- Name -->
-                <div class="flex space-x-3">
+                {{-- <div class="flex space-x-3">
                     <div class="w-full">
                         <x-input.label for="first_name"
                                        :value="__('Voornaam')"
@@ -141,10 +199,9 @@
                                       name="last_name"
                                       :value="old('last_name')"
                                       placeholder="Achternaam"
-                                      required
-                                      autofocus />
+                                      required />
                     </div>
-                </div>
+                </div> --}}
 
                 <!-- Email Address -->
                 <x-input.label for="email"
@@ -156,7 +213,8 @@
                               name="email"
                               :value="old('email')"
                               placeholder="Emailadres"
-                              required />
+                              required
+                              autofocus />
 
                 <!-- Password -->
                 <x-input.label for="password"
@@ -171,7 +229,7 @@
                               autocomplete="new-password" />
 
                 <!-- Confirm Password -->
-                <x-input.label for="password_confirmation"
+                {{-- <x-input.label for="password_confirmation"
                                :value="__('Bevestig wachtwoord')"
                                class="hidden" />
                 <x-input.text id="password_confirmation"
@@ -179,13 +237,15 @@
                               type="password"
                               name="password_confirmation"
                               placeholder="Bevestig wachtwoord"
-                              required />
+                              required /> --}}
 
                 {{-- Buttons --}}
                 <x-auth.button-container>
-                    <x-link-auth href="{{ route('login') }}">
-                        {{ __('Terug naar inloggen?') }}
-                    </x-link>
+                    <div class="pt-6 md:pt-0">
+                        <x-link-auth href="{{ route('login') }}">
+                            {{ __('Terug naar inloggen?') }}
+                            </x-link>
+                    </div>
                     <x-button class="w-full sm:w-auto">
                         {{ __('Account aanmaken') }}
                     </x-button>

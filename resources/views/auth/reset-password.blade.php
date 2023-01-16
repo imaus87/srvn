@@ -4,7 +4,7 @@
             <x-auth.header />
         </x-slot>
 
-        <p class="mt-6 text-neutral-800">
+        <p class="mt-2 text-neutral-800">
             Vul je nieuwe wachtwoord in voor het account met email:
             <span class="font-semibold text-neutral-900">
                 {{ $request->email }}
@@ -17,7 +17,7 @@
 
         <form method="POST"
               action="{{ route('password.update') }}"
-              class="space-y-6">
+              class="space-y-3">
             @csrf
 
             <!-- Password Reset Token -->
@@ -27,8 +27,8 @@
 
             <!-- Email Address -->
             <x-input.label for="email"
-                            :value="__('Emailadres')"
-                            class="hidden" />
+                           :value="__('Emailadres')"
+                           class="hidden" />
 
             <x-input.text id="email"
                           class="hidden w-full"
@@ -41,8 +41,8 @@
 
             <!-- Password -->
             <x-input.label for="password"
-                            :value="__('Wachtwoord')"
-                            class="hidden" />
+                           :value="__('Wachtwoord')"
+                           class="hidden" />
 
             <x-input.text id="password"
                           class="block w-full"
@@ -53,7 +53,7 @@
                           autofocus />
 
             <!-- Confirm Password -->
-            <x-input.label for="password_confirmation"
+            {{-- <x-input.label for="password_confirmation"
                             :value="__('Bevestig wachtwoord')"
                             class="hidden" />
 
@@ -62,12 +62,14 @@
                           type="password"
                           name="password_confirmation"
                           placeholder="Bevestig wachtwoord"
-                          required />
+                          required /> --}}
 
             <x-auth.button-container>
-                <x-link-auth href="{{ route('login') }}">
-                    {{ __('Terug naar inloggen?') }}
-                </x-link>
+                <div class="pt-6 md:pt-0">
+                    <x-link-auth href="{{ route('login') }}">
+                        {{ __('Terug naar inloggen?') }}
+                    </x-link>
+                </div>
 
                 <x-button>
                     {{ __('Stel opnieuw in') }}
