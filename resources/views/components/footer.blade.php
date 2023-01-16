@@ -1,50 +1,98 @@
 <div>
 
-    <section class="space-x-0 space-y-6 sm:flex sm:space-x-3 sm:space-y-0 md:space-x-6">
+    {{-- <section class="lg:flex lg:space-x-6"> --}}
+    <section>
 
-        <div class="flex space-x-3">
-            <x-h6 class="w-19 shrink-0 sm:w-auto">Missie</x-h6>
-            <div class="space-y-3">
-                <p class="max-w-xs text-neutral-500 lg:max-w-sm">
-                    Iedereen kan meedoen bij SRVN! Verdien je minder dan de draagkrachtvrije voet? Geen probleem!
-                </p>
-                <a href="#" class="inline-flex items-center">
-                    <span class="font-oxanium font-medium uppercase">
-                        Bekijk onze missie
-                    </span>
-                    {{-- <span class="font-oxanium font-medium uppercase">Vraag kwijtschelding aan</span> --}}
-                    <div class="-mt-0.5">
-                        <x-heroicon-s-chevron-double-right class="h-5 w-5 text-neutral-300" />
-                    </div>
-                </a>
+        {{-- <div class="space-x-0 space-y-6 sm:flex sm:space-x-3 sm:space-y-0 md:space-x-6"> --}}
+        <div class="space-x-0 space-y-6 sm:space-y-9 lg:flex lg:space-y-0 lg:space-x-6">
+
+            <div class="flex space-x-3">
+                {{-- <x-h6 class="w-19 shrink-0 sm:w-auto">Missie</x-h6> --}}
+                <x-h6 class="w-19 shrink-0 lg:w-auto">Missie</x-h6>
+                <div class="space-y-3">
+                    {{-- <p class="max-w-xs text-neutral-500 lg:max-w-sm"> --}}
+                    <p class="max-w-sm text-neutral-500">
+                        Iedereen kan meedoen bij SRVN! Verdien je minder dan de draagkrachtvrije voet? Geen probleem!
+                    </p>
+                    <a href="#" class="inline-flex items-center">
+                        <span class="font-oxanium font-medium uppercase">
+                            Bekijk onze missie
+                        </span>
+                        {{-- <span class="font-oxanium font-medium uppercase">Vraag kwijtschelding aan</span> --}}
+                        <div class="-mt-0.5">
+                            <x-heroicon-s-chevron-double-right class="h-5 w-5 text-neutral-300" />
+                        </div>
+                    </a>
+                </div>
             </div>
+
+            <div class="space-x-0 space-y-6 sm:flex sm:space-y-0 sm:space-x-6">
+
+                <div class="flex space-x-3">
+                    <x-h6 class="w-19 sm:w-auto">Competitie</x-h6>
+                    <nav class="text-neutral-500">
+                        <ul>
+                            <li><a href="#">Schrijf je in!</a></li>
+                            <li><a href="#">Reglementen</a></li>
+                            <li><a href="#">Commissies</a></li>
+                            <li><a href="#">Archief</a></li>
+                            <li><a href="#">Prijzen</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flex space-x-3">
+                    <x-h6 class="w-19 sm:w-auto">Vereniging</x-h6>
+                    <nav class="text-neutral-500">
+                        <ul>
+                            <li><a href="#">Over ons</a></li>
+                            <li><a href="#">Sponsoren</a></li>
+                            <li><a href="#">Studentenkorting</a></li>
+                            <li><a href="#">Kwijtschelding</a></li>
+                            <li><a href="#">Perskit</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                {{-- <div class="flex space-x-3 sm:hidden lg:flex"> --}}
+                <div class="flex space-x-3">
+                    <x-h6 class="w-19 sm:w-auto">App</x-h6>
+                    <div class="shrink grow-0 md:hidden">
+                        <x-store-badge />
+                    </div>
+                    <div class="hidden shrink grow-0 md:block">
+                        <div class="border-4 border-white">
+                            <x-qr-code class="-mx-[18px] h-[64px]" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-        <div class="flex space-x-3">
-            <x-h6 class="w-19 sm:w-auto">Competitie</x-h6>
-            <nav class="text-neutral-500">
-                <ul>
-                    <li><a href="#">Schrijf je in!</a></li>
-                    <li><a href="#">Reglementen</a></li>
-                    <li><a href="#">Commissies</a></li>
-                    <li><a href="#">Archief</a></li>
-                    <li><a href="#">Prijzen</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="flex space-x-3">
-            <x-h6 class="w-19 sm:w-auto">Vereniging</x-h6>
-            <nav class="text-neutral-500">
-                <ul>
-                    <li><a href="#">Over ons</a></li>
-                    <li><a href="#">Sponsoren</a></li>
-                    <li><a href="#">Studentenkorting</a></li>
-                    <li><a href="#">Kwijtschelding</a></li>
-                    <li><a href="#">Perskit</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+
+        {{-- <x-qr-code-callout /> --}}
+
+        {{-- <div class="shrink grow-0">
+            <div class="hidden items-center space-x-3 rounded-md bg-neutral-500/5 p-3 shadow-md lg:flex">
+                <div class="border-4 border-white">
+                    <x-qr-code class="h-18 -mx-[14px]" />
+                </div>
+                <div class="pr-3">
+                    <p class="shrink-0 text-neutral-500">
+                        <span class="inline-block xl:hidden">
+                            Installeer op
+                        </span>
+                        <span class="hidden xl:inline-block">
+                            Scan om te installeren
+                        </span>
+                    </p>
+                    <p class="text-lg font-semibold">
+                        iOS & Android
+                    </p>
+                </div>
+            </div>
+        </div> --}}
 
     </section>
 
