@@ -1,4 +1,4 @@
-<section>
+<section {{ $attributes->merge(['class' => '']) }}>
     <p class="max-w-sm font-oxanium text-2xl font-semibold sm:max-w-lg sm:text-3xl">
         Klaar om dieper in de wereld van <span class="font-extrabold">sim racing</span> te duiken?
     </p>
