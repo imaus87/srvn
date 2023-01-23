@@ -33,7 +33,7 @@
         </div>
     </header>
 
-    <main class="pb-[527px] h-full pt-23 lg:pt-9">
+    <main class="pb-[1039px] md:pb-[673px] lg:pb-[527px] h-full pt-23 lg:pt-9">
 
         {{ $slot }}
 
