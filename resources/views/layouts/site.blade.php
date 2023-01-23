@@ -22,38 +22,35 @@
 
 <body x-data="{ showBar: false, navOpen: false }"
       x-bind:class="navOpen && '!overflow-hidden !fixed !w-full'"
-      class="min-h-screen w-screen bg-srvn-gray font-titilliumweb text-neutral-800 antialiased">
-    <div id="app">
+      class="relative min-h-screen w-screen bg-srvn-gray font-titilliumweb text-neutral-800 antialiased">
 
-        <header>
-            <div class="block lg:hidden">
-                <x-navbar.mobile />
-            </div>
-            <div class="hidden lg:block">
-                <x-navbar.desktop />
-            </div>
-        </header>
+    <header>
+        <div class="block lg:hidden">
+            <x-navbar.mobile />
+        </div>
+        <div class="hidden lg:block">
+            <x-navbar.desktop />
+        </div>
+    </header>
 
-        <main class="h-full pb-6 pt-23 lg:pt-9">
+    <main class="pb-[527px] h-full pt-23 lg:pt-9">
 
-            {{ $slot }}
+        {{ $slot }}
 
-        </main>
+    </main>
 
-        <Footer>
-            <div class="bg-neutral-900 text-neutral-300">
-                <div class="max-w-7xl px-3 py-9 md:px-6 xl:ml-auto">
+    <footer class="absolute bottom-0 right-0 left-0">
+        <div class="bg-neutral-900 text-neutral-300">
+            <div class="max-w-7xl px-3 py-9 md:px-6 xl:ml-auto">
 
-                    <div class="mb-9">
-                        <x-news-signup />
-                    </div>
-
-                    <x-footer />
+                <div class="mb-9">
+                    <x-news-signup />
                 </div>
-            </div>
-        </Footer>
 
-    </div>
+                <x-footer />
+            </div>
+        </div>
+    </footer>
 
     <livewire:scripts />
     <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js"
