@@ -1,15 +1,16 @@
 <?php
 
-use App\Http\Livewire\Site\Download;
+use App\Events\TestEvent;
 use App\Http\Livewire\Site\Home;
+use App\Http\Livewire\Site\News;
+use App\Http\Livewire\Site\GetIn;
 use App\Http\Livewire\Site\Teams;
 use App\Http\Livewire\Site\Drivers;
-use App\Http\Livewire\Site\Drivers\Driver;
-use App\Http\Livewire\Site\GetIn;
-use App\Http\Livewire\Site\News;
+use App\Http\Livewire\Site\Download;
 use App\Http\Livewire\Site\Schedule;
 use App\Http\Livewire\Site\Standings;
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\Site\Drivers\Driver;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,3 +31,11 @@ Route::get('/rijders/{driver}', Driver::class)->name('driver');
 Route::get('/teams', Teams::class)->name('teams');
 Route::get('/instappen', GetIn::class)->name('get-in');
 Route::get('/download', Download::class)->name('download');
+
+Route::get('/send', function () {
+    event(new TestEvent());
+});
+
+Route::get('/socket', function () {
+    return view('socket');
+});
