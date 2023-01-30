@@ -57,7 +57,7 @@
             data-turbo-eval="false"></script>
 
             <script>
-                Echo.channel('user')
+                window.Echo.channel('user')
                     .listenToAll((event, data) => {
                         console.log(event);
                     })
