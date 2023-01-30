@@ -1,5 +1,9 @@
 <div>
 
+    <div>
+        {{ $showNewOrderNotification }}
+    </div>
+
     <x-news-callout />
 
     <div class="max-w-7xl bg-transparent dark:bg-neutral-900 lg:bg-transparent xl:ml-auto">
