@@ -56,6 +56,13 @@
     <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js"
             data-turbo-eval="false"></script>
 
+            <script>
+                Echo.channel('user')
+                    .listenToAll((event, data) => {
+                        console.log(event);
+                    })
+            </script>
+
 </body>
 
 </html>

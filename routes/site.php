@@ -35,7 +35,3 @@ Route::get('/download', Download::class)->name('download');
 Route::get('/send', function () {
     event(new TestEvent());
 });
-
-Route::get('/socket', function () {
-    return view('socket');
-});
